@@ -1,0 +1,361 @@
+/* Es el jquery.ui.css mutilado ... para que funcione el dialog de jquery ... y encapsulado en la clase cssDialogAyuda para que no
+presente afectaciones a cualquier otra cosa en la página - en teoria -
+------------------------------------------------------------------------------------------------------*/
+.cssDialogAyuda .ui-helper-clearfix:before,.cssDialogAyuda .ui-helper-clearfix:after{content:"";display:table;border-collapse:collapse}
+.cssDialogAyuda .ui-helper-clearfix:after{clear:both}
+.cssDialogAyuda .ui-helper-clearfix{min-height:0}
+.cssDialogAyuda.ui-dialog{position:absolute;top:0;left:0;outline:0;z-index:2000 !important;position:absolute}
+.cssDialogAyuda .ui-dialog-titlebar{padding:.4em 1em;position:relative}
+.cssDialogAyuda .ui-dialog-title{float:left;margin:.1em 0;white-space:nowrap;width:90%;overflow:hidden;text-overflow:ellipsis;color:#222}
+.cssDialogAyuda .ui-dialog-titlebar-close{position:absolute;right:.3em;top:50%;width:21px;margin:-10px 0 0 0;padding:1px;height:20px}
+.cssDialogAyuda .ui-dialog-content{position:relative;border:0;padding:.5em 1em;background:0;overflow:auto}
+.cssDialogAyuda .ui-widget{font-family:Verdana,Arial,sans-serif;font-size:1.1em}
+.cssDialogAyuda .ui-widget{font-size:1em}
+.cssDialogAyuda .ui-widget-content{border:1px solid #9daeae;background:#fff url(images/ui-bg_flat_75_ffffff_40x100.png) 50% 50% repeat-x;color:#222}
+.cssDialogAyuda .ui-widget-header{border:1px solid #aaa;background: #b6c2c9;font-weight:bold}
+.cssDialogAyuda .ui-icon{width:16px;height:16px}
+.cssDialogAyuda .ui-icon,.cssDialogAyuda .ui-widget-content .ui-icon{background-image:url(images/ui-icons_222222_256x240.png)}
+.cssDialogAyuda .ui-icon-closethick{background-position:-96px -128px}
+
+
+
+/* Para los menus dropdowns demasiado extensos
+------------------------------------------------------------------------------------------------------*/
+.dropdown-large {
+  position: static !important;
+}
+.dropdown-menu-large {
+  margin-left: 16px;
+  margin-right: 16px;
+  padding: 20px 0px;
+}
+.dropdown-menu-large > li > ul {
+  padding: 0;
+  margin: 0;
+}
+.dropdown-menu-large > li > ul > li {
+  list-style: none;
+}
+.dropdown-menu-large > li > ul > li > a {
+  display: block;
+  padding: 3px 20px;
+  clear: both;
+  font-weight: normal;
+  line-height: 1.428571429;
+  color: #333333;
+  white-space: normal;
+}
+.dropdown-menu-large > li ul > li > a:hover,
+.dropdown-menu-large > li ul > li > a:focus {
+  text-decoration: none;
+  color: #262626;
+  background-color: #f5f5f5;
+}
+.dropdown-menu-large .disabled > a,
+.dropdown-menu-large .disabled > a:hover,
+.dropdown-menu-large .disabled > a:focus {
+  color: #999999;
+}
+.dropdown-menu-large .disabled > a:hover,
+.dropdown-menu-large .disabled > a:focus {
+  text-decoration: none;
+  background-color: transparent;
+  background-image: none;
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  cursor: not-allowed;
+}
+.dropdown-menu-large .dropdown-header {
+  color: #428bca;
+  font-size: 18px;
+}
+@media (max-width: 768px) {
+  .dropdown-menu-large {
+    margin-left: 0 ;
+    margin-right: 0 ;
+  }
+  .dropdown-menu-large > li {
+    margin-bottom: 30px;
+  }
+  .dropdown-menu-large > li:last-child {
+    margin-bottom: 0;
+  }
+  .dropdown-menu-large .dropdown-header {
+    padding: 3px 15px !important;
+  }
+}
+
+
+
+.textoGris {
+  color: #BDBDBD !important;
+}
+
+.iconoVerde{
+  color: green;
+}
+
+
+
+#SitemaActivo{
+background-color: #C3C4B1;
+}
+
+
+textarea { resize: vertical; }
+
+
+#cgPantallaCompleta {
+  margin: 0px;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  border: 1px solid #CCC;
+  padding: 12px;
+  display: none;
+  background-color: white;
+}
+
+.ui-widget-overlay { 
+	background: rgba(0,0,0,.4) !important;
+	opacity: 100 !important;
+	filter:Alpha(Opacity=100) !important;  
+}
+
+.notoi { 
+	display: none;
+}
+
+/*.F1Catalogo:focus { background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAoCAYAAAAPOoFWAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAPZJREFUeNq81tsOgjAMANB2ov7/7ypaN7IlIwi9rGuT8QSc9EIDAsAznxvY4pXPKr05RUE5MEVB+TyWfCEl9LZApYopCmo9C4FKSMtYoI8Bwv79aQJU4l6hXXCZrQbokJEksxHo9KMOgc6w1atHXM8K9DVC7FQnJ0i8iK3QooGgbnyKgMDygBWyYFZoqx4qS27KqLZJjA1D0jK6QJcYEQEiWv9PGkTsbqxQ8oT+ZtZB6AkdsJnQDnMoHXHLGKOgDYuCWmYhEERCI5gaamW0bnHdA3k2ltlIN+2qKRyCND0bhqSYCyTB3CAOc4WusBEIpkeBuPgJMAAX8Hs1NfqHRgAAAABJRU5ErkJggg==") repeat-x scroll left top lightgreen;} */
+.F1Catalogo:focus { background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAoCAYAAAAPOoFWAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAPZJREFUeNq81tsOgjAMANB2ov7/7ypaN7IlIwi9rGuT8QSc9EIDAsAznxvY4pXPKr05RUE5MEVB+TyWfCEl9LZApYopCmo9C4FKSMtYoI8Bwv79aQJU4l6hXXCZrQbokJEksxHo9KMOgc6w1atHXM8K9DVC7FQnJ0i8iK3QooGgbnyKgMDygBWyYFZoqx4qS27KqLZJjA1D0jK6QJcYEQEiWv9PGkTsbqxQ8oT+ZtZB6AkdsJnQDnMoHXHLGKOgDYuCWmYhEERCI5gaamW0bnHdA3k2ltlIN+2qKRyCND0bhqSYCyTB3CAOc4WusBEIpkeBuPgJMAAX8Hs1NfqHRgAAAABJRU5ErkJggg==") repeat-x scroll left top #ffeaa8;}
+
+.poaSaldoDisponible { background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAoCAYAAAAPOoFWAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAPZJREFUeNq81tsOgjAMANB2ov7/7ypaN7IlIwi9rGuT8QSc9EIDAsAznxvY4pXPKr05RUE5MEVB+TyWfCEl9LZApYopCmo9C4FKSMtYoI8Bwv79aQJU4l6hXXCZrQbokJEksxHo9KMOgc6w1atHXM8K9DVC7FQnJ0i8iK3QooGgbnyKgMDygBWyYFZoqx4qS27KqLZJjA1D0jK6QJcYEQEiWv9PGkTsbqxQ8oT+ZtZB6AkdsJnQDnMoHXHLGKOgDYuCWmYhEERCI5gaamW0bnHdA3k2ltlIN+2qKRyCND0bhqSYCyTB3CAOc4WusBEIpkeBuPgJMAAX8Hs1NfqHRgAAAABJRU5ErkJggg==") repeat-x scroll left top #ffeaa8;}
+
+
+
+/**
+ * Zabuto Calendar
+ */
+
+div.zabuto_calendar {
+    margin: 0;
+    padding: 0;
+}
+
+div.zabuto_calendar .table {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+div.zabuto_calendar .table th,
+div.zabuto_calendar .table td {
+    padding: 4px 2px;
+    text-align: center;
+}
+
+div.zabuto_calendar .table tr th,
+div.zabuto_calendar .table tr td {
+    background-color: #ffffff;
+}
+
+div.zabuto_calendar .table tr.calendar-month-header th {
+    background-color: #fafafa;
+}
+
+div.zabuto_calendar .table tr.calendar-month-header th span {
+    cursor: pointer;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+div.zabuto_calendar .table tr.calendar-dow-header th {
+    background-color: #f0f0f0;
+}
+
+div.zabuto_calendar .table tr:last-child {
+    border-bottom: 1px solid #dddddd;
+}
+
+div.zabuto_calendar .table tr.calendar-month-header th {
+    padding-top: 12px;
+    padding-bottom: 4px;
+}
+
+div.zabuto_calendar .table-bordered tr.calendar-month-header th {
+    border-left: 0;
+    border-right: 0;
+}
+
+div.zabuto_calendar .table-bordered tr.calendar-month-header th:first-child {
+    border-left: 1px solid #dddddd;
+}
+
+div.zabuto_calendar div.calendar-month-navigation {
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    padding-top: 5px;
+}
+
+div.zabuto_calendar tr.calendar-dow-header th,
+div.zabuto_calendar tr.calendar-dow td {
+    width: 14%;
+}
+
+div.zabuto_calendar .table tr td div.day {
+    margin: 0;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+/* actions and events */
+div.zabuto_calendar .table tr td.event div.day,
+div.zabuto_calendar ul.legend li.event {
+    background-color: #fff0c3;
+}
+
+div.zabuto_calendar .table tr td.dow-clickable,
+div.zabuto_calendar .table tr td.event-clickable {
+    cursor: pointer;
+}
+
+/* badge */
+div.zabuto_calendar .badge-today,
+div.zabuto_calendar div.legend span.badge-today {
+    background-color: #357ebd;
+    color: #ffffff;
+    text-shadow: none;
+}
+
+div.zabuto_calendar .badge-event,
+div.zabuto_calendar div.legend span.badge-event {
+    background-color: #ff9b08;
+    color: #ffffff;
+    text-shadow: none;
+}
+
+div.zabuto_calendar .badge-event {
+    font-size: 0.95em;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 4px;
+}
+
+/* legend */
+div.zabuto_calendar div.legend {
+    margin-top: 5px;
+    text-align: right;
+}
+
+div.zabuto_calendar div.legend span {
+    color: #999999;
+    font-size: 10px;
+    font-weight: normal;
+}
+
+div.zabuto_calendar div.legend span.legend-text:after,
+div.zabuto_calendar div.legend span.legend-block:after,
+div.zabuto_calendar div.legend span.legend-list:after,
+div.zabuto_calendar div.legend span.legend-spacer:after {
+    content: ' ';
+}
+
+div.zabuto_calendar div.legend span.legend-spacer {
+    padding-left: 25px;
+}
+
+div.zabuto_calendar ul.legend > span {
+    padding-left: 2px;
+}
+
+div.zabuto_calendar ul.legend {
+    display: inline-block;
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
+
+div.zabuto_calendar ul.legend li {
+    display: inline-block;
+    height: 11px;
+    width: 11px;
+    margin-left: 5px;
+}
+
+div.zabuto_calendar ul.legend
+div.zabuto_calendar ul.legend li:first-child {
+    margin-left: 7px;
+}
+
+div.zabuto_calendar ul.legend li:last-child {
+    margin-right: 5px;
+}
+
+div.zabuto_calendar div.legend span.badge {
+    font-size: 0.9em;
+    border-radius: 5px 5px 5px 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 3px;
+}
+
+/* responsive */
+@media (max-width: 979px) {
+    div.zabuto_calendar .table th,
+    div.zabuto_calendar .table td {
+        padding: 2px 1px;
+    }
+}
+
+
+.paraDemo {
+   background: #EEF9F9;
+}
+
+
+
+
+
+progress {
+	height: 18px;
+	width: 100%;
+	-webkit-appearance: none;
+}
+
+/* All good till now. Now we'll style the background */
+progress::-webkit-progress-bar {
+	background: ;
+	border-radius: 50px;
+	padding: 2px;
+	box-shadow: 0 1px 0px 0 rgba(255, 255, 255, 0.2);
+}
+
+/* Now the value part */
+progress::-webkit-progress-value {
+	border-radius: 50px;
+	box-shadow: inset 0 1px 1px 0 rgba(255, 255, 255, 0.4);
+	background:
+		-webkit-linear-gradient(45deg, transparent, transparent 33%, rgba(0, 0, 0, 0.1) 33%, rgba(0, 0, 0, 0.1) 66%, transparent 66%),
+		-webkit-linear-gradient(top, rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.2)),
+		-webkit-linear-gradient(left, rgb(43, 194, 83) 37%, rgb(84, 240, 84) 69%);
+	
+	/* Looks great, now animating it */
+	background-size: 25px 14px, 100% 100%, 100% 100%;
+	-webkit-animation: move 5s linear 0 infinite;
+}
+
+/* That's it! Now let's try creating a new stripe pattern and animate it using animation and keyframes properties  */
+
+@-webkit-keyframes move {
+	0% {background-position: 0px 0px, 0 0, 0 0}
+	100% {background-position: -100px 0px, 0 0, 0 0}
+}
+
+/* Prefix-free was creating issues with the animation */
+
+.modal-header {
+  flex: unset !important;
+}

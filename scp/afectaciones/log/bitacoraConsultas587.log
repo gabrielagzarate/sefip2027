@@ -1,0 +1,389 @@
+31-08-2026 12:13:16CLASE[ControladorBancoDocumentos]||CLIENTE[127.0.0.1]||USRSES[5166]||NOERROR[0]||ERROR[]||CONSULTA[
+                INSERT INTO cat_BancoDocumentos(
+                    gpo_id,
+                    ur_id,
+                    tdf_id,
+                    bdo_referencia,
+                    rfc_id,
+                    bdo_agrupacionGlobal,
+                    bdo_concepto,
+                    bdo_total,
+                    bdo_percepcionPresupuestal,
+                    bdo_percepcionContable,
+                    bdo_retencionContable,
+                    bdo_limitadoTipoClc,
+                    bdo_fondoRotatorio,
+                    bdo_estadoDevengo,
+                    bdo_fechaDocumento, sts_id, bdo_estadoPago, bdo_estadoSat, bdo_origen, bdo_uuid, usr_id
+                )
+                VALUES(
+                ?, ?, ?,
+                ?,
+                ?,
+                "GRAL",
+                ?,
+                ?,
+                ?,
+                ?,
+                ?,
+                ?,
+                ?,
+                1,
+                ?,
+                1,
+                1,
+                ?,
+                ?,
+                ?,
+                ?
+                );
+            ]||PARSEDQUERY[
+                INSERT INTO cat_BancoDocumentos(
+                    gpo_id,
+                    ur_id,
+                    tdf_id,
+                    bdo_referencia,
+                    rfc_id,
+                    bdo_agrupacionGlobal,
+                    bdo_concepto,
+                    bdo_total,
+                    bdo_percepcionPresupuestal,
+                    bdo_percepcionContable,
+                    bdo_retencionContable,
+                    bdo_limitadoTipoClc,
+                    bdo_fondoRotatorio,
+                    bdo_estadoDevengo,
+                    bdo_fechaDocumento, sts_id, bdo_estadoPago, bdo_estadoSat, bdo_origen, bdo_uuid, usr_id
+                )
+                VALUES(
+                5, 87, CLC,
+                DE CAPACITACIÒN,
+                AAAV891225MH6,
+                "GRAL",
+                PAGO DE PASAJE DE LA 1RA JORNADA DE CAPACITACIÒN SECRETARIAL,
+                100.00,
+                100,
+                0,
+                0,
+                0,
+                N,
+                1,
+                2026/08/31,
+                1,
+                1,
+                1,
+                1,
+                ,
+                5166
+                );
+            ]||PARAMETROS[["5","87","CLC","DE CAPACITACIÒN","AAAV891225MH6","PAGO DE PASAJE DE LA 1RA JORNADA DE CAPACITACIÒN SECRETARIAL","100.00","100","0","0","0","N","2026\/08\/31",1,1,"",5166]]||ESTADO[]|| BITACORA DE AFECTACION DE TABLAS 
+31-08-2026 12:44:52CLASE[ControladorBancoDocumentos]||CLIENTE[127.0.0.1]||USRSES[5166]||NOERROR[0]||ERROR[]||CONSULTA[
+            DELETE FROM cat_BancoDocumentos
+            WHERE gpo_id = ?
+                AND ur_id = ?
+                AND bdo_referencia = ? AND rfc_id = ?
+                AND bdo_id = ?
+                AND tdf_id <> 'SDI';]||PARSEDQUERY[
+            DELETE FROM cat_BancoDocumentos
+            WHERE gpo_id = 5
+                AND ur_id = 87
+                AND bdo_referencia = DE CAPACITACIÒN AND rfc_id = AAAV891225MH6
+                AND bdo_id = 175438
+                AND tdf_id <> 'SDI';]||PARAMETROS[["5","87","DE CAPACITACIÒN","AAAV891225MH6","175438"]]||ESTADO[]|| BITACORA DE AFECTACION DE TABLAS 
+31-08-2026 12:46:11CLASE[ControladorBancoDocumentos]||CLIENTE[127.0.0.1]||USRSES[5166]||NOERROR[0]||ERROR[]||CONSULTA[
+                INSERT INTO cat_BancoDocumentos(
+                    gpo_id,
+                    ur_id,
+                    tdf_id,
+                    bdo_referencia,
+                    rfc_id,
+                    bdo_agrupacionGlobal,
+                    bdo_concepto,
+                    bdo_total,
+                    bdo_percepcionPresupuestal,
+                    bdo_percepcionContable,
+                    bdo_retencionContable,
+                    bdo_limitadoTipoClc,
+                    bdo_fondoRotatorio,
+                    bdo_estadoDevengo,
+                    bdo_fechaDocumento, sts_id, bdo_estadoPago, bdo_estadoSat, bdo_origen, bdo_uuid, usr_id
+                )
+                VALUES(
+                ?, ?, ?,
+                ?,
+                ?,
+                "GRAL",
+                ?,
+                ?,
+                ?,
+                ?,
+                ?,
+                ?,
+                ?,
+                1,
+                ?,
+                1,
+                1,
+                ?,
+                ?,
+                ?,
+                ?
+                );
+            ]||PARSEDQUERY[
+                INSERT INTO cat_BancoDocumentos(
+                    gpo_id,
+                    ur_id,
+                    tdf_id,
+                    bdo_referencia,
+                    rfc_id,
+                    bdo_agrupacionGlobal,
+                    bdo_concepto,
+                    bdo_total,
+                    bdo_percepcionPresupuestal,
+                    bdo_percepcionContable,
+                    bdo_retencionContable,
+                    bdo_limitadoTipoClc,
+                    bdo_fondoRotatorio,
+                    bdo_estadoDevengo,
+                    bdo_fechaDocumento, sts_id, bdo_estadoPago, bdo_estadoSat, bdo_origen, bdo_uuid, usr_id
+                )
+                VALUES(
+                5, 87, GRAL,
+                FFFFF,
+                AABM7604041S0,
+                "GRAL",
+                FFFFFFFFFFFFFFFFFFF,
+                100.50,
+                100.5,
+                0,
+                0,
+                0,
+                N,
+                1,
+                2026/08/31,
+                1,
+                1,
+                1,
+                1,
+                ,
+                5166
+                );
+            ]||PARAMETROS[["5","87","GRAL","FFFFF","AABM7604041S0","FFFFFFFFFFFFFFFFFFF","100.50","100.5","0","0","0","N","2026\/08\/31",1,1,"",5166]]||ESTADO[]|| BITACORA DE AFECTACION DE TABLAS 
+31-08-2026 12:47:07CLASE[ControladorBancoDocumentos]||CLIENTE[127.0.0.1]||USRSES[5166]||NOERROR[0]||ERROR[]||CONSULTA[
+            DELETE FROM cat_BancoDocumentos
+            WHERE gpo_id = ?
+                AND ur_id = ?
+                AND bdo_referencia = ? AND rfc_id = ?
+                AND bdo_id = ?
+                AND tdf_id <> 'SDI';]||PARSEDQUERY[
+            DELETE FROM cat_BancoDocumentos
+            WHERE gpo_id = 5
+                AND ur_id = 87
+                AND bdo_referencia = FFFFF AND rfc_id = AABM7604041S0
+                AND bdo_id = 175439
+                AND tdf_id <> 'SDI';]||PARAMETROS[["5","87","FFFFF","AABM7604041S0","175439"]]||ESTADO[]|| BITACORA DE AFECTACION DE TABLAS 
+31-08-2026 13:00:29CLASE[ControladorBancoDocumentos]||CLIENTE[127.0.0.1]||USRSES[5166]||NOERROR[0]||ERROR[]||CONSULTA[
+                INSERT INTO cat_BancoDocumentos(
+                    gpo_id,
+                    ur_id,
+                    tdf_id,
+                    bdo_referencia,
+                    rfc_id,
+                    bdo_agrupacionGlobal,
+                    bdo_concepto,
+                    bdo_total,
+                    bdo_percepcionPresupuestal,
+                    bdo_percepcionContable,
+                    bdo_retencionContable,
+                    bdo_limitadoTipoClc,
+                    bdo_fondoRotatorio,
+                    bdo_estadoDevengo,
+                    bdo_fechaDocumento, sts_id, bdo_estadoPago, bdo_estadoSat, bdo_origen, bdo_uuid, usr_id
+                )
+                VALUES(
+                ?, ?, ?,
+                ?,
+                ?,
+                "GRAL",
+                ?,
+                ?,
+                ?,
+                ?,
+                ?,
+                ?,
+                ?,
+                1,
+                ?,
+                1,
+                1,
+                ?,
+                ?,
+                ?,
+                ?
+                );
+            ]||PARSEDQUERY[
+                INSERT INTO cat_BancoDocumentos(
+                    gpo_id,
+                    ur_id,
+                    tdf_id,
+                    bdo_referencia,
+                    rfc_id,
+                    bdo_agrupacionGlobal,
+                    bdo_concepto,
+                    bdo_total,
+                    bdo_percepcionPresupuestal,
+                    bdo_percepcionContable,
+                    bdo_retencionContable,
+                    bdo_limitadoTipoClc,
+                    bdo_fondoRotatorio,
+                    bdo_estadoDevengo,
+                    bdo_fechaDocumento, sts_id, bdo_estadoPago, bdo_estadoSat, bdo_origen, bdo_uuid, usr_id
+                )
+                VALUES(
+                5, 87, GRAL,
+                ►JDJDJD,
+                AACC800902BQ3,
+                "GRAL",
+                DDDD►,
+                455.00,
+                455,
+                0,
+                0,
+                0,
+                N,
+                1,
+                2026/08/31,
+                1,
+                1,
+                1,
+                1,
+                ,
+                5166
+                );
+            ]||PARAMETROS[["5","87","GRAL","►JDJDJD","AACC800902BQ3","DDDD►","455.00","455","0","0","0","N","2026\/08\/31",1,1,"",5166]]||ESTADO[]|| BITACORA DE AFECTACION DE TABLAS 
+31-08-2026 13:00:45CLASE[ControladorBancoDocumentos]||CLIENTE[127.0.0.1]||USRSES[5166]||NOERROR[0]||ERROR[]||CONSULTA[
+                UPDATE cat_BancoDocumentos
+                SET tdf_id = ?, bdo_referencia = ?, rfc_id = ?, bdo_fechaDocumento = ?, 
+                    bdo_concepto = ?,
+                    bdo_fechaDocumento = ?, 
+                    bdo_total = ?,
+                    bdo_percepcionPresupuestal = ?,
+                    bdo_percepcionContable = ?,
+                    bdo_retencionContable = ?,
+                    bdo_limitadoTipoClc = ?,
+                    bdo_fondoRotatorio = ?,
+                    usr_id = ?
+                WHERE gpo_id = ?
+                AND ur_id = ?
+                AND rfc_id = ?
+                AND bdo_referencia = ?;
+            ]||PARSEDQUERY[
+                UPDATE cat_BancoDocumentos
+                SET tdf_id = GRAL, bdo_referencia = DJDJD, rfc_id = AACC800902BQ3, bdo_fechaDocumento = 2026/08/31, 
+                    bdo_concepto = DDDD,
+                    bdo_fechaDocumento = 2026/08/31, 
+                    bdo_total = 455.00,
+                    bdo_percepcionPresupuestal = 455.00,
+                    bdo_percepcionContable = 0.00,
+                    bdo_retencionContable = 0.00,
+                    bdo_limitadoTipoClc = 0,
+                    bdo_fondoRotatorio = N,
+                    usr_id = 5166
+                WHERE gpo_id = 5
+                AND ur_id = 87
+                AND rfc_id = AACC800902BQ3
+                AND bdo_referencia = ►JDJDJD;
+            ]||PARAMETROS[["GRAL","DJDJD","AACC800902BQ3","2026\/08\/31","DDDD","2026\/08\/31","455.00","455.00","0.00","0.00","0","N",5166,"5","87","AACC800902BQ3","►JDJDJD"]]||ESTADO[]|| BITACORA DE AFECTACION DE TABLAS 
+31-08-2026 13:01:19CLASE[ControladorBancoDocumentos]||CLIENTE[127.0.0.1]||USRSES[5166]||NOERROR[0]||ERROR[]||CONSULTA[
+            DELETE FROM cat_BancoDocumentos
+            WHERE gpo_id = ?
+                AND ur_id = ?
+                AND bdo_referencia = ? AND rfc_id = ?
+                AND bdo_id = ?
+                AND tdf_id <> 'SDI';]||PARSEDQUERY[
+            DELETE FROM cat_BancoDocumentos
+            WHERE gpo_id = 5
+                AND ur_id = 87
+                AND bdo_referencia = DJDJD AND rfc_id = AACC800902BQ3
+                AND bdo_id = 175440
+                AND tdf_id <> 'SDI';]||PARAMETROS[["5","87","DJDJD","AACC800902BQ3","175440"]]||ESTADO[]|| BITACORA DE AFECTACION DE TABLAS 
+01-09-2026 16:25:21CLASE[Afectacion]||CLIENTE[127.0.0.1]||USRSES[5166]||NOERROR[0]||ERROR[]||CONSULTA[INSERT INTO scp_Afectacion( gpo_id, ur_id, clc_id, afe_id, epg_id, ecf_id, ue_id, tcp_id, tcl_id, stc_id, afe_fondoRotatorio, eaf_id, afe_periodo,  usr_id,usr_fecha  ) VALUES (  :gpo_id,  :ur_id,  :clc_id,  :afe_id,  :epg_id,  :ecf_id,  :ue_id,  :tcp_id,  :tcl_id,  :stc_id,  :afe_fondoRotatorio,  :eaf_id,  :afe_periodo,  :usr_id , now() ) ]||PARSEDQUERY[INSERT INTO scp_Afectacion( gpo_id, ur_id, clc_id, afe_id, epg_id, ecf_id, ue_id, tcp_id, tcl_id, stc_id, afe_fondoRotatorio, eaf_id, afe_periodo,  usr_id,usr_fecha  ) VALUES (  :gpo_id,  :ur_id,  :clc_id,  :afe_id,  :epg_id,  :ecf_id,  :ue_id,  :tcp_id,  :tcl_id,  :stc_id,  :afe_fondoRotatorio,  :eaf_id,  :afe_periodo,  :usr_id , now() ) ]||PARAMETROS[{"gpo_id":5,"ur_id":"87","clc_id":"0","afe_id":"0","epg_id":"001194","ecf_id":"015395","ue_id":"001","tcp_id":"D","tcl_id":"B","stc_id":"00","afe_fondoRotatorio":"N","eaf_id":"G","afe_periodo":3,"usr_id":5166}]||ESTADO[]|| BITACORA DE AFECTACION DE TABLAS 
+01-09-2026 18:35:11CLASE[ControladorBancoDocumentos]||CLIENTE[127.0.0.1]||USRSES[5166]||NOERROR[0]||ERROR[]||CONSULTA[
+                INSERT INTO cat_BancoDocumentos(
+                    gpo_id,
+                    ur_id,
+                    tdf_id,
+                    bdo_referencia,
+                    rfc_id,
+                    bdo_agrupacionGlobal,
+                    bdo_concepto,
+                    bdo_total,
+                    bdo_percepcionPresupuestal,
+                    bdo_percepcionContable,
+                    bdo_retencionContable,
+                    bdo_limitadoTipoClc,
+                    bdo_fondoRotatorio,
+                    bdo_estadoDevengo,
+                    bdo_fechaDocumento, sts_id, bdo_estadoPago, bdo_estadoSat, bdo_origen, bdo_uuid, usr_id
+                )
+                VALUES(
+                ?, ?, ?,
+                ?,
+                ?,
+                "GRAL",
+                ?,
+                ?,
+                ?,
+                ?,
+                ?,
+                ?,
+                ?,
+                1,
+                ?,
+                1,
+                1,
+                ?,
+                ?,
+                ?,
+                ?
+                );
+            ]||PARSEDQUERY[
+                INSERT INTO cat_BancoDocumentos(
+                    gpo_id,
+                    ur_id,
+                    tdf_id,
+                    bdo_referencia,
+                    rfc_id,
+                    bdo_agrupacionGlobal,
+                    bdo_concepto,
+                    bdo_total,
+                    bdo_percepcionPresupuestal,
+                    bdo_percepcionContable,
+                    bdo_retencionContable,
+                    bdo_limitadoTipoClc,
+                    bdo_fondoRotatorio,
+                    bdo_estadoDevengo,
+                    bdo_fechaDocumento, sts_id, bdo_estadoPago, bdo_estadoSat, bdo_origen, bdo_uuid, usr_id
+                )
+                VALUES(
+                5, 87, FACT,
+                FAC001,
+                GEO621201KIA,
+                "GRAL",
+                PRUEBAS,
+                700.00,
+                500,
+                200,
+                0,
+                0,
+                N,
+                1,
+                2026/09/01,
+                1,
+                1,
+                1,
+                1,
+                ,
+                5166
+                );
+            ]||PARAMETROS[["5","87","FACT","FAC001","GEO621201KIA","PRUEBAS","700.00","500","200","0","0","N","2026\/09\/01",1,1,"",5166]]||ESTADO[]|| BITACORA DE AFECTACION DE TABLAS 

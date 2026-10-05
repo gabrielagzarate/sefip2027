@@ -1,0 +1,380 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Asegura que el padding y el borde no sumen al tamaño total */
+}
+
+.btn-user {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip;
+    display: inline-block;
+    font-weight: normal;
+    font-size: 11px;
+    text-decoration: none;
+    vertical-align: middle;
+    border-radius: 5px;
+    border-style: solid;
+}
+
+.btn-user-primary {
+    background-color: white;
+    border-color: solid #0d6efd;
+    color: #0d6efd;
+}
+
+.btn-user-success {
+    background-color: white;
+    border-color: #04AA6D;
+    color: #04AA6D;
+}
+
+.btn-user-danger {
+    background-color: white;
+    border-color: #dc3545;
+    color: #dc3545;
+}
+
+.btn-user-warning {
+    background-color: white;
+    border-color: #ffc107;
+    color: #ffc107;
+}
+
+/*
+ * Menú usuario: Bootstrap .dropdown-header usa nowrap; Popper/flex del header pueden recortar el panel.
+ * Refuerzo con .app-header (por si #header no aplica) y overflow visible en la cadena flex.
+ */
+.app-header .navbar-sefip-right,
+.app-header .navbar-sefip-right > .navbar-item,
+.app-header .navbar-sefip-right .sefip-dropdown-usuario {
+    overflow: visible !important;
+}
+
+/* En navbar BS desactiva Popper: acotar ancho al viewport y permitir salto de línea */
+.app-header .navbar-sefip-right .dropdown-menu,
+#header .navbar-sefip-right .dropdown-menu {
+    max-width: min(22rem, calc(100vw - 0.75rem)) !important;
+    box-sizing: border-box;
+}
+
+.app-header .navbar-sefip-right .dropdown-menu .media,
+#header .navbar-sefip-right .dropdown-menu .media {
+    max-width: 100%;
+}
+
+.app-header .navbar-sefip-right .dropdown-menu .media-body,
+#header .navbar-sefip-right .dropdown-menu .media-body {
+    min-width: 0;
+    flex: 1 1 auto;
+}
+
+.app-header .navbar-sefip-right .dropdown-menu .media-heading,
+.app-header .navbar-sefip-right .dropdown-menu .dropdown-header,
+.app-header .navbar-sefip-right .dropdown-menu .text-muted,
+#header .navbar-sefip-right .dropdown-menu .media-heading,
+#header .navbar-sefip-right .dropdown-menu .dropdown-header,
+#header .navbar-sefip-right .dropdown-menu .text-muted {
+    white-space: normal !important;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+}
+
+.app-header .navbar-sefip-right .sefip-dropdown-usuario .dropdown-menu.sefip-dropdown-usuario-menu,
+#header .navbar-sefip-right .sefip-dropdown-usuario .dropdown-menu.sefip-dropdown-usuario-menu {
+    min-width: 11rem !important;
+    max-width: min(16rem, calc(100vw - 0.75rem)) !important;
+    width: auto !important;
+}
+
+.app-header .navbar-sefip-right .sefip-dropdown-usuario .dropdown-header.sefip-dropdown-usuario-nombre,
+#header .navbar-sefip-right .sefip-dropdown-usuario .dropdown-header.sefip-dropdown-usuario-nombre {
+    white-space: normal !important;
+    word-wrap: break-word !important;
+    overflow-wrap: anywhere !important;
+    word-break: break-word !important;
+    line-height: 1.25 !important;
+    max-width: 100% !important;
+}
+
+/* Sobre: menú alineado al inicio del icono. Teléfono: dropdown-menu-end en HTML para no salirse por la derecha.
+ * Bootstrap 5 añade .show al toggle: mismo fondo que :focus para no dejar el icono blanco. */
+.app-header .navbar-sefip-right .navbar-item:nth-child(1).dropdown > .navbar-link.dropdown-toggle.show {
+    background-color: #b69364 !important;
+    color: #ffffff !important;
+}
+
+.app-header .navbar-sefip-right .navbar-item:nth-child(5).dropdown > .navbar-link.dropdown-toggle.show {
+    background-color: #c3a680 !important;
+    color: #ffffff !important;
+}
+
+.app-header .navbar-sefip-right .navbar-item:nth-child(1).dropdown .dropdown-menu,
+.app-header .navbar-sefip-right .navbar-item:nth-child(5).dropdown .dropdown-menu {
+    min-width: 14rem;
+}
+
+/* Combos selectpicker: forzar letra negra para que la información
+   seleccionada sea legible incluso cuando el combo está deshabilitado
+   o muestra el placeholder. Bootstrap-select (CDN) se carga después
+   que styles.css, así que repetimos las reglas aquí para garantizar
+   la precedencia. */
+.bootstrap-select > .btn,
+.bootstrap-select > .dropdown-toggle,
+.bootstrap-select > .btn.dropdown-toggle.bs-placeholder,
+.bootstrap-select > .btn .filter-option,
+.bootstrap-select > .btn .filter-option-inner,
+.bootstrap-select > .btn .filter-option-inner-inner {
+    color: #212529 !important;
+}
+
+.bootstrap-select > .btn.disabled,
+.bootstrap-select > .btn[disabled],
+.bootstrap-select.disabled > .btn {
+    color: #212529 !important;
+    background-color: #e9ecef !important;
+    opacity: 1 !important;
+    cursor: not-allowed;
+}
+
+.bootstrap-select > .btn.disabled .filter-option-inner-inner,
+.bootstrap-select > .btn[disabled] .filter-option-inner-inner,
+.bootstrap-select.disabled .filter-option-inner-inner {
+    color: #212529 !important;
+    opacity: 1 !important;
+}
+
+/* ============================================================
+   Float submenu (cuando el sidebar está compactado)
+   El template Color Admin crea un popup flotante con el HTML
+   clonado del submenú original. Por defecto las opciones se
+   pintaban con rgba(255,255,255,0.85) sobre el degradado morado,
+   lo que se veía casi blanco/ilegible. Le damos el mismo tono
+   crema/dorado que usa el submenú expandido para mantener la
+   consistencia visual.
+   ============================================================ */
+.app-sidebar-float-submenu-container {
+    background: #8E418D !important;
+    background: linear-gradient(to right, rgb(85, 39, 84) 0%, #8e418d 100%) !important;
+    border-radius: 0 .75rem .75rem 0 !important;
+    box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.35);
+}
+
+.app-sidebar-float-submenu-container .app-sidebar-float-submenu .menu-item .menu-link,
+.app-sidebar-float-submenu-container .app-sidebar-float-submenu .menu-item .menu-link .menu-text {
+    color: #B38E5D !important;
+    font-weight: 500;
+}
+
+.app-sidebar-float-submenu-container .app-sidebar-float-submenu .menu-item .menu-link .menu-icon,
+.app-sidebar-float-submenu-container .app-sidebar-float-submenu .menu-item .menu-link .menu-icon i,
+.app-sidebar-float-submenu-container .app-sidebar-float-submenu .menu-item .menu-link .demo-icon {
+    color: #B38E5D !important;
+}
+
+.app-sidebar-float-submenu-container .app-sidebar-float-submenu .menu-item .menu-link:hover,
+.app-sidebar-float-submenu-container .app-sidebar-float-submenu .menu-item .menu-link:focus,
+.app-sidebar-float-submenu-container .app-sidebar-float-submenu .menu-item.active > .menu-link {
+    color: #d4be8e !important;
+    background: rgba(179, 142, 93, 0.18) !important;
+    cursor: pointer;
+}
+
+.app-sidebar-float-submenu-container .app-sidebar-float-submenu .menu-item .menu-link:hover .menu-text,
+.app-sidebar-float-submenu-container .app-sidebar-float-submenu .menu-item .menu-link:hover .menu-icon,
+.app-sidebar-float-submenu-container .app-sidebar-float-submenu .menu-item .menu-link:hover .menu-icon i,
+.app-sidebar-float-submenu-container .app-sidebar-float-submenu .menu-item.active > .menu-link .menu-text,
+.app-sidebar-float-submenu-container .app-sidebar-float-submenu .menu-item.active > .menu-link .menu-icon,
+.app-sidebar-float-submenu-container .app-sidebar-float-submenu .menu-item.active > .menu-link .menu-icon i {
+    color: #d4be8e !important;
+}
+
+.app-sidebar-float-submenu-arrow {
+    background-color: #8E418D !important;
+}
+
+.app-sidebar-float-submenu-line {
+    background: #B38E5D !important;
+}
+
+/* ============================================================
+   Modales de mensajes del sistema (SEFIP)
+   ============================================================ */
+.sefip-modal-mensaje .modal-dialog {
+    max-width: min(720px, calc(100vw - 1.5rem));
+    margin: 1rem auto;
+}
+
+.sefip-modal-mensaje-content {
+    border: none;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    box-shadow: 0 1.25rem 3rem rgba(0, 0, 0, 0.22);
+}
+
+.sefip-modal-mensaje-header {
+    border-bottom: none;
+    padding: 1.25rem 1.5rem 1rem;
+    color: #fff;
+}
+
+.sefip-modal-mensaje-header .modal-title {
+    font-size: 1.15rem;
+    font-weight: 700;
+    line-height: 1.35;
+    margin: 0;
+    color: #fff;
+    text-align: center;
+    white-space: normal;
+    word-break: break-word;
+}
+
+.sefip-modal-mensaje-contador {
+    display: inline-block;
+    margin-top: 0.45rem;
+    padding: 0.15rem 0.55rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.sefip-modal-mensaje--success {
+    background: linear-gradient(135deg, #59B038 0%, #285C4D 100%);
+}
+
+.sefip-modal-mensaje--warning {
+    background: linear-gradient(135deg, #E6AD2F 0%, #F98927 100%);
+}
+
+.sefip-modal-mensaje--danger {
+    background: linear-gradient(135deg, #F44C63 0%, #9D2449 100%);
+}
+
+.sefip-modal-mensaje--info {
+    background: linear-gradient(135deg, #8e418d 0%, #622779 100%);
+}
+
+.sefip-modal-mensaje-body {
+    padding: 1.35rem 1.5rem;
+    color: #333;
+    font-size: 0.95rem;
+    line-height: 1.65;
+    word-break: break-word;
+}
+
+.sefip-modal-mensaje-body p:last-child,
+.sefip-modal-mensaje-body ul:last-child {
+    margin-bottom: 0;
+}
+
+.sefip-modal-mensaje-adjuntos {
+    margin-top: 1.25rem;
+    padding-top: 1rem;
+    border-top: 1px solid #e9ecef;
+}
+
+.sefip-modal-mensaje-adjuntos-titulo {
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #6c757d;
+    margin-bottom: 0.65rem;
+}
+
+.sefip-modal-mensaje-adjuntos-lista {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.45rem;
+}
+
+.sefip-modal-mensaje-adjunto-item {
+    margin: 0;
+}
+
+.sefip-modal-mensaje-adjunto-link {
+    display: flex;
+    align-items: center;
+    padding: 0.55rem 0.75rem;
+    border: 1px solid #dee2e6;
+    border-radius: 0.5rem;
+    color: #333;
+    text-decoration: none;
+    background: #f8f9fa;
+    transition: background-color 0.15s ease, border-color 0.15s ease;
+}
+
+.sefip-modal-mensaje-adjunto-link:hover,
+.sefip-modal-mensaje-adjunto-link:focus {
+    background: #fff;
+    border-color: #8e418d;
+    color: #622779;
+}
+
+.sefip-modal-mensaje-footer {
+    border-top: 1px solid #e9ecef;
+    padding: 0.85rem 1.5rem 1.15rem;
+    justify-content: flex-end;
+    background: #fafafa;
+}
+
+#divMensajes .panel {
+    border: none;
+    border-radius: 0.65rem;
+    overflow: hidden;
+    box-shadow: 0 0.35rem 1rem rgba(0, 0, 0, 0.08);
+    margin-bottom: 1rem;
+}
+
+#divMensajes .panel-heading {
+    padding: 0.85rem 1.15rem;
+    border-bottom: none;
+}
+
+#divMensajes .panel-success .panel-heading {
+    background: linear-gradient(135deg, #59B038 0%, #285C4D 100%);
+    color: #fff;
+}
+
+#divMensajes .panel-warning .panel-heading {
+    background: linear-gradient(135deg, #E6AD2F 0%, #F98927 100%);
+    color: #fff;
+}
+
+#divMensajes .panel-error .panel-heading,
+#divMensajes .panel-danger .panel-heading {
+    background: linear-gradient(135deg, #F44C63 0%, #9D2449 100%);
+    color: #fff;
+}
+
+#divMensajes .panel-title {
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+#divMensajes .panel-body {
+    padding: 1rem 1.15rem;
+    line-height: 1.6;
+}
+
+@media (max-width: 575.98px) {
+    .sefip-modal-mensaje-header {
+        padding: 1rem 1rem 0.85rem;
+    }
+
+    .sefip-modal-mensaje-body,
+    .sefip-modal-mensaje-footer {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .sefip-modal-mensaje-header .modal-title {
+        font-size: 1.05rem;
+    }
+}

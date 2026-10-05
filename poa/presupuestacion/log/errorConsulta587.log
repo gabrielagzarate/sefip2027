@@ -1,0 +1,117 @@
+13-05-2026 19:48:06CLASE[Arrendamiento]||CLIENTE[127.0.0.1]||USRSES[5162]||NOERROR[45186]||ERROR[SQLSTATE[45186]: <<Unknown error>>: 1644 EXCEDE EL TECHO PRESUPUESTAL]||CONSULTA[INSERT INTO poa_Arrendamiento( ccd_id, gpo_id, ur_id, ue_id, epg_id, pg_id, pe_id, ecf_id, arr_uso, arr_ubicacion, arr_inicioPeriodo, arr_terminoPeriodo, arr_rentaMensual, arr_totalUnidades, arr_observaciones, uni_ene, uni_feb, uni_mar, uni_abr, uni_may, uni_jun, uni_jul, uni_ago, uni_sep, uni_oct, uni_nov, uni_dic, mon_ene, mon_feb, mon_mar, mon_abr, mon_may, mon_jun, mon_jul, mon_ago, mon_sep, mon_oct, mon_nov, mon_dic,  usr_id,usr_fecha  ) VALUES (  :ccd_id,  :gpo_id,  :ur_id,  :ue_id,  :epg_id,  :pg_id,  :pe_id,  :ecf_id,  :arr_uso,  :arr_ubicacion,  :arr_inicioPeriodo,  :arr_terminoPeriodo,  :arr_rentaMensual,  :arr_totalUnidades,  :arr_observaciones,  :uni_ene,  :uni_feb,  :uni_mar,  :uni_abr,  :uni_may,  :uni_jun,  :uni_jul,  :uni_ago,  :uni_sep,  :uni_oct,  :uni_nov,  :uni_dic,  :mon_ene,  :mon_feb,  :mon_mar,  :mon_abr,  :mon_may,  :mon_jun,  :mon_jul,  :mon_ago,  :mon_sep,  :mon_oct,  :mon_nov,  :mon_dic,  :usr_id , now() ) ]||PARSEDQUERY[INSERT INTO poa_Arrendamiento( ccd_id, gpo_id, ur_id, ue_id, epg_id, pg_id, pe_id, ecf_id, arr_uso, arr_ubicacion, arr_inicioPeriodo, arr_terminoPeriodo, arr_rentaMensual, arr_totalUnidades, arr_observaciones, uni_ene, uni_feb, uni_mar, uni_abr, uni_may, uni_jun, uni_jul, uni_ago, uni_sep, uni_oct, uni_nov, uni_dic, mon_ene, mon_feb, mon_mar, mon_abr, mon_may, mon_jun, mon_jul, mon_ago, mon_sep, mon_oct, mon_nov, mon_dic,  usr_id,usr_fecha  ) VALUES (  :ccd_id,  :gpo_id,  :ur_id,  :ue_id,  :epg_id,  :pg_id,  :pe_id,  :ecf_id,  :arr_uso,  :arr_ubicacion,  :arr_inicioPeriodo,  :arr_terminoPeriodo,  :arr_rentaMensual,  :arr_totalUnidades,  :arr_observaciones,  :uni_ene,  :uni_feb,  :uni_mar,  :uni_abr,  :uni_may,  :uni_jun,  :uni_jul,  :uni_ago,  :uni_sep,  :uni_oct,  :uni_nov,  :uni_dic,  :mon_ene,  :mon_feb,  :mon_mar,  :mon_abr,  :mon_may,  :mon_jun,  :mon_jul,  :mon_ago,  :mon_sep,  :mon_oct,  :mon_nov,  :mon_dic,  :usr_id , now() ) ]||PARAMETROS[{"ccd_id":"5","gpo_id":"5","ur_id":"87","ue_id":"001","epg_id":"001187","pg_id":"411","pe_id":"310","ecf_id":"015351","arr_uso":"NINGUNO X","arr_ubicacion":"OAXACA","arr_inicioPeriodo":"2026\/05\/06","arr_terminoPeriodo":"2026\/06\/05","arr_rentaMensual":"3000","arr_totalUnidades":1,"arr_observaciones":"NINGUNA","uni_ene":"1","uni_feb":"1","uni_mar":"1","uni_abr":"1","uni_may":"1","uni_jun":"1","uni_jul":"1","uni_ago":"1","uni_sep":"1","uni_oct":"1","uni_nov":"1","uni_dic":"1","mon_ene":"3000","mon_feb":"3000","mon_mar":"3000","mon_abr":"3000","mon_may":"3000","mon_jun":"3000","mon_jul":"3000","mon_ago":"3000","mon_sep":"3000","mon_oct":"3000","mon_nov":"3000","mon_dic":"3000","usr_id":5162}]||ESTADO[]||[SIN OPCION][SIN METODO]
+26-05-2026 09:03:11CLASE[ControladorOtrasPartidas]||CLIENTE[127.0.0.1]||USRSES[5162]||NOERROR[42S02]||ERROR[SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ctrl2026.cat_UnidadMedida' doesn't exist]||CONSULTA[SELECT SQL_CALC_FOUND_ROWS  a.ced_id, a.ccd_id, a.epg_id, a.ecf_id,
+            CONCAT( gpo_id, ur_id, "-", ue_id, "-", prg_id, "-", spr_id, "-", py_id, "-", oa_id ) AS programatico,
+            cf.ecf_clave AS cf,
+            a.otp_archivo, a.pg_id, a.pe_id,
+            COALESCE(a.otp_unidadMedida, u.unm_nombre) AS otp_unidadMedida,
+            a.otp_costo,fte_id,sft_id,ori_id,sor_id,0 as cso_id,cfi_id,cfi_anio,
+            format((a.uni_ene+ a.uni_feb+ a.uni_mar+ a.uni_abr+ a.uni_may+ a.uni_jun+ a.uni_jul+ a.uni_ago+ a.uni_sep+ a.uni_oct+ a.uni_nov+ a.uni_dic),0)  cantidad,
+            (a.uni_ene+ a.uni_feb+ a.uni_mar+ a.uni_abr+ a.uni_may+ a.uni_jun+ a.uni_jul+ a.uni_ago+ a.uni_sep+ a.uni_oct+ a.uni_nov+ a.uni_dic) * a.otp_costo  total
+            FROM poa_OtrasPartidas a
+            INNER JOIN enc_Programatico ep USING( gpo_id,ur_id,epg_id )
+            INNER JOIN enc_ClaveFinanciamiento cf using(ecf_id)
+            INNER JOIN sinpres.cat_ClaveFinanciamiento2027 USING( fte_id, sft_id, ori_id, sor_id, cfi_id, cfi_anio )
+            LEFT JOIN cat_UnidadMedida u ON u.unm_id = a.unm_id
+            WHERE gpo_id = :gpo AND ur_id = :ur 
+            GROUP BY a.ccd_id, a.ced_id, a.gpo_id, a.ur_id, a.ue_id LIMIT 0,50;]||PARSEDQUERY[SELECT SQL_CALC_FOUND_ROWS  a.ced_id, a.ccd_id, a.epg_id, a.ecf_id,
+            CONCAT( gpo_id, ur_id, "-", ue_id, "-", prg_id, "-", spr_id, "-", py_id, "-", oa_id ) AS programatico,
+            cf.ecf_clave AS cf,
+            a.otp_archivo, a.pg_id, a.pe_id,
+            COALESCE(a.otp_unidadMedida, u.unm_nombre) AS otp_unidadMedida,
+            a.otp_costo,fte_id,sft_id,ori_id,sor_id,0 as cso_id,cfi_id,cfi_anio,
+            format((a.uni_ene+ a.uni_feb+ a.uni_mar+ a.uni_abr+ a.uni_may+ a.uni_jun+ a.uni_jul+ a.uni_ago+ a.uni_sep+ a.uni_oct+ a.uni_nov+ a.uni_dic),0)  cantidad,
+            (a.uni_ene+ a.uni_feb+ a.uni_mar+ a.uni_abr+ a.uni_may+ a.uni_jun+ a.uni_jul+ a.uni_ago+ a.uni_sep+ a.uni_oct+ a.uni_nov+ a.uni_dic) * a.otp_costo  total
+            FROM poa_OtrasPartidas a
+            INNER JOIN enc_Programatico ep USING( gpo_id,ur_id,epg_id )
+            INNER JOIN enc_ClaveFinanciamiento cf using(ecf_id)
+            INNER JOIN sinpres.cat_ClaveFinanciamiento2027 USING( fte_id, sft_id, ori_id, sor_id, cfi_id, cfi_anio )
+            LEFT JOIN cat_UnidadMedida u ON u.unm_id = a.unm_id
+            WHERE gpo_id = :gpo AND ur_id = :ur 
+            GROUP BY a.ccd_id, a.ced_id, a.gpo_id, a.ur_id, a.ue_id LIMIT 0,50;]||PARAMETROS[{":gpo":"5",":ur":"87"}]||ESTADO[]||[A_3_8][SIN METODO]
+26-05-2026 09:03:12CLASE[ControladorOtrasPartidas]||CLIENTE[127.0.0.1]||USRSES[5162]||NOERROR[42S02]||ERROR[SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ctrl2026.cat_UnidadMedida' doesn't exist]||CONSULTA[SELECT SQL_CALC_FOUND_ROWS  a.ced_id, a.ccd_id, a.epg_id, a.ecf_id,
+            CONCAT( gpo_id, ur_id, "-", ue_id, "-", prg_id, "-", spr_id, "-", py_id, "-", oa_id ) AS programatico,
+            cf.ecf_clave AS cf,
+            a.otp_archivo, a.pg_id, a.pe_id,
+            COALESCE(a.otp_unidadMedida, u.unm_nombre) AS otp_unidadMedida,
+            a.otp_costo,fte_id,sft_id,ori_id,sor_id,0 as cso_id,cfi_id,cfi_anio,
+            format((a.uni_ene+ a.uni_feb+ a.uni_mar+ a.uni_abr+ a.uni_may+ a.uni_jun+ a.uni_jul+ a.uni_ago+ a.uni_sep+ a.uni_oct+ a.uni_nov+ a.uni_dic),0)  cantidad,
+            (a.uni_ene+ a.uni_feb+ a.uni_mar+ a.uni_abr+ a.uni_may+ a.uni_jun+ a.uni_jul+ a.uni_ago+ a.uni_sep+ a.uni_oct+ a.uni_nov+ a.uni_dic) * a.otp_costo  total
+            FROM poa_OtrasPartidas a
+            INNER JOIN enc_Programatico ep USING( gpo_id,ur_id,epg_id )
+            INNER JOIN enc_ClaveFinanciamiento cf using(ecf_id)
+            INNER JOIN sinpres.cat_ClaveFinanciamiento2027 USING( fte_id, sft_id, ori_id, sor_id, cfi_id, cfi_anio )
+            LEFT JOIN cat_UnidadMedida u ON u.unm_id = a.unm_id
+            WHERE gpo_id = :gpo AND ur_id = :ur 
+            GROUP BY a.ccd_id, a.ced_id, a.gpo_id, a.ur_id, a.ue_id LIMIT 0,50;]||PARSEDQUERY[SELECT SQL_CALC_FOUND_ROWS  a.ced_id, a.ccd_id, a.epg_id, a.ecf_id,
+            CONCAT( gpo_id, ur_id, "-", ue_id, "-", prg_id, "-", spr_id, "-", py_id, "-", oa_id ) AS programatico,
+            cf.ecf_clave AS cf,
+            a.otp_archivo, a.pg_id, a.pe_id,
+            COALESCE(a.otp_unidadMedida, u.unm_nombre) AS otp_unidadMedida,
+            a.otp_costo,fte_id,sft_id,ori_id,sor_id,0 as cso_id,cfi_id,cfi_anio,
+            format((a.uni_ene+ a.uni_feb+ a.uni_mar+ a.uni_abr+ a.uni_may+ a.uni_jun+ a.uni_jul+ a.uni_ago+ a.uni_sep+ a.uni_oct+ a.uni_nov+ a.uni_dic),0)  cantidad,
+            (a.uni_ene+ a.uni_feb+ a.uni_mar+ a.uni_abr+ a.uni_may+ a.uni_jun+ a.uni_jul+ a.uni_ago+ a.uni_sep+ a.uni_oct+ a.uni_nov+ a.uni_dic) * a.otp_costo  total
+            FROM poa_OtrasPartidas a
+            INNER JOIN enc_Programatico ep USING( gpo_id,ur_id,epg_id )
+            INNER JOIN enc_ClaveFinanciamiento cf using(ecf_id)
+            INNER JOIN sinpres.cat_ClaveFinanciamiento2027 USING( fte_id, sft_id, ori_id, sor_id, cfi_id, cfi_anio )
+            LEFT JOIN cat_UnidadMedida u ON u.unm_id = a.unm_id
+            WHERE gpo_id = :gpo AND ur_id = :ur 
+            GROUP BY a.ccd_id, a.ced_id, a.gpo_id, a.ur_id, a.ue_id LIMIT 0,50;]||PARAMETROS[{":gpo":"5",":ur":"87"}]||ESTADO[]||[A_3_8][SIN METODO]
+26-05-2026 09:05:17CLASE[ControladorOtrasPartidas]||CLIENTE[127.0.0.1]||USRSES[5162]||NOERROR[42S22]||ERROR[SQLSTATE[42S22]: Column not found: 1054 Unknown column 'a.otp_unidadMedida' in 'field list']||CONSULTA[SELECT SQL_CALC_FOUND_ROWS  a.ced_id, a.ccd_id, a.epg_id, a.ecf_id,
+            CONCAT( gpo_id, ur_id, "-", ue_id, "-", prg_id, "-", spr_id, "-", py_id, "-", oa_id ) AS programatico,
+            cf.ecf_clave AS cf,
+            a.otp_archivo, a.pg_id, a.pe_id,
+            COALESCE(a.otp_unidadMedida, u.unm_nombre) AS otp_unidadMedida,
+            a.otp_costo,fte_id,sft_id,ori_id,sor_id,0 as cso_id,cfi_id,cfi_anio,
+            format((a.uni_ene+ a.uni_feb+ a.uni_mar+ a.uni_abr+ a.uni_may+ a.uni_jun+ a.uni_jul+ a.uni_ago+ a.uni_sep+ a.uni_oct+ a.uni_nov+ a.uni_dic),0)  cantidad,
+            (a.uni_ene+ a.uni_feb+ a.uni_mar+ a.uni_abr+ a.uni_may+ a.uni_jun+ a.uni_jul+ a.uni_ago+ a.uni_sep+ a.uni_oct+ a.uni_nov+ a.uni_dic) * a.otp_costo  total
+            FROM poa_OtrasPartidas a
+            INNER JOIN enc_Programatico ep USING( gpo_id,ur_id,epg_id )
+            INNER JOIN enc_ClaveFinanciamiento cf using(ecf_id)
+            INNER JOIN sinpres.cat_ClaveFinanciamiento2027 USING( fte_id, sft_id, ori_id, sor_id, cfi_id, cfi_anio )
+            LEFT JOIN cat_UnidadMedida u ON u.unm_id = a.unm_id
+            WHERE gpo_id = :gpo AND ur_id = :ur 
+            GROUP BY a.ccd_id, a.ced_id, a.gpo_id, a.ur_id, a.ue_id LIMIT 0,50;]||PARSEDQUERY[SELECT SQL_CALC_FOUND_ROWS  a.ced_id, a.ccd_id, a.epg_id, a.ecf_id,
+            CONCAT( gpo_id, ur_id, "-", ue_id, "-", prg_id, "-", spr_id, "-", py_id, "-", oa_id ) AS programatico,
+            cf.ecf_clave AS cf,
+            a.otp_archivo, a.pg_id, a.pe_id,
+            COALESCE(a.otp_unidadMedida, u.unm_nombre) AS otp_unidadMedida,
+            a.otp_costo,fte_id,sft_id,ori_id,sor_id,0 as cso_id,cfi_id,cfi_anio,
+            format((a.uni_ene+ a.uni_feb+ a.uni_mar+ a.uni_abr+ a.uni_may+ a.uni_jun+ a.uni_jul+ a.uni_ago+ a.uni_sep+ a.uni_oct+ a.uni_nov+ a.uni_dic),0)  cantidad,
+            (a.uni_ene+ a.uni_feb+ a.uni_mar+ a.uni_abr+ a.uni_may+ a.uni_jun+ a.uni_jul+ a.uni_ago+ a.uni_sep+ a.uni_oct+ a.uni_nov+ a.uni_dic) * a.otp_costo  total
+            FROM poa_OtrasPartidas a
+            INNER JOIN enc_Programatico ep USING( gpo_id,ur_id,epg_id )
+            INNER JOIN enc_ClaveFinanciamiento cf using(ecf_id)
+            INNER JOIN sinpres.cat_ClaveFinanciamiento2027 USING( fte_id, sft_id, ori_id, sor_id, cfi_id, cfi_anio )
+            LEFT JOIN cat_UnidadMedida u ON u.unm_id = a.unm_id
+            WHERE gpo_id = :gpo AND ur_id = :ur 
+            GROUP BY a.ccd_id, a.ced_id, a.gpo_id, a.ur_id, a.ue_id LIMIT 0,50;]||PARAMETROS[{":gpo":"5",":ur":"87"}]||ESTADO[]||[A_3_8][SIN METODO]
+26-05-2026 09:05:18CLASE[ControladorOtrasPartidas]||CLIENTE[127.0.0.1]||USRSES[5162]||NOERROR[42S22]||ERROR[SQLSTATE[42S22]: Column not found: 1054 Unknown column 'a.otp_unidadMedida' in 'field list']||CONSULTA[SELECT SQL_CALC_FOUND_ROWS  a.ced_id, a.ccd_id, a.epg_id, a.ecf_id,
+            CONCAT( gpo_id, ur_id, "-", ue_id, "-", prg_id, "-", spr_id, "-", py_id, "-", oa_id ) AS programatico,
+            cf.ecf_clave AS cf,
+            a.otp_archivo, a.pg_id, a.pe_id,
+            COALESCE(a.otp_unidadMedida, u.unm_nombre) AS otp_unidadMedida,
+            a.otp_costo,fte_id,sft_id,ori_id,sor_id,0 as cso_id,cfi_id,cfi_anio,
+            format((a.uni_ene+ a.uni_feb+ a.uni_mar+ a.uni_abr+ a.uni_may+ a.uni_jun+ a.uni_jul+ a.uni_ago+ a.uni_sep+ a.uni_oct+ a.uni_nov+ a.uni_dic),0)  cantidad,
+            (a.uni_ene+ a.uni_feb+ a.uni_mar+ a.uni_abr+ a.uni_may+ a.uni_jun+ a.uni_jul+ a.uni_ago+ a.uni_sep+ a.uni_oct+ a.uni_nov+ a.uni_dic) * a.otp_costo  total
+            FROM poa_OtrasPartidas a
+            INNER JOIN enc_Programatico ep USING( gpo_id,ur_id,epg_id )
+            INNER JOIN enc_ClaveFinanciamiento cf using(ecf_id)
+            INNER JOIN sinpres.cat_ClaveFinanciamiento2027 USING( fte_id, sft_id, ori_id, sor_id, cfi_id, cfi_anio )
+            LEFT JOIN cat_UnidadMedida u ON u.unm_id = a.unm_id
+            WHERE gpo_id = :gpo AND ur_id = :ur 
+            GROUP BY a.ccd_id, a.ced_id, a.gpo_id, a.ur_id, a.ue_id LIMIT 0,50;]||PARSEDQUERY[SELECT SQL_CALC_FOUND_ROWS  a.ced_id, a.ccd_id, a.epg_id, a.ecf_id,
+            CONCAT( gpo_id, ur_id, "-", ue_id, "-", prg_id, "-", spr_id, "-", py_id, "-", oa_id ) AS programatico,
+            cf.ecf_clave AS cf,
+            a.otp_archivo, a.pg_id, a.pe_id,
+            COALESCE(a.otp_unidadMedida, u.unm_nombre) AS otp_unidadMedida,
+            a.otp_costo,fte_id,sft_id,ori_id,sor_id,0 as cso_id,cfi_id,cfi_anio,
+            format((a.uni_ene+ a.uni_feb+ a.uni_mar+ a.uni_abr+ a.uni_may+ a.uni_jun+ a.uni_jul+ a.uni_ago+ a.uni_sep+ a.uni_oct+ a.uni_nov+ a.uni_dic),0)  cantidad,
+            (a.uni_ene+ a.uni_feb+ a.uni_mar+ a.uni_abr+ a.uni_may+ a.uni_jun+ a.uni_jul+ a.uni_ago+ a.uni_sep+ a.uni_oct+ a.uni_nov+ a.uni_dic) * a.otp_costo  total
+            FROM poa_OtrasPartidas a
+            INNER JOIN enc_Programatico ep USING( gpo_id,ur_id,epg_id )
+            INNER JOIN enc_ClaveFinanciamiento cf using(ecf_id)
+            INNER JOIN sinpres.cat_ClaveFinanciamiento2027 USING( fte_id, sft_id, ori_id, sor_id, cfi_id, cfi_anio )
+            LEFT JOIN cat_UnidadMedida u ON u.unm_id = a.unm_id
+            WHERE gpo_id = :gpo AND ur_id = :ur 
+            GROUP BY a.ccd_id, a.ced_id, a.gpo_id, a.ur_id, a.ue_id LIMIT 0,50;]||PARAMETROS[{":gpo":"5",":ur":"87"}]||ESTADO[]||[A_3_8][SIN METODO]

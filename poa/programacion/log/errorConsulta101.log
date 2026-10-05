@@ -1,0 +1,14 @@
+13-05-2026 16:59:00CLASE[WebResponse]||CLIENTE[127.0.0.1]||USRSES[4116]||NOERROR[HY093]||ERROR[SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens]||CONSULTA[
+                            SELECT py_id,py_nombre
+                            FROM cat_Proyecto
+                            WHERE gpo_id = ? AND ur_id = ? and sts_id = 1  AND prg_id = ? AND spr_id = ?]||PARSEDQUERY[
+                            SELECT py_id,py_nombre
+                            FROM cat_Proyecto
+                            WHERE gpo_id = 503 AND ur_id = 01 and sts_id = 1  AND prg_id =  AND spr_id = ]||PARAMETROS[["503","01"]]||ESTADO[]||[A_2_2][SIN METODO]
+13-05-2026 16:59:00CLASE[WebResponse]||CLIENTE[127.0.0.1]||USRSES[4116]||NOERROR[HY093]||ERROR[SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens]||CONSULTA[
+                            SELECT py_id,py_nombre
+                            FROM cat_Proyecto
+                            WHERE gpo_id = ? AND ur_id = ? and sts_id = 1  AND prg_id = ? AND spr_id = ?]||PARSEDQUERY[
+                            SELECT py_id,py_nombre
+                            FROM cat_Proyecto
+                            WHERE gpo_id = 503 AND ur_id = 01 and sts_id = 1  AND prg_id =  AND spr_id = ]||PARAMETROS[["503","01"]]||ESTADO[]||[A_2_2][SIN METODO]

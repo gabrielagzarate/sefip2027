@@ -1,0 +1,12 @@
+{
+    "name": "sefip/se2027",
+    "description": "TCPDF (tecnickcom/tcpdf) for PHPExcel PDF writer and PHP 8.3 migration",
+    "require": {
+        "php": ">=8.0",
+        "phpmailer/phpmailer": "^7.0",
+        "tecnickcom/tcpdf": "^6.8"
+    },
+    "config": {
+        "sort-packages": true
+    }
+}

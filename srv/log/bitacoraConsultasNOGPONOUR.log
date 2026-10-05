@@ -1,0 +1,13 @@
+12-05-2026 17:43:44CLASE[ServicioUsuario]||CLIENTE[127.0.0.1]||USRSES[0]||NOERROR[0]||ERROR[]||CONSULTA[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARSEDQUERY[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARAMETROS[{":pass":"8cd7728181cc23ecea1b3469ccdc3b5cdf78145236585a8f7495db12652187c5",":usr_id":498,":ejercicio":2027,":date":"2026-05-12 17:43:43"}]||ESTADO[]|| BITACORA DE AFECTACION DE TABLAS 

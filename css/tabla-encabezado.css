@@ -1,0 +1,20 @@
+/**/
+#tabla-TabProv thead{
+
+    
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    
+    outline: 1px solid rgb(175,175,175);
+    
+}
+#tabla-TabProv table > thead tr th:nth-child(1), th:nth-child(2), th:nth-child(3), th:nth-child(4), th:nth-child(5),
+th:nth-child(6), th:nth-child(7), th:nth-child(8), th:nth-child(9), th:nth-child(10), th:nth-child(11), th:nth-child(12),
+th:nth-child(13), th:nth-child(14), th:nth-child(15), th:nth-child(16), th:nth-child(17), th:nth-child(18), th:nth-child(19),
+th:nth-child(20), th:nth-child(21), th:nth-child(22), th:nth-child(23), th:nth-child(24), th:nth-child(25), th:nth-child(26),
+th:nth-child(27), th:nth-child(28), th:nth-child(29), th:nth-child(30), th:nth-child(31), th:nth-child(32), th:nth-child(33),
+th:nth-child(34), th:nth-child(35), th:nth-child(36), th:nth-child(37), th:nth-child(38), th:nth-child(39), th:nth-child(40){
+    outline: 1px solid rgb(175,175,175);
+}
+

@@ -1,0 +1,13 @@
+{
+    "/js/lib/bootstrap.min.js": "/js/lib/bootstrap.min.js",
+    "/assets/js/alertify.min.js": "/assets/js/alertify.min.js",
+    "/js/libreriasSefip.min.js": "/js/libreriasSefip.min.js",
+    "/js/codemirror.min.js": "/js/codemirror.min.js",
+    "/js/jquery.treeview.js": "/js/jquery.treeview.js",
+    "/js/jquery-migrate.min.js": "/js/jquery-migrate.min.js",
+    "/js/ladda.min.js": "/js/ladda.min.js",
+    "/js/spin.min.js": "/js/spin.min.js",
+    "/js/axios.min.js": "/js/axios.min.js",
+    "/css/codemirror.css": "/css/codemirror.css",
+    "/assets/css/alertify.min.css": "/assets/css/alertify.min.css"
+}

@@ -1,0 +1,15 @@
+stages:
+  - quality
+
+sonarqube-check:
+  stage: quality
+
+  image:
+    name: q-codequality-runner:latest
+    pull_policy: if-not-present
+
+  tags:
+    - mantenimiento sonarqube java php
+
+  script:
+    - sonar-scanner -Dsonar.host.url=$SONAR_HOST_URL -Dsonar.token=$SONAR_TOKEN

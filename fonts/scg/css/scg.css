@@ -1,0 +1,145 @@
+@font-face {
+  font-family: 'scg';
+  src: url('../font/scg.eot?89768673');
+  src: url('../font/scg.eot?89768673#iefix') format('embedded-opentype'),
+       url('../font/scg.woff2?89768673') format('woff2'),
+       url('../font/scg.woff?89768673') format('woff'),
+       url('../font/scg.ttf?89768673') format('truetype'),
+       url('../font/scg.svg?89768673#scg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'scg';
+    src: url('../font/scg.svg?89768673#scg') format('svg');
+  }
+}
+*/
+ 
+ [class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "scg";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+ 
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+.icon-scg-banco:before { content: '\e800'; } /* '' */
+.icon-scg-bancocargaestadocuenta:before { content: '\e801'; } /* '' */
+.icon-scg-bancocuentacontable:before { content: '\e802'; } /* '' */
+.icon-scg-bancoegresos:before { content: '\e803'; } /* '' */
+.icon-scg-bancoestadocuenta:before { content: '\e804'; } /* '' */
+.icon-scg-bancoingresos:before { content: '\e805'; } /* '' */
+.icon-scg-catalogo:before { content: '\e806'; } /* '' */
+.icon-scg-catalogoagrupacioncuenta:before { content: '\e807'; } /* '' */
+.icon-scg-catalogoagrupaciondocumentofuente:before { content: '\e808'; } /* '' */
+.icon-scg-catalogoagrupacionpoliza:before { content: '\e809'; } /* '' */
+.icon-scg-catalogomescontable:before { content: '\e80a'; } /* '' */
+.icon-scg-catalogomomentocontable:before { content: '\e80b'; } /* '' */
+.icon-scg-catalogoproveedor:before { content: '\e80c'; } /* '' */
+.icon-scg-catalogotipodocumentofuente:before { content: '\e80d'; } /* '' */
+.icon-scg-catalogovinculacioncog:before { content: '\e80e'; } /* '' */
+.icon-scg-catalogovinculacionretencion:before { content: '\e80f'; } /* '' */
+.icon-scg-conciliacion:before { content: '\e810'; } /* '' */
+.icon-scg-conciliaciondebengado:before { content: '\e811'; } /* '' */
+.icon-scg-conciliaciondebengadocog:before { content: '\e812'; } /* '' */
+.icon-scg-conciliacionejercido:before { content: '\e813'; } /* '' */
+.icon-scg-conciliacionministrado:before { content: '\e814'; } /* '' */
+.icon-scg-conciliacionmodificado:before { content: '\e815'; } /* '' */
+.icon-scg-conciliacionmomentoscontable:before { content: '\e816'; } /* '' */
+.icon-scg-conciliacionpagado:before { content: '\e817'; } /* '' */
+.icon-scg-conciliacionpagadocog:before { content: '\e818'; } /* '' */
+.icon-scg-conciliacionpagoterceros:before { content: '\e819'; } /* '' */
+.icon-scg-conciliacionrectificado:before { content: '\e81a'; } /* '' */
+.icon-scg-conciliaciontransferidocog:before { content: '\e81b'; } /* '' */
+.icon-scg-consulta:before { content: '\e81c'; } /* '' */
+.icon-scg-consultabalanza:before { content: '\e81d'; } /* '' */
+.icon-scg-consultalibrodiario:before { content: '\e81e'; } /* '' */
+.icon-scg-consultalibromayor:before { content: '\e81f'; } /* '' */
+.icon-scg-cuenta:before { content: '\e820'; } /* '' */
+.icon-scg-cuentacargacuentas:before { content: '\e821'; } /* '' */
+.icon-scg-cuentaconac:before { content: '\e822'; } /* '' */
+.icon-scg-cuentamaestro:before { content: '\e823'; } /* '' */
+.icon-scg-cuentaplancuentas:before { content: '\e824'; } /* '' */
+.icon-scg-cuentapublica:before { content: '\e825'; } /* '' */
+.icon-scg-cuentapublicaactividades:before { content: '\e826'; } /* '' */
+.icon-scg-cuentapublicaanalitico:before { content: '\e827'; } /* '' */
+.icon-scg-cuentapublicacambiosituacionfinanciera:before { content: '\e828'; } /* '' */
+.icon-scg-cuentapublicadeudapublica:before { content: '\e829'; } /* '' */
+.icon-scg-cuentapublicaflujoefectivo:before { content: '\e82a'; } /* '' */
+.icon-scg-cuentapublicanotas:before { content: '\e82b'; } /* '' */
+.icon-scg-cuentapublicapasivoscontigentes:before { content: '\e82c'; } /* '' */
+.icon-scg-cuentapublicasituacionfinanciera:before { content: '\e82d'; } /* '' */
+.icon-scg-cuentapublicavariacionhaciendapatrimonio:before { content: '\e82e'; } /* '' */
+.icon-scg-estadosfinancieros:before { content: '\e82f'; } /* '' */
+.icon-scg-estadosfinancierosactividades:before { content: '\e830'; } /* '' */
+.icon-scg-estadosfinancierosanalitico:before { content: '\e831'; } /* '' */
+.icon-scg-estadosfinancierosbienesinmuebles:before { content: '\e832'; } /* '' */
+.icon-scg-estadosfinancierosbienesmuebles:before { content: '\e833'; } /* '' */
+.icon-scg-estadosfinancieroscambiosituacion:before { content: '\e834'; } /* '' */
+.icon-scg-estadosfinancierosdeudapublica:before { content: '\e835'; } /* '' */
+.icon-scg-estadosfinancierosflujoefectivo:before { content: '\e836'; } /* '' */
+.icon-scg-estadosfinancieroshacienda:before { content: '\e837'; } /* '' */
+.icon-scg-estadosfinancierosnotas:before { content: '\e838'; } /* '' */
+.icon-scg-estadosfinancierospasivoscontigentes:before { content: '\e839'; } /* '' */
+.icon-scg-estadosfinancierossituacion:before { content: '\e83a'; } /* '' */
+.icon-scg-fondos:before { content: '\e83b'; } /* '' */
+.icon-scg-fondoscereco:before { content: '\e83c'; } /* '' */
+.icon-scg-fondosclc:before { content: '\e83d'; } /* '' */
+.icon-scg-fondosministrado:before { content: '\e83e'; } /* '' */
+.icon-scg-fondosrectificado:before { content: '\e83f'; } /* '' */
+.icon-scg-poliza:before { content: '\e840'; } /* '' */
+.icon-scg-polizacapturamanual:before { content: '\e841'; } /* '' */
+.icon-scg-polizacargapolizas:before { content: '\e842'; } /* '' */
+.icon-scg-reportes:before { content: '\e843'; } /* '' */
+.icon-scg-reportesclc:before { content: '\e844'; } /* '' */
+.icon-scg-reportescompromisocancelado:before { content: '\e845'; } /* '' */
+.icon-scg-reportescuentacontable:before { content: '\e846'; } /* '' */
+.icon-scg-reportesdevengadocancelado:before { content: '\e847'; } /* '' */
+.icon-scg-reportesdevengadofragmentado:before { content: '\e848'; } /* '' */
+.icon-scg-reportesgasto:before { content: '\e849'; } /* '' */
+.icon-scg-reportesopsgeneradaspagadas:before { content: '\e84a'; } /* '' */
+.icon-scg-reportespolizaserronea:before { content: '\e84b'; } /* '' */
+.icon-scg-reportesreportediario:before { content: '\e84c'; } /* '' */
+.icon-scg-vinculacion:before { content: '\e84d'; } /* '' */
+.icon-scg-vinculacionclc:before { content: '\e84e'; } /* '' */
+.icon-scg-vinculacioncomprometido:before { content: '\e84f'; } /* '' */
+.icon-scg-vinculaciondevengado:before { content: '\e850'; } /* '' */
+.icon-scg-vinculacionejercido:before { content: '\e851'; } /* '' */
+.icon-scg-vinculacionministrado:before { content: '\e852'; } /* '' */
+.icon-scg-vinculacionmodificado:before { content: '\e853'; } /* '' */
+.icon-scg-vinculacionpagado:before { content: '\e854'; } /* '' */
+.icon-scg-vinculacionpagoterceros:before { content: '\e855'; } /* '' */
+.icon-scg-vinculacionprovision:before { content: '\e856'; } /* '' */
+.icon-scg-vinculacionrectificado:before { content: '\e857'; } /* '' */

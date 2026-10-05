@@ -1,0 +1,30 @@
+26-05-2026 08:43:51CLASE[Controlador]||CLIENTE[127.0.0.1]||USRSES[5162]||NOERROR[2002]||ERROR[SQLSTATE[HY000] [2002] Se produjo un error durante el intento de conexión ya que la parte conectada no respondió adecuadamente tras un periodo de tiempo, o bien se produjo un error en la conexión establecida ya que el host conectado no ha podido responder]||CONSULTA[
+            SELECT  sis_id, sis_siglas, sis_nombre, sis_color
+            FROM cat_PermisosUsuarios usu
+            INNER JOIN cat_Sistema USING(sis_id)
+            INNER JOIN cat_Menu using (sis_id)
+            WHERE sts_id =1 AND usu.usr_id = :usr_id
+            GROUP BY sis_id;
+        ]||PARSEDQUERY[
+            SELECT  sis_id, sis_siglas, sis_nombre, sis_color
+            FROM cat_PermisosUsuarios usu
+            INNER JOIN cat_Sistema USING(sis_id)
+            INNER JOIN cat_Menu using (sis_id)
+            WHERE sts_id =1 AND usu.usr_id = :usr_id
+            GROUP BY sis_id;
+        ]||ESTADO[]||FUNCION[conectar]
+26-05-2026 08:44:36CLASE[Controlador]||CLIENTE[127.0.0.1]||USRSES[5162]||NOERROR[2002]||ERROR[SQLSTATE[HY000] [2002] Se produjo un error durante el intento de conexión ya que la parte conectada no respondió adecuadamente tras un periodo de tiempo, o bien se produjo un error en la conexión establecida ya que el host conectado no ha podido responder]||CONSULTA[
+            SELECT  sis_id, sis_siglas, sis_nombre, sis_color
+            FROM cat_PermisosUsuarios usu
+            INNER JOIN cat_Sistema USING(sis_id)
+            INNER JOIN cat_Menu using (sis_id)
+            WHERE sts_id =1 AND usu.usr_id = :usr_id
+            GROUP BY sis_id;
+        ]||PARSEDQUERY[
+            SELECT  sis_id, sis_siglas, sis_nombre, sis_color
+            FROM cat_PermisosUsuarios usu
+            INNER JOIN cat_Sistema USING(sis_id)
+            INNER JOIN cat_Menu using (sis_id)
+            WHERE sts_id =1 AND usu.usr_id = :usr_id
+            GROUP BY sis_id;
+        ]||ESTADO[]||FUNCION[conectar]

@@ -1,0 +1,677 @@
+/*Login*/
+/*
+   1.0   GLOBAL - Color system
+   2.0   GLOBAL - RTL Settings
+   3.0   GLOBAL - Component Color 
+   4.0   GLOBAL - Link Color 
+   5.0   GLOBAL - Grid & Container
+   6.0   GLOBAL - Body
+   7.0   GLOBAL - Font   
+   8.0   GLOBAL - Border Color   
+   9.0   GLOBAL - Radius   
+   10.0  GLOBAL - Box Shadow   
+   11.0  GLOBAL - Enable Caret / Negative Margin
+   12.0  App - Header / Top Menu / Sidebar / Content / Page Header
+   13.0  App - POS System
+   14.0  App - Login Register
+   15.0   UI - Buttons + Forms
+   16.0   UI - Buttons
+   17.0   UI - Forms
+   18.0   UI - Form Check
+   19.0   UI - Form Switch
+   20.0   UI - Form Input Group
+   21.0   UI - Form Select
+   22.0   UI - Form Range
+   23.0   UI - Form File
+   24.0   UI - Form Floating
+   25.0   UI - Form Feedback & Validation
+   26.0   UI - Table
+   27.0   UI - Pagination
+   28.0   UI - Modal
+   29.0   UI - List Group
+   30.0   UI - Alert
+   31.0   UI - Card
+   32.0   UI - Accordion
+   33.0   UI - Dropdown
+   34.0   UI - Progress Bar
+   35.0   UI - Toasts
+   36.0   UI - Badges
+   37.0   UI - Nav Link
+   38.0   UI - Nav Tabs
+   39.0   UI - Nav Pills
+   40.0   UI - Navbar
+   41.0   UI - Tooltip
+   42.0   UI - Popover
+   43.0   UI - Image Thumbnail
+   44.0   UI - Figure
+   45.0   UI - Breadcrumb
+   46.0   UI - Carousel
+   47.0   UI - Spinners
+   48.0   UI - Close Button
+   49.0   UI - Offcanvas
+   50.0   UI - Code
+   51.0   UI - Hr
+   52.0   UI - Panel
+*/
+/*
+   1.0   GLOBAL - Color system
+   2.0   GLOBAL - RTL Settings
+   3.0   GLOBAL - Component Color 
+   4.0   GLOBAL - Link Color 
+   5.0   GLOBAL - Grid & Container
+   6.0   GLOBAL - Body
+   7.0   GLOBAL - Font   
+   8.0   GLOBAL - Border Color   
+   9.0   GLOBAL - Radius   
+   10.0  GLOBAL - Box Shadow   
+   11.0  GLOBAL - Enable Caret / Negative Margin
+   12.0  App - Header / Top Menu / Sidebar / Content / Page Header
+   13.0  App - POS System
+   14.0  App - Login Register
+   15.0   UI - Buttons + Forms
+   16.0   UI - Buttons
+   17.0   UI - Forms
+   18.0   UI - Form Check
+   19.0   UI - Form Switch
+   20.0   UI - Form Input Group
+   21.0   UI - Form Select
+   22.0   UI - Form Range
+   23.0   UI - Form File
+   24.0   UI - Form Floating
+   25.0   UI - Form Feedback & Validation
+   26.0   UI - Table
+   27.0   UI - Pagination
+   28.0   UI - Modal
+   29.0   UI - List Group
+   30.0   UI - Alert
+   31.0   UI - Card
+   32.0   UI - Accordion
+   33.0   UI - Dropdown
+   34.0   UI - Progress Bar
+   35.0   UI - Toasts
+   36.0   UI - Badges
+   37.0   UI - Nav Link
+   38.0   UI - Nav Tabs
+   39.0   UI - Nav Pills
+   40.0   UI - Navbar
+   41.0   UI - Tooltip
+   42.0   UI - Popover
+   43.0   UI - Image Thumbnail
+   44.0   UI - Figure
+   45.0   UI - Breadcrumb
+   46.0   UI - Carousel
+   47.0   UI - Spinners
+   48.0   UI - Close Button
+   49.0   UI - Offcanvas
+   50.0   UI - Code
+   51.0   UI - Hr
+   52.0   UI - Panel
+*/
+/*
+   1.0   GLOBAL - Color system
+   2.0   GLOBAL - RTL Settings
+   3.0   GLOBAL - Component Color 
+   4.0   GLOBAL - Link Color 
+   5.0   GLOBAL - Grid & Container
+   6.0   GLOBAL - Body
+   7.0   GLOBAL - Font   
+   8.0   GLOBAL - Border Color   
+   9.0   GLOBAL - Radius   
+   10.0  GLOBAL - Box Shadow   
+   11.0  GLOBAL - Enable Caret / Negative Margin
+   12.0  App - Header / Top Menu / Sidebar / Content / Page Header
+   13.0  App - POS System
+   14.0  App - Login Register
+   15.0   UI - Buttons + Forms
+   16.0   UI - Buttons
+   17.0   UI - Forms
+   18.0   UI - Form Check
+   19.0   UI - Form Switch
+   20.0   UI - Form Input Group
+   21.0   UI - Form Select
+   22.0   UI - Form Range
+   23.0   UI - Form File
+   24.0   UI - Form Floating
+   25.0   UI - Form Feedback & Validation
+   26.0   UI - Table
+   27.0   UI - Pagination
+   28.0   UI - Modal
+   29.0   UI - List Group
+   30.0   UI - Alert
+   31.0   UI - Card
+   32.0   UI - Accordion
+   33.0   UI - Dropdown
+   34.0   UI - Progress Bar
+   35.0   UI - Toasts
+   36.0   UI - Badges
+   37.0   UI - Nav Link
+   38.0   UI - Nav Tabs
+   39.0   UI - Nav Pills
+   40.0   UI - Navbar
+   41.0   UI - Tooltip
+   42.0   UI - Popover
+   43.0   UI - Image Thumbnail
+   44.0   UI - Figure
+   45.0   UI - Breadcrumb
+   46.0   UI - Carousel
+   47.0   UI - Spinners
+   48.0   UI - Close Button
+   49.0   UI - Offcanvas
+   50.0   UI - Code
+   51.0   UI - Hr
+   52.0   UI - Panel
+*/
+/* CSS Document */
+/* Login migracion Boostrap 5, 2022 */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/Monserrat/Montserrat-Italic-VariableFont_wght.ttf);
+  font-style: italic;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/Monserrat/Montserrat-VariableFont_wght.ttf);
+  font-weight: normal;
+}
+html {
+  background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0) 0%, #ededed 100%);
+}
+
+body {
+  background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.65) 50%, rgba(238, 238, 238, 0.75) 70%, rgba(221, 221, 221, 0.75) 100%), url(../img/bg-login_2027.png) fixed 0 0 #F1F1F1;
+}
+
+.login {
+  border-radius: 0.25rem;
+  transition: all ease-in-out 0.3s;
+  font-family: "Montserrat";
+  display: block;
+  min-width: 420px;
+  max-width: 500px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -250px;
+  margin-top: -180px;
+  background: #ffffff;
+  box-shadow: 0px 15px 15px -10px rgba(130, 130, 130, 0.75);
+}
+@media (max-width: 576px) {
+  .login {
+    top: 0%;
+    margin-top: 0px;
+  }
+}
+
+.login:hover {
+  filter: grayscale(0%);
+}
+
+.login form {
+  border-radius: 0.25rem;
+  background: rgb(255, 255, 255);
+  padding: 10px;
+  overflow: hidden;
+}
+
+.login img.img-responsive {
+  width: 150px;
+  margin: 0 auto;
+}
+
+.login input {
+  border: 1px solid #ddd;
+  box-shadow: inset 0px 0px 10px 1px rgba(200, 200, 200, 0.4);
+  border-radius: 2px;
+  font-size: 11px;
+}
+
+.login .input-ur {
+  border-radius: 2px 0 0 0px !important;
+  color: #545454;
+  max-width: 50px;
+  text-align: center;
+}
+
+.login .input-ur::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.login .input-ur::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.login .input-user {
+  border-radius: 0 2px 0 0;
+}
+
+.login .input-pass {
+  border-radius: 2px 2px 0 0;
+}
+
+.login .btn-login {
+  background-color: #828282;
+  color: #fff;
+  width: 100%;
+  background: linear-gradient(135deg, #545454 0%, #545454 50%, #828282 50%, #828282 100%);
+}
+
+.login .btn-login:focus,
+.login .btn-login:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.login .btn-captcha {
+  background-color: #828282;
+  color: #fff;
+}
+
+.login .btn-captcha.active,
+.login .btn-captcha:hover,
+.login .btn-captcha:focus {
+  background-color: #545454;
+  color: #fff;
+}
+
+.login .btn-pass {
+  background-color: #828282;
+  color: #fff;
+}
+
+.login .btn-pass.active,
+.login .btn-pass:hover,
+.login .btn-pass:focus {
+  background-color: #e8550d;
+  color: #fff;
+}
+
+/*-----------
+LOGIN 2027
+------*/
+.login {
+  background: url(../images/bg-sidebar_2027.png) fixed 0 0, linear-gradient(to right, #8E418D 0%, rgb(85.2, 39, 84.6) 80%, #FFFFFF 100%);
+  box-shadow: 0px 15px 15px -10px rgba(100, 100, 100, 0.75);
+}
+
+.login button,
+.login .btn-default,
+.login .btn-login,
+.login .btn-captcha {
+  color: #fff;
+  background-color: #8E418D;
+  border-top: #8E418D;
+  border-radius: 0.25rem;
+  background: linear-gradient(45deg, rgb(159.4927536232, 73.0072463768, 158.3695652174) 0%, rgb(124.5072463768, 56.9927536232, 123.6304347826) 100%);
+}
+
+.login button:focus,
+.login .btn-default:focus,
+.login .btn-login:focus,
+.login .btn-captcha:focus,
+.login button:hover,
+.login .btn-default:hover,
+.login .btn-login:hover,
+.login .btn-captcha:focus {
+  background: linear-gradient(45deg, rgb(107.0144927536, 48.9855072464, 106.2608695652) 0%, rgb(124.5072463768, 56.9927536232, 123.6304347826) 100%);
+  color: #fff;
+}
+
+.btn-captcha {
+  border-radius: 0 0 0 0.25rem !important;
+  border-bottom: 2px solid #8E418D;
+}
+
+.login input {
+  border: 1px solid #ddd;
+  box-shadow: inset 0px 0px 10px 1px rgba(222, 222, 222, 0.4), 0px 0px 5px 1px #ddd;
+  border-radius: 0.25rem;
+  border: 0;
+  border-bottom: 2px solid rgb(113, 74.5, 112.5);
+}
+.login input:focus {
+  box-shadow: 0px 0px 5px 1px rgb(209.8, 179, 209.4);
+  border: 1px solid #8E418D;
+  border-bottom: 2px solid rgb(113, 74.5, 112.5);
+}
+
+.login input[type=password],
+.login input .input-pass {
+  border-bottom-color: rgb(125.2944, 82.6056, 124.74);
+  border-radius: 0.25rem;
+}
+
+.login input[name=usuario] {
+  border-radius: 0px 0.25rem 0.25rem 0px;
+}
+
+.login input[name=captcha] {
+  border-radius: 0 0 0.25rem 0;
+  border-bottom-color: rgb(137.5888, 90.7112, 136.98);
+}
+
+.login input[name=claveUr],
+.login input .input-ur {
+  border-bottom-color: rgb(149.8832, 98.8168, 149.22);
+  border-radius: 0.25rem 0 0 0.25rem !important;
+}
+
+/*-----------
+Botón mostrar/ocultar contraseña (minimalista)
+------*/
+.login .input-group:has(#show-pass) {
+  position: relative;
+}
+
+.login .input-pass {
+  padding-right: 2.5rem;
+}
+
+.login .input-group-append:has(#show-pass) {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 4;
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+.login #show-pass {
+  background: transparent !important;
+  background-color: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  color: #8E418D;
+  padding: 0 0.85rem;
+  height: 100%;
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.15s ease-in-out, transform 0.15s ease-in-out;
+}
+
+.login #show-pass:hover,
+.login #show-pass:active {
+  color: rgb(85, 39, 84);
+  transform: scale(1.08);
+}
+
+.login #show-pass i {
+  font-size: 1rem;
+  line-height: 1;
+  color: inherit;
+}
+
+.bg-uat-login {
+  background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0) 50%, rgba(246, 246, 246, 0.5) 70%, rgba(238, 238, 238, 0.5) 100%), url(../img/bg-login-uat-1.png) fixed 0 0;
+}
+.bg-uat-login .login {
+  background: url(../img/bg-login-uat-1.png) fixed 0 0, linear-gradient(to right, #8E418D 0%, rgb(85.2, 39, 84.6) 80%, #FFFFFF 100%);
+}
+
+/*-----------
+End LOGIN 2025
+------*/
+.borfer-radius-right {
+  border-radius: 0 12px 12px 0;
+}
+
+.borfer-radius-left {
+  border-radius: 12px 0 0 12px;
+}
+
+#siimage {
+  border: 0px solid;
+  border-top: 1px solid #ccc;
+  cursor: pointer;
+  width: 100%;
+}
+
+textarea,
+input {
+  text-transform: uppercase;
+}
+
+#login-form small {
+  font-size: 8px;
+}
+
+/*sis*/
+#login-form button.sis:nth-child(1) {
+  background: #F44C63;
+}
+
+#login-form button.sis:nth-child(2) {
+  background: #00B0A6;
+}
+
+#login-form button.sis:nth-child(3) {
+  background: #59B038;
+}
+
+#login-form button.sis:nth-child(4) {
+  background: #285C4D;
+}
+
+#login-form button.sis:nth-child(5) {
+  background: #8E418D;
+}
+
+#login-form button.sis:nth-child(6) {
+  background: #8E418D;
+}
+
+#login-form button.sis:nth-child(7) {
+  background: #E6AD2F;
+}
+
+#login-form button.sis:nth-child(8) {
+  background: #F98927;
+}
+
+#login-form button.sis:nth-child(9) {
+  background: #9D2449;
+}
+
+/* end- sis*/
+ul.sefip-modulos {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+ul.sefip-modulos li {
+  display: block;
+  border-bottom: 1px solid #eee;
+  overflow: hidden;
+  height: 40px;
+  line-height: 40px;
+}
+
+ul.sefip-modulos li span,
+ul.sefip-modulos li a {
+  float: right;
+}
+
+ul.sefip-modulos li span {
+  display: inline-block;
+  color: #fff;
+  text-align: center;
+  margin-left: 5px;
+  width: 50px;
+  font-size: 14px;
+  border-radius: 0px 5px 5px 0px;
+  box-shadow: inset 5px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+ul.sefip-modulos li a {
+  display: inline-block;
+  text-align: right;
+  font-size: 10px;
+  color: #555;
+}
+
+/* modulos
+------------------------------------------------------*/
+.modulo-poa span {
+  background-color: #F44C63;
+}
+
+.modulo-scg span {
+  background-color: #8E418D;
+}
+
+.modulo-si span {
+  background-color: #5B78BB;
+}
+
+.modulo-mga span {
+  background-color: #0098D4;
+}
+
+.modulo-sop span {
+  background-color: #F98927;
+}
+
+.modulo-scp span {
+  background-color: #E6AD2F;
+}
+
+.modulo-tes span {
+  background-color: #59B038;
+}
+
+.modulo-srv span {
+  background-color: #285C4D;
+}
+
+.modulo-mcs span {
+  background-color: #00B0A6;
+}
+
+.modulo-siox span {
+  background-color: #9D2449;
+}
+
+/* end modulos
+------------------------------------------------------*/
+
+/* Link "¿Olvidaste tu contraseña?" - mismo dorado que el árbol del submenú */
+.login #recuperaPassword,
+#recuperaPassword {
+  color: #B38E5D !important;
+}
+.login #recuperaPassword:hover,
+.login #recuperaPassword:focus,
+#recuperaPassword:hover,
+#recuperaPassword:focus {
+  color: #d4be8e !important;
+  text-decoration: underline !important;
+}
+
+/* Pantalla de mantenimiento / fuera de servicio */
+.sefip-mantenimiento {
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 1.5rem;
+}
+
+.sefip-mantenimiento-card {
+  display: flex;
+  width: 100%;
+  max-width: 640px;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 20px 40px -12px rgba(85, 39, 84, 0.35);
+}
+
+.sefip-mantenimiento-brand {
+  flex: 0 0 42%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2.5rem 1.75rem;
+  background: url(../images/bg-sidebar_2027.png) fixed 0 0,
+    linear-gradient(160deg, #8E418D 0%, rgb(85, 39, 84) 100%);
+}
+
+.sefip-mantenimiento-logo {
+  width: 100%;
+  max-width: 180px;
+  height: auto;
+}
+
+.sefip-mantenimiento-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2.5rem 2rem;
+  background: #fff;
+}
+
+.sefip-mantenimiento-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  margin-bottom: 1.25rem;
+  border-radius: 50%;
+  background: linear-gradient(135deg, rgba(142, 65, 141, 0.12) 0%, rgba(85, 39, 84, 0.08) 100%);
+  color: #8E418D;
+  font-size: 1.35rem;
+}
+
+.sefip-mantenimiento-titulo {
+  margin: 0 0 0.75rem;
+  font-size: 1.15rem;
+  font-weight: 700;
+  line-height: 1.4;
+  color: rgb(85, 39, 84);
+}
+
+.sefip-mantenimiento-texto {
+  margin: 0;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #555;
+  max-width: 280px;
+}
+
+@media (max-width: 576px) {
+  .sefip-mantenimiento-card {
+    flex-direction: column;
+    max-width: 380px;
+  }
+
+  .sefip-mantenimiento-brand {
+    flex: none;
+    padding: 2rem 1.5rem 1.5rem;
+  }
+
+  .sefip-mantenimiento-logo {
+    max-width: 140px;
+  }
+
+  .sefip-mantenimiento-body {
+    padding: 2rem 1.5rem;
+  }
+
+  .sefip-mantenimiento-titulo {
+    font-size: 1.05rem;
+  }
+}

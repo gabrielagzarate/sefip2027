@@ -1,0 +1,49 @@
+{
+  "name": "sefip-2027",
+  "version": "1.0.0",
+  "description": "sistema estatal de las finanzas públicas",
+  "main": "webpack.mix.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx mix --production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.finanzasoaxaca.gob.mx/sefip/sefip2027.git"
+  },
+  "keywords": [
+    "oaxaca",
+    "gobierno",
+    "estatal",
+    "finazas",
+    "finanzasoaxaca"
+  ],
+  "author": "japhetmata@gmail.com",
+  "license": "ISC",
+  "devDependencies": {
+    "alertifyjs": "^1.13.1",
+    "bootstrap": "^5.3.3",
+    "bootstrap-paginator": "^1.0.2",
+    "bootstrap-select": "^1.13.18",
+    "jquery": "^3.7.1",
+    "jquery-ui": "^1.13.2",
+    "laravel-mix": "^6.0.49",
+    "resolve-url-loader": "^5.0.0",
+    "sass": "^1.75.0",
+    "sass-loader": "^14.2.1"
+  },
+  "dependencies": {
+    "axios": "^1.6.8",
+    "bootstrap-table": "^1.22.4",
+    "codemirror": "^5.65.16",
+    "jquery-migrate": "^3.4.1",
+    "jquery-treeview": "^1.4.2",
+    "ladda": "^2.0.3",
+    "mousetrap": "^1.6.5",
+    "slickgrid": "^5.9.1",
+    "spin.js": "^4.1.1"
+  }
+}

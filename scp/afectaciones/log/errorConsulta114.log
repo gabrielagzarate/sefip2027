@@ -1,0 +1,495 @@
+18-09-2026 12:31:38CLASE[modelCargaMasiva]||CLIENTE[127.0.0.1]||USRSES[498]||NOERROR[42S02]||ERROR[SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ctrl2027Bitacora.bit_CargaMasiva' doesn't exist]||CONSULTA[ 
+            SELECT
+                c.tem_carga AS ID,
+                CONCAT(c.gpo_id,c.ur_id) AS UR,
+                DATE_FORMAT(c.usr_fecha,"%d/%m/%Y %H:%i:%s") AS Fecha,
+                IF(ecr_id IN(99,100),"Completada","Error") AS Estado,
+                usr_usuario  AS Usuario,
+                TIMEDIFF(fin,ini) AS Duracion
+            FROM cat_CargaMasiva c
+            INNER JOIN cat_Usuario USING(usr_id)
+            LEFT JOIN (
+                SELECT crm_id,tem_carga, MIN(usr_fecha)ini,MAX(usr_fecha) fin
+                FROM ctrl2027Bitacora.bit_CargaMasiva
+                WHERE tem_carga ="118-260917-5184-035011"
+                    AND ecr_id NOT IN (99,100)
+                    GROUP BY crm_id
+            ) m USING ( crm_id,tem_carga)
+            WHERE tem_carga ="118-260917-5184-035011"]||PARSEDQUERY[ 
+            SELECT
+                c.tem_carga AS ID,
+                CONCAT(c.gpo_id,c.ur_id) AS UR,
+                DATE_FORMAT(c.usr_fecha,"%d/%m/%Y %H:%i:%s") AS Fecha,
+                IF(ecr_id IN(99,100),"Completada","Error") AS Estado,
+                usr_usuario  AS Usuario,
+                TIMEDIFF(fin,ini) AS Duracion
+            FROM cat_CargaMasiva c
+            INNER JOIN cat_Usuario USING(usr_id)
+            LEFT JOIN (
+                SELECT crm_id,tem_carga, MIN(usr_fecha)ini,MAX(usr_fecha) fin
+                FROM ctrl2027Bitacora.bit_CargaMasiva
+                WHERE tem_carga ="118-260917-5184-035011"
+                    AND ecr_id NOT IN (99,100)
+                    GROUP BY crm_id
+            ) m USING ( crm_id,tem_carga)
+            WHERE tem_carga ="118-260917-5184-035011"]||ESTADO[]||[SIN OPCION][SIN METODO]
+18-09-2026 12:32:27CLASE[modelCargaMasiva]||CLIENTE[127.0.0.1]||USRSES[498]||NOERROR[42S02]||ERROR[SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ctrl2027Bitacora.bit_CargaMasiva' doesn't exist]||CONSULTA[ 
+            SELECT
+                c.tem_carga AS ID,
+                CONCAT(c.gpo_id,c.ur_id) AS UR,
+                DATE_FORMAT(c.usr_fecha,"%d/%m/%Y %H:%i:%s") AS Fecha,
+                IF(ecr_id IN(99,100),"Completada","Error") AS Estado,
+                usr_usuario  AS Usuario,
+                TIMEDIFF(fin,ini) AS Duracion
+            FROM cat_CargaMasiva c
+            INNER JOIN cat_Usuario USING(usr_id)
+            LEFT JOIN (
+                SELECT crm_id,tem_carga, MIN(usr_fecha)ini,MAX(usr_fecha) fin
+                FROM ctrl2027Bitacora.bit_CargaMasiva
+                WHERE tem_carga ="118-260917-5184-035011"
+                    AND ecr_id NOT IN (99,100)
+                    GROUP BY crm_id
+            ) m USING ( crm_id,tem_carga)
+            WHERE tem_carga ="118-260917-5184-035011"]||PARSEDQUERY[ 
+            SELECT
+                c.tem_carga AS ID,
+                CONCAT(c.gpo_id,c.ur_id) AS UR,
+                DATE_FORMAT(c.usr_fecha,"%d/%m/%Y %H:%i:%s") AS Fecha,
+                IF(ecr_id IN(99,100),"Completada","Error") AS Estado,
+                usr_usuario  AS Usuario,
+                TIMEDIFF(fin,ini) AS Duracion
+            FROM cat_CargaMasiva c
+            INNER JOIN cat_Usuario USING(usr_id)
+            LEFT JOIN (
+                SELECT crm_id,tem_carga, MIN(usr_fecha)ini,MAX(usr_fecha) fin
+                FROM ctrl2027Bitacora.bit_CargaMasiva
+                WHERE tem_carga ="118-260917-5184-035011"
+                    AND ecr_id NOT IN (99,100)
+                    GROUP BY crm_id
+            ) m USING ( crm_id,tem_carga)
+            WHERE tem_carga ="118-260917-5184-035011"]||ESTADO[]||[SIN OPCION][SIN METODO]
+18-09-2026 12:32:41CLASE[ControladorRechazaCargaMasiva]||CLIENTE[127.0.0.1]||USRSES[498]||NOERROR[42S02]||ERROR[SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ctrl2027Bitacora.bit_CargaMasiva' doesn't exist]||CONSULTA[SELECT
+            -- VAlidacion en copiar Archivo
+        CASE
+                when (
+                SELECT
+                    IFNULL(ecr_id, 0)
+                FROM
+                    ctrl2027Bitacora.bit_CargaMasiva
+                WHERE
+                    tem_carga = :tem_carga
+                    and ecr_id = 35
+                    and bit_observacion = 'FINALIZA EL COPIADO DEL FICHERO'
+        ) <> 0 then 'success'
+                ELSE (
+        CASE
+                    when
+        (
+                    SELECT
+                        count(*)
+                    FROM
+                        ctrl2027Bitacora.bit_CargaMasiva a
+                    where
+                        bit_id <= (
+                        SELECT
+                            IFNULL((SELECT bit_id FROM ctrl2027Bitacora.bit_CargaMasiva   
+        WHERE tem_carga = a.tem_carga
+        and ecr_id = 1
+        and bit_observacion = 'FINALIZA EL COPIADO DEL FICHERO'
+        limit 1) , (
+            SELECT
+                IFNULL(bit_id, 0)
+            FROM
+                ctrl2027Bitacora.bit_CargaMasiva
+            WHERE
+                tem_carga = a.tem_carga
+                and ecr_id = 69
+                and bit_observacion = 'SE CREA LA CARGA MASIVA'
+            limit 1)))
+                        AND bit_id >= (
+                        SELECT
+                            IFNULL(bit_id, 0)
+                        FROM
+                            ctrl2027Bitacora.bit_CargaMasiva
+                        WHERE
+                            tem_carga = a.tem_carga
+                            and ecr_id = 1
+                            and bit_observacion = 'SE CREA LA CARGA MASIVA'
+                        limit 1)
+                        and tem_carga = :tem_carga
+        )= 0 then 'defaualt'
+                    ELSE 'danger'
+                END
+        )
+            END as fase1,
+            -- Validacion en Preparacion de Archivo
+        CASE
+                when (
+                SELECT
+                    IFNULL(ecr_id, 0)
+                FROM
+                    ctrl2027Bitacora.bit_CargaMasiva
+                WHERE
+                    tem_carga =:tem_carga
+                    and ecr_id = 70
+                    and bit_observacion = 'FINALIZA LA PREPARACION DE DATOS SIN CONTRATIEMPOS'
+        ) <> 0 then 'success'
+                ELSE 
+        (
+        CASE
+                    when
+        (
+                    SELECT
+                        count(*)
+                    FROM
+                        ctrl2027Bitacora.bit_CargaMasiva b
+                    where
+                        bit_id <= (
+                        SELECT
+                            IFNULL((SELECT bit_id FROM ctrl2027Bitacora.bit_CargaMasiva   
+        WHERE tem_carga = b.tem_carga
+        and ecr_id = 70 
+        and bit_observacion = 'FINALIZA LA PREPARACION DE DATOS SIN CONTRATIEMPOS'
+        limit 1) , (
+            SELECT
+                IFNULL(bit_id, 0)
+            FROM
+                ctrl2027Bitacora.bit_CargaMasiva
+            WHERE
+                tem_carga = b.tem_carga
+                and ecr_id = 69
+                and bit_observacion = 'INICIA LA PREPARACION DE DATOS- LINEA 1643'
+            limit 1)))
+                        AND bit_id >= (
+                        SELECT
+                            IFNULL(bit_id, 0)
+                        FROM
+                            ctrl2027Bitacora.bit_CargaMasiva
+                        WHERE
+                            tem_carga = b.tem_carga
+                            and ecr_id = 69
+                            and bit_observacion = 'INICIA LA PREPARACION DE DATOS- LINEA 1643'
+                        limit 1)
+                        and tem_carga = :tem_carga
+        )= 0 then 'defaualt'
+                    ELSE 'danger'
+                END
+        )
+            END as fase2,
+            -- Validacion en revision de datos 
+        CASE
+                when (
+                SELECT
+                    IFNULL(ecr_id, 0)
+                FROM
+                    ctrl2027Bitacora.bit_CargaMasiva
+                WHERE
+                    tem_carga = :tem_carga
+                    and ecr_id = 6
+                    and bit_observacion = 'FIN DE LA REVISION'
+        ) <> 0 then 'success'
+                ELSE (
+        CASE
+                    when (
+                    SELECT
+                        count(*)
+                    FROM
+                        ctrl2027Bitacora.bit_CargaMasiva c
+                    where
+                        bit_id <= (
+                        SELECT
+                            IFNULL((SELECT bit_id FROM ctrl2027Bitacora.bit_CargaMasiva   
+        WHERE tem_carga = c.tem_carga
+        and ecr_id = 6 
+        and bit_observacion = 'FIN DE LA REVISION'
+        limit 1) , (
+            SELECT
+                IFNULL(bit_id, 0)
+            FROM
+                ctrl2027Bitacora.bit_CargaMasiva
+            WHERE
+                tem_carga = c.tem_carga
+                and ecr_id = 5
+                and bit_observacion = 'INICIA LA REVISION DE DATOS'
+            limit 1)))
+                        AND bit_id >= (
+                        SELECT
+                            IFNULL(bit_id, 0)
+                        FROM
+                            ctrl2027Bitacora.bit_CargaMasiva
+                        WHERE
+                            tem_carga = c.tem_carga
+                            and ecr_id = 5
+                            and bit_observacion = 'INICIA LA REVISION DE DATOS'
+                        limit 1)
+                        and tem_carga = :tem_carga
+        ) = 0 then 'defaualt'
+                    ELSE 'danger'
+                END)
+            END as fase3,
+            -- Validacion en Cargar datos
+        CASE
+                when (
+                SELECT
+                    IFNULL(ecr_id, 0)
+                FROM
+                    ctrl2027Bitacora.bit_CargaMasiva
+                WHERE
+                    tem_carga = :tem_carga
+                    and ecr_id = 100
+                    and bit_observacion = 'CARGA EXITOSA'
+        ) <> 0 then 'success'
+                ELSE (
+        CASE
+                    when
+        (
+                    SELECT
+                        count(*)
+                    FROM
+                        ctrl2027Bitacora.bit_CargaMasiva d
+                    where
+                        bit_id <= (
+                        SELECT
+                            IFNULL((SELECT bit_id FROM ctrl2027Bitacora.bit_CargaMasiva   
+        WHERE tem_carga = d.tem_carga
+        and ecr_id = 100 
+        and bit_observacion = 'CARGA EXITOSA'
+        limit 1) , (
+            SELECT
+                IFNULL(bit_id, 0)
+            FROM
+                ctrl2027Bitacora.bit_CargaMasiva
+            WHERE
+                tem_carga = d.tem_carga
+                and ecr_id = 69
+                and bit_observacion = 'INICIA LA CARGA DE DATOS TIPO DE CARGA1'
+            limit 1)))
+                        AND bit_id >= (
+                        SELECT
+                            IFNULL(bit_id, 0)
+                        FROM
+                            ctrl2027Bitacora.bit_CargaMasiva
+                        WHERE
+                            tem_carga = d.tem_carga
+                            and ecr_id = 69
+                            and bit_observacion = 'INICIA LA CARGA DE DATOS TIPO DE CARGA1'
+                        limit 1)
+                        and tem_carga = :tem_carga
+        )= 0 then 'defaualt'
+                    ELSE 'danger'
+                END)
+            END as fase4
+            -- FIN DE LAS VALIDACIONES
+            ]||PARSEDQUERY[SELECT
+            -- VAlidacion en copiar Archivo
+        CASE
+                when (
+                SELECT
+                    IFNULL(ecr_id, 0)
+                FROM
+                    ctrl2027Bitacora.bit_CargaMasiva
+                WHERE
+                    tem_carga = :tem_carga
+                    and ecr_id = 35
+                    and bit_observacion = 'FINALIZA EL COPIADO DEL FICHERO'
+        ) <> 0 then 'success'
+                ELSE (
+        CASE
+                    when
+        (
+                    SELECT
+                        count(*)
+                    FROM
+                        ctrl2027Bitacora.bit_CargaMasiva a
+                    where
+                        bit_id <= (
+                        SELECT
+                            IFNULL((SELECT bit_id FROM ctrl2027Bitacora.bit_CargaMasiva   
+        WHERE tem_carga = a.tem_carga
+        and ecr_id = 1
+        and bit_observacion = 'FINALIZA EL COPIADO DEL FICHERO'
+        limit 1) , (
+            SELECT
+                IFNULL(bit_id, 0)
+            FROM
+                ctrl2027Bitacora.bit_CargaMasiva
+            WHERE
+                tem_carga = a.tem_carga
+                and ecr_id = 69
+                and bit_observacion = 'SE CREA LA CARGA MASIVA'
+            limit 1)))
+                        AND bit_id >= (
+                        SELECT
+                            IFNULL(bit_id, 0)
+                        FROM
+                            ctrl2027Bitacora.bit_CargaMasiva
+                        WHERE
+                            tem_carga = a.tem_carga
+                            and ecr_id = 1
+                            and bit_observacion = 'SE CREA LA CARGA MASIVA'
+                        limit 1)
+                        and tem_carga = :tem_carga
+        )= 0 then 'defaualt'
+                    ELSE 'danger'
+                END
+        )
+            END as fase1,
+            -- Validacion en Preparacion de Archivo
+        CASE
+                when (
+                SELECT
+                    IFNULL(ecr_id, 0)
+                FROM
+                    ctrl2027Bitacora.bit_CargaMasiva
+                WHERE
+                    tem_carga =:tem_carga
+                    and ecr_id = 70
+                    and bit_observacion = 'FINALIZA LA PREPARACION DE DATOS SIN CONTRATIEMPOS'
+        ) <> 0 then 'success'
+                ELSE 
+        (
+        CASE
+                    when
+        (
+                    SELECT
+                        count(*)
+                    FROM
+                        ctrl2027Bitacora.bit_CargaMasiva b
+                    where
+                        bit_id <= (
+                        SELECT
+                            IFNULL((SELECT bit_id FROM ctrl2027Bitacora.bit_CargaMasiva   
+        WHERE tem_carga = b.tem_carga
+        and ecr_id = 70 
+        and bit_observacion = 'FINALIZA LA PREPARACION DE DATOS SIN CONTRATIEMPOS'
+        limit 1) , (
+            SELECT
+                IFNULL(bit_id, 0)
+            FROM
+                ctrl2027Bitacora.bit_CargaMasiva
+            WHERE
+                tem_carga = b.tem_carga
+                and ecr_id = 69
+                and bit_observacion = 'INICIA LA PREPARACION DE DATOS- LINEA 1643'
+            limit 1)))
+                        AND bit_id >= (
+                        SELECT
+                            IFNULL(bit_id, 0)
+                        FROM
+                            ctrl2027Bitacora.bit_CargaMasiva
+                        WHERE
+                            tem_carga = b.tem_carga
+                            and ecr_id = 69
+                            and bit_observacion = 'INICIA LA PREPARACION DE DATOS- LINEA 1643'
+                        limit 1)
+                        and tem_carga = :tem_carga
+        )= 0 then 'defaualt'
+                    ELSE 'danger'
+                END
+        )
+            END as fase2,
+            -- Validacion en revision de datos 
+        CASE
+                when (
+                SELECT
+                    IFNULL(ecr_id, 0)
+                FROM
+                    ctrl2027Bitacora.bit_CargaMasiva
+                WHERE
+                    tem_carga = :tem_carga
+                    and ecr_id = 6
+                    and bit_observacion = 'FIN DE LA REVISION'
+        ) <> 0 then 'success'
+                ELSE (
+        CASE
+                    when (
+                    SELECT
+                        count(*)
+                    FROM
+                        ctrl2027Bitacora.bit_CargaMasiva c
+                    where
+                        bit_id <= (
+                        SELECT
+                            IFNULL((SELECT bit_id FROM ctrl2027Bitacora.bit_CargaMasiva   
+        WHERE tem_carga = c.tem_carga
+        and ecr_id = 6 
+        and bit_observacion = 'FIN DE LA REVISION'
+        limit 1) , (
+            SELECT
+                IFNULL(bit_id, 0)
+            FROM
+                ctrl2027Bitacora.bit_CargaMasiva
+            WHERE
+                tem_carga = c.tem_carga
+                and ecr_id = 5
+                and bit_observacion = 'INICIA LA REVISION DE DATOS'
+            limit 1)))
+                        AND bit_id >= (
+                        SELECT
+                            IFNULL(bit_id, 0)
+                        FROM
+                            ctrl2027Bitacora.bit_CargaMasiva
+                        WHERE
+                            tem_carga = c.tem_carga
+                            and ecr_id = 5
+                            and bit_observacion = 'INICIA LA REVISION DE DATOS'
+                        limit 1)
+                        and tem_carga = :tem_carga
+        ) = 0 then 'defaualt'
+                    ELSE 'danger'
+                END)
+            END as fase3,
+            -- Validacion en Cargar datos
+        CASE
+                when (
+                SELECT
+                    IFNULL(ecr_id, 0)
+                FROM
+                    ctrl2027Bitacora.bit_CargaMasiva
+                WHERE
+                    tem_carga = :tem_carga
+                    and ecr_id = 100
+                    and bit_observacion = 'CARGA EXITOSA'
+        ) <> 0 then 'success'
+                ELSE (
+        CASE
+                    when
+        (
+                    SELECT
+                        count(*)
+                    FROM
+                        ctrl2027Bitacora.bit_CargaMasiva d
+                    where
+                        bit_id <= (
+                        SELECT
+                            IFNULL((SELECT bit_id FROM ctrl2027Bitacora.bit_CargaMasiva   
+        WHERE tem_carga = d.tem_carga
+        and ecr_id = 100 
+        and bit_observacion = 'CARGA EXITOSA'
+        limit 1) , (
+            SELECT
+                IFNULL(bit_id, 0)
+            FROM
+                ctrl2027Bitacora.bit_CargaMasiva
+            WHERE
+                tem_carga = d.tem_carga
+                and ecr_id = 69
+                and bit_observacion = 'INICIA LA CARGA DE DATOS TIPO DE CARGA1'
+            limit 1)))
+                        AND bit_id >= (
+                        SELECT
+                            IFNULL(bit_id, 0)
+                        FROM
+                            ctrl2027Bitacora.bit_CargaMasiva
+                        WHERE
+                            tem_carga = d.tem_carga
+                            and ecr_id = 69
+                            and bit_observacion = 'INICIA LA CARGA DE DATOS TIPO DE CARGA1'
+                        limit 1)
+                        and tem_carga = :tem_carga
+        )= 0 then 'defaualt'
+                    ELSE 'danger'
+                END)
+            END as fase4
+            -- FIN DE LAS VALIDACIONES
+            ]||PARAMETROS[{":tem_carga":"118-260910-5184-313011"}]||ESTADO[]||[S_2_21][verDetalleProgreso]

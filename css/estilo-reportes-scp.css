@@ -1,0 +1,118 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*-------------------------------------------------
+Tabla Gris
+-------------------------------------------------*/
+.tabla-gris-collapse th{
+	margin:0;
+	padding:0;
+	border: 1px solid #eee;
+	background:rgba(155, 155, 155, 0.05);
+	box-shadow:none;
+	text-align:left;
+	}
+.tabla-gris th{
+	margin:0;
+	padding:0;
+	border: 1px solid #eee;
+	background:rgba(155, 155, 155, 0.05);
+	box-shadow:none;
+	text-align:left;
+	}
+.tabla-gris {
+	padding:6px 12px;
+	background:rgba(155, 155, 155, 0.1);
+	border:1px solid;
+	border-color:rgba(155, 155, 155, 0.4);
+	border-bottom:3px solid #828282;
+	color:#545454;
+	font-weight:500;
+	text-align: center;
+	}
+.tabla-gris button{
+	display: table-cell;
+	padding:5px 15px;
+	min-height:35px;
+	background:rgba(155, 155, 155, 0.75);
+	border:0;
+	border-right: 5px solid #828282;
+	color:#545454;
+	color:#FFF;
+	text-shadow: 1px 1px 3px rgba(155, 155, 155, 1);
+	margin-right:10px;
+	border-radius:0px;
+	}
+.tabla-gris div{
+	float: left;
+	}
+.tabla-gris button .cerrar_tabla_sefin{
+	color:#545454;
+	}
+
+
+
+/*-------------------------------------------------
+Tabla Amarilla
+-------------------------------------------------*/
+.encabezadotabla-collapse th{
+	margin:0;
+	padding:0;
+	border: 1px solid #E6AD2F;
+	background:rgba(230, 173, 47,0.05);
+	box-shadow:none;
+	text-align:left;
+	vertical-align:middle;
+	}
+.encabezadotabla th{
+	margin:0;
+	padding:0;
+	border: 1px solid #E6AD2F !important;
+	border-bottom:1px solid #E6AD2F !important;
+	background:rgba(250, 150, 150, 0.05);
+	box-shadow:none;
+	text-align:left;
+	vertical-align: middle; 
+	}
+.table > thead > tr.encabezadotabla > th {
+    color: #242a30;
+    font-weight: 600;
+    border-bottom: 1px solid #E6AD2f !important;
+}
+.encabezadotabla {
+	padding:6px 12px;
+	background:rgba(150, 150, 150,0.3)!important;
+	border:1px solid!important;
+	border-color:rgba(230, 173, 47,0.4) !important;
+	border-bottom:1px solid #E6AD2F !important;
+	color:#906C1D;
+	font-weight:500;
+	text-align: center;
+	vertical-align:middle;
+	}
+.encabezadotabla button{
+	display: table-cell;
+	min-height:30px;
+	padding:5px 15px;
+	background:rgba(230, 173, 47,0.9);
+	border:0;
+	border-right: 5px solid #C99729;
+	color:#545454;
+	color:#FFF;
+	text-shadow: 1px 1px 3px rgba(230, 173, 47,1);
+	margin-right:10px;
+	border-radius:0px;
+	}
+.encabezadotabla div{
+	float: left;
+	}
+.encabezadotabla button .cerrar_tabla_sefin{
+	color:#906C1D;
+	}
+.encabezadotabla button:hover{
+	background:rgba(230, 173, 47,1);
+	color:#FFF;
+	}
+
+.reportessefin{
+	border-bottom:1px solid #E6AD2F !important;}

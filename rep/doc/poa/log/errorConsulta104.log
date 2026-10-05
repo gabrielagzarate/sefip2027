@@ -1,0 +1,484 @@
+26-05-2026 16:31:48CLASE[AccesoDatos]||CLIENTE[127.0.0.1]||USRSES[4118]||NOERROR[42S22]||ERROR[SQLSTATE[42S22]: Column not found: 1054 Unknown column 'umv_nombre' in 'field list']||CONSULTA[
+            SELECT
+                gpo_id,
+                ur_clave,  ur_id,
+                ur_nombre, ue_id,
+                ue_nombre, epg_id,
+                prg_id, prg_nombre,
+                spr_id, spr_nombre,
+                py_id,  py_nombre,
+                oa_id,  oa_nombre,
+                pg_id,  pg_nombre,
+                cedula.pe_id,  pe_nombre,
+                ecf_id, ter_id,
+                ter_nombre,
+                cfi_clave,
+                cfi_nombre,
+                ced_id,
+                COALESCE(otp_unidadMedida, umv_nombre) AS otp_unidadMedida, otp_costo, otp_archivo, 
+                total, nivel
+            FROM (
+                SELECT
+                    gpo_id,
+                    ur_id,
+                    ue_id,
+                    epg_id,
+                    prg_id,
+                    spr_id,
+                    py_id,
+                    oa_id,
+                    pg_id, pe_id,
+                    ecf_id,
+                    ced_id, COALESCE(otp_unidadMedida, umv_nombre) AS otp_unidadMedida, otp_costo, otp_archivo, 
+                    SUM( mon_ene + mon_feb + mon_mar + mon_abr + mon_may + mon_jun + mon_jul + mon_ago + mon_sep + mon_oct + mon_nov + mon_dic ) AS total,
+                    9 AS nivel
+                FROM presupuesto 
+                    INNER JOIN poa_OtrasPartidas USING( gpo_id, ur_id, ue_id, epg_id, pg_id, pe_id, ecf_id )
+                    LEFT JOIN cat_UnidadMedidaVariable ON cat_UnidadMedidaVariable.umv_id = poa_OtrasPartidas.umv_id
+                    
+                WHERE gpo_id = :gpo
+                    AND ur_id = :ur
+                    
+                     AND ced_id = :ced
+                    
+                     AND epg_id = :epg
+                     AND ecf_id = :ecf
+                GROUP BY gpo_id, ur_id, prg_id, spr_id, ue_id, py_id, oa_id, ecf_id, pg_id, pe_id, ced_id 
+            )cedula
+                INNER JOIN enc_ClaveFinanciamiento USING (ecf_id)
+                INNER JOIN sinpres.cat_ClaveFinanciamiento2027 USING (cff_id, fte_id, sft_id, ori_id, sor_id, cfi_id, cfi_anio)
+                INNER JOIN sinpres.cat_SuborigenRecurso2027 cs USING (cff_id, fte_id, sft_id, ori_id, sor_id)
+                INNER JOIN sinpres.cat_TipoRecurso USING (ter_id)
+                INNER JOIN cat_PartidaGenerica USING (pg_id)
+                INNER JOIN cat_PartidaEspecifica USING (pg_id, pe_id)
+                INNER JOIN cat_ObraActividad USING (gpo_id, ur_id, prg_id, spr_id, py_id, oa_id, ue_id)
+                INNER JOIN cat_Proyecto USING (gpo_id, ur_id, prg_id, spr_id, py_id)
+                INNER JOIN cat_Subprograma USING (gpo_id, ur_id, prg_id, spr_id)
+                INNER JOIN cat_Programa USING (gpo_id, ur_id, prg_id)
+                INNER JOIN cat_UnidadEjecutora USING (gpo_id, ur_id, ue_id)
+                INNER JOIN cat_UnidadResponsable USING (gpo_id, ur_id)
+            ORDER BY gpo_id, ur_id, prg_id, spr_id, ue_id, py_id, oa_id, cfi_clave, pe_id, ced_id, nivel
+        ]||PARSEDQUERY[
+            SELECT
+                gpo_id,
+                ur_clave,  ur_id,
+                ur_nombre, ue_id,
+                ue_nombre, epg_id,
+                prg_id, prg_nombre,
+                spr_id, spr_nombre,
+                py_id,  py_nombre,
+                oa_id,  oa_nombre,
+                pg_id,  pg_nombre,
+                cedula.pe_id,  pe_nombre,
+                ecf_id, ter_id,
+                ter_nombre,
+                cfi_clave,
+                cfi_nombre,
+                ced_id,
+                COALESCE(otp_unidadMedida, umv_nombre) AS otp_unidadMedida, otp_costo, otp_archivo, 
+                total, nivel
+            FROM (
+                SELECT
+                    gpo_id,
+                    ur_id,
+                    ue_id,
+                    epg_id,
+                    prg_id,
+                    spr_id,
+                    py_id,
+                    oa_id,
+                    pg_id, pe_id,
+                    ecf_id,
+                    ced_id, COALESCE(otp_unidadMedida, umv_nombre) AS otp_unidadMedida, otp_costo, otp_archivo, 
+                    SUM( mon_ene + mon_feb + mon_mar + mon_abr + mon_may + mon_jun + mon_jul + mon_ago + mon_sep + mon_oct + mon_nov + mon_dic ) AS total,
+                    9 AS nivel
+                FROM presupuesto 
+                    INNER JOIN poa_OtrasPartidas USING( gpo_id, ur_id, ue_id, epg_id, pg_id, pe_id, ecf_id )
+                    LEFT JOIN cat_UnidadMedidaVariable ON cat_UnidadMedidaVariable.umv_id = poa_OtrasPartidas.umv_id
+                    
+                WHERE gpo_id = :gpo
+                    AND ur_id = :ur
+                    
+                     AND ced_id = :ced
+                    
+                     AND epg_id = :epg
+                     AND ecf_id = :ecf
+                GROUP BY gpo_id, ur_id, prg_id, spr_id, ue_id, py_id, oa_id, ecf_id, pg_id, pe_id, ced_id 
+            )cedula
+                INNER JOIN enc_ClaveFinanciamiento USING (ecf_id)
+                INNER JOIN sinpres.cat_ClaveFinanciamiento2027 USING (cff_id, fte_id, sft_id, ori_id, sor_id, cfi_id, cfi_anio)
+                INNER JOIN sinpres.cat_SuborigenRecurso2027 cs USING (cff_id, fte_id, sft_id, ori_id, sor_id)
+                INNER JOIN sinpres.cat_TipoRecurso USING (ter_id)
+                INNER JOIN cat_PartidaGenerica USING (pg_id)
+                INNER JOIN cat_PartidaEspecifica USING (pg_id, pe_id)
+                INNER JOIN cat_ObraActividad USING (gpo_id, ur_id, prg_id, spr_id, py_id, oa_id, ue_id)
+                INNER JOIN cat_Proyecto USING (gpo_id, ur_id, prg_id, spr_id, py_id)
+                INNER JOIN cat_Subprograma USING (gpo_id, ur_id, prg_id, spr_id)
+                INNER JOIN cat_Programa USING (gpo_id, ur_id, prg_id)
+                INNER JOIN cat_UnidadEjecutora USING (gpo_id, ur_id, ue_id)
+                INNER JOIN cat_UnidadResponsable USING (gpo_id, ur_id)
+            ORDER BY gpo_id, ur_id, prg_id, spr_id, ue_id, py_id, oa_id, cfi_clave, pe_id, ced_id, nivel
+        ]||PARAMETROS[{"epg":"000030","ecf":"016294","ced":"1","gpo":"1","ur":"04"}]||ESTADO[]||[SIN OPCION][SIN METODO]
+26-05-2026 16:32:53CLASE[AccesoDatos]||CLIENTE[127.0.0.1]||USRSES[4118]||NOERROR[42S22]||ERROR[SQLSTATE[42S22]: Column not found: 1054 Unknown column 'umv_nombre' in 'field list']||CONSULTA[
+            SELECT
+                gpo_id,
+                ur_clave,  ur_id,
+                ur_nombre, ue_id,
+                ue_nombre, epg_id,
+                prg_id, prg_nombre,
+                spr_id, spr_nombre,
+                py_id,  py_nombre,
+                oa_id,  oa_nombre,
+                pg_id,  pg_nombre,
+                cedula.pe_id,  pe_nombre,
+                ecf_id, ter_id,
+                ter_nombre,
+                cfi_clave,
+                cfi_nombre,
+                ced_id,
+                COALESCE(otp_unidadMedida, umv_nombre) AS otp_unidadMedida, otp_costo, otp_archivo, 
+                total, nivel
+            FROM (
+                SELECT
+                    gpo_id,
+                    ur_id,
+                    ue_id,
+                    epg_id,
+                    prg_id,
+                    spr_id,
+                    py_id,
+                    oa_id,
+                    pg_id, pe_id,
+                    ecf_id,
+                    ced_id, COALESCE(otp_unidadMedida, umv_nombre) AS otp_unidadMedida, otp_costo, otp_archivo, 
+                    SUM( mon_ene + mon_feb + mon_mar + mon_abr + mon_may + mon_jun + mon_jul + mon_ago + mon_sep + mon_oct + mon_nov + mon_dic ) AS total,
+                    9 AS nivel
+                FROM presupuesto 
+                    INNER JOIN poa_OtrasPartidas USING( gpo_id, ur_id, ue_id, epg_id, pg_id, pe_id, ecf_id )
+                    LEFT JOIN cat_UnidadMedidaVariable ON cat_UnidadMedidaVariable.umv_id = poa_OtrasPartidas.umv_id
+                    
+                WHERE gpo_id = :gpo
+                    AND ur_id = :ur
+                    
+                     AND ced_id = :ced
+                    
+                     AND epg_id = :epg
+                     AND ecf_id = :ecf
+                GROUP BY gpo_id, ur_id, prg_id, spr_id, ue_id, py_id, oa_id, ecf_id, pg_id, pe_id, ced_id 
+            )cedula
+                INNER JOIN enc_ClaveFinanciamiento USING (ecf_id)
+                INNER JOIN sinpres.cat_ClaveFinanciamiento2027 USING (cff_id, fte_id, sft_id, ori_id, sor_id, cfi_id, cfi_anio)
+                INNER JOIN sinpres.cat_SuborigenRecurso2027 cs USING (cff_id, fte_id, sft_id, ori_id, sor_id)
+                INNER JOIN sinpres.cat_TipoRecurso USING (ter_id)
+                INNER JOIN cat_PartidaGenerica USING (pg_id)
+                INNER JOIN cat_PartidaEspecifica USING (pg_id, pe_id)
+                INNER JOIN cat_ObraActividad USING (gpo_id, ur_id, prg_id, spr_id, py_id, oa_id, ue_id)
+                INNER JOIN cat_Proyecto USING (gpo_id, ur_id, prg_id, spr_id, py_id)
+                INNER JOIN cat_Subprograma USING (gpo_id, ur_id, prg_id, spr_id)
+                INNER JOIN cat_Programa USING (gpo_id, ur_id, prg_id)
+                INNER JOIN cat_UnidadEjecutora USING (gpo_id, ur_id, ue_id)
+                INNER JOIN cat_UnidadResponsable USING (gpo_id, ur_id)
+            ORDER BY gpo_id, ur_id, prg_id, spr_id, ue_id, py_id, oa_id, cfi_clave, pe_id, ced_id, nivel
+        ]||PARSEDQUERY[
+            SELECT
+                gpo_id,
+                ur_clave,  ur_id,
+                ur_nombre, ue_id,
+                ue_nombre, epg_id,
+                prg_id, prg_nombre,
+                spr_id, spr_nombre,
+                py_id,  py_nombre,
+                oa_id,  oa_nombre,
+                pg_id,  pg_nombre,
+                cedula.pe_id,  pe_nombre,
+                ecf_id, ter_id,
+                ter_nombre,
+                cfi_clave,
+                cfi_nombre,
+                ced_id,
+                COALESCE(otp_unidadMedida, umv_nombre) AS otp_unidadMedida, otp_costo, otp_archivo, 
+                total, nivel
+            FROM (
+                SELECT
+                    gpo_id,
+                    ur_id,
+                    ue_id,
+                    epg_id,
+                    prg_id,
+                    spr_id,
+                    py_id,
+                    oa_id,
+                    pg_id, pe_id,
+                    ecf_id,
+                    ced_id, COALESCE(otp_unidadMedida, umv_nombre) AS otp_unidadMedida, otp_costo, otp_archivo, 
+                    SUM( mon_ene + mon_feb + mon_mar + mon_abr + mon_may + mon_jun + mon_jul + mon_ago + mon_sep + mon_oct + mon_nov + mon_dic ) AS total,
+                    9 AS nivel
+                FROM presupuesto 
+                    INNER JOIN poa_OtrasPartidas USING( gpo_id, ur_id, ue_id, epg_id, pg_id, pe_id, ecf_id )
+                    LEFT JOIN cat_UnidadMedidaVariable ON cat_UnidadMedidaVariable.umv_id = poa_OtrasPartidas.umv_id
+                    
+                WHERE gpo_id = :gpo
+                    AND ur_id = :ur
+                    
+                     AND ced_id = :ced
+                    
+                     AND epg_id = :epg
+                     AND ecf_id = :ecf
+                GROUP BY gpo_id, ur_id, prg_id, spr_id, ue_id, py_id, oa_id, ecf_id, pg_id, pe_id, ced_id 
+            )cedula
+                INNER JOIN enc_ClaveFinanciamiento USING (ecf_id)
+                INNER JOIN sinpres.cat_ClaveFinanciamiento2027 USING (cff_id, fte_id, sft_id, ori_id, sor_id, cfi_id, cfi_anio)
+                INNER JOIN sinpres.cat_SuborigenRecurso2027 cs USING (cff_id, fte_id, sft_id, ori_id, sor_id)
+                INNER JOIN sinpres.cat_TipoRecurso USING (ter_id)
+                INNER JOIN cat_PartidaGenerica USING (pg_id)
+                INNER JOIN cat_PartidaEspecifica USING (pg_id, pe_id)
+                INNER JOIN cat_ObraActividad USING (gpo_id, ur_id, prg_id, spr_id, py_id, oa_id, ue_id)
+                INNER JOIN cat_Proyecto USING (gpo_id, ur_id, prg_id, spr_id, py_id)
+                INNER JOIN cat_Subprograma USING (gpo_id, ur_id, prg_id, spr_id)
+                INNER JOIN cat_Programa USING (gpo_id, ur_id, prg_id)
+                INNER JOIN cat_UnidadEjecutora USING (gpo_id, ur_id, ue_id)
+                INNER JOIN cat_UnidadResponsable USING (gpo_id, ur_id)
+            ORDER BY gpo_id, ur_id, prg_id, spr_id, ue_id, py_id, oa_id, cfi_clave, pe_id, ced_id, nivel
+        ]||PARAMETROS[{"epg":"000030","ecf":"016294","ced":"1","gpo":"1","ur":"04"}]||ESTADO[]||[SIN OPCION][SIN METODO]
+26-05-2026 16:33:38CLASE[AccesoDatos]||CLIENTE[127.0.0.1]||USRSES[4118]||NOERROR[42S22]||ERROR[SQLSTATE[42S22]: Column not found: 1054 Unknown column 'umv_nombre' in 'field list']||CONSULTA[
+            SELECT
+                gpo_id,
+                ur_clave,  ur_id,
+                ur_nombre, ue_id,
+                ue_nombre, epg_id,
+                prg_id, prg_nombre,
+                spr_id, spr_nombre,
+                py_id,  py_nombre,
+                oa_id,  oa_nombre,
+                pg_id,  pg_nombre,
+                cedula.pe_id,  pe_nombre,
+                ecf_id, ter_id,
+                ter_nombre,
+                cfi_clave,
+                cfi_nombre,
+                ced_id,
+                COALESCE(otp_unidadMedida, umv_nombre) AS otp_unidadMedida, otp_costo, otp_archivo, 
+                total, nivel
+            FROM (
+                SELECT
+                    gpo_id,
+                    ur_id,
+                    ue_id,
+                    epg_id,
+                    prg_id,
+                    spr_id,
+                    py_id,
+                    oa_id,
+                    pg_id, pe_id,
+                    ecf_id,
+                    ced_id, COALESCE(otp_unidadMedida, umv_nombre) AS otp_unidadMedida, otp_costo, otp_archivo, 
+                    SUM( mon_ene + mon_feb + mon_mar + mon_abr + mon_may + mon_jun + mon_jul + mon_ago + mon_sep + mon_oct + mon_nov + mon_dic ) AS total,
+                    9 AS nivel
+                FROM presupuesto 
+                    INNER JOIN poa_OtrasPartidas USING( gpo_id, ur_id, ue_id, epg_id, pg_id, pe_id, ecf_id )
+                    LEFT JOIN cat_UnidadMedidaVariable ON cat_UnidadMedidaVariable.umv_id = poa_OtrasPartidas.umv_id
+                    
+                WHERE gpo_id = :gpo
+                    AND ur_id = :ur
+                    
+                     AND ced_id = :ced
+                    
+                     AND epg_id = :epg
+                     AND ecf_id = :ecf
+                GROUP BY gpo_id, ur_id, prg_id, spr_id, ue_id, py_id, oa_id, ecf_id, pg_id, pe_id, ced_id 
+            )cedula
+                INNER JOIN enc_ClaveFinanciamiento USING (ecf_id)
+                INNER JOIN sinpres.cat_ClaveFinanciamiento2027 USING (cff_id, fte_id, sft_id, ori_id, sor_id, cfi_id, cfi_anio)
+                INNER JOIN sinpres.cat_SuborigenRecurso2027 cs USING (cff_id, fte_id, sft_id, ori_id, sor_id)
+                INNER JOIN sinpres.cat_TipoRecurso USING (ter_id)
+                INNER JOIN cat_PartidaGenerica USING (pg_id)
+                INNER JOIN cat_PartidaEspecifica USING (pg_id, pe_id)
+                INNER JOIN cat_ObraActividad USING (gpo_id, ur_id, prg_id, spr_id, py_id, oa_id, ue_id)
+                INNER JOIN cat_Proyecto USING (gpo_id, ur_id, prg_id, spr_id, py_id)
+                INNER JOIN cat_Subprograma USING (gpo_id, ur_id, prg_id, spr_id)
+                INNER JOIN cat_Programa USING (gpo_id, ur_id, prg_id)
+                INNER JOIN cat_UnidadEjecutora USING (gpo_id, ur_id, ue_id)
+                INNER JOIN cat_UnidadResponsable USING (gpo_id, ur_id)
+            ORDER BY gpo_id, ur_id, prg_id, spr_id, ue_id, py_id, oa_id, cfi_clave, pe_id, ced_id, nivel
+        ]||PARSEDQUERY[
+            SELECT
+                gpo_id,
+                ur_clave,  ur_id,
+                ur_nombre, ue_id,
+                ue_nombre, epg_id,
+                prg_id, prg_nombre,
+                spr_id, spr_nombre,
+                py_id,  py_nombre,
+                oa_id,  oa_nombre,
+                pg_id,  pg_nombre,
+                cedula.pe_id,  pe_nombre,
+                ecf_id, ter_id,
+                ter_nombre,
+                cfi_clave,
+                cfi_nombre,
+                ced_id,
+                COALESCE(otp_unidadMedida, umv_nombre) AS otp_unidadMedida, otp_costo, otp_archivo, 
+                total, nivel
+            FROM (
+                SELECT
+                    gpo_id,
+                    ur_id,
+                    ue_id,
+                    epg_id,
+                    prg_id,
+                    spr_id,
+                    py_id,
+                    oa_id,
+                    pg_id, pe_id,
+                    ecf_id,
+                    ced_id, COALESCE(otp_unidadMedida, umv_nombre) AS otp_unidadMedida, otp_costo, otp_archivo, 
+                    SUM( mon_ene + mon_feb + mon_mar + mon_abr + mon_may + mon_jun + mon_jul + mon_ago + mon_sep + mon_oct + mon_nov + mon_dic ) AS total,
+                    9 AS nivel
+                FROM presupuesto 
+                    INNER JOIN poa_OtrasPartidas USING( gpo_id, ur_id, ue_id, epg_id, pg_id, pe_id, ecf_id )
+                    LEFT JOIN cat_UnidadMedidaVariable ON cat_UnidadMedidaVariable.umv_id = poa_OtrasPartidas.umv_id
+                    
+                WHERE gpo_id = :gpo
+                    AND ur_id = :ur
+                    
+                     AND ced_id = :ced
+                    
+                     AND epg_id = :epg
+                     AND ecf_id = :ecf
+                GROUP BY gpo_id, ur_id, prg_id, spr_id, ue_id, py_id, oa_id, ecf_id, pg_id, pe_id, ced_id 
+            )cedula
+                INNER JOIN enc_ClaveFinanciamiento USING (ecf_id)
+                INNER JOIN sinpres.cat_ClaveFinanciamiento2027 USING (cff_id, fte_id, sft_id, ori_id, sor_id, cfi_id, cfi_anio)
+                INNER JOIN sinpres.cat_SuborigenRecurso2027 cs USING (cff_id, fte_id, sft_id, ori_id, sor_id)
+                INNER JOIN sinpres.cat_TipoRecurso USING (ter_id)
+                INNER JOIN cat_PartidaGenerica USING (pg_id)
+                INNER JOIN cat_PartidaEspecifica USING (pg_id, pe_id)
+                INNER JOIN cat_ObraActividad USING (gpo_id, ur_id, prg_id, spr_id, py_id, oa_id, ue_id)
+                INNER JOIN cat_Proyecto USING (gpo_id, ur_id, prg_id, spr_id, py_id)
+                INNER JOIN cat_Subprograma USING (gpo_id, ur_id, prg_id, spr_id)
+                INNER JOIN cat_Programa USING (gpo_id, ur_id, prg_id)
+                INNER JOIN cat_UnidadEjecutora USING (gpo_id, ur_id, ue_id)
+                INNER JOIN cat_UnidadResponsable USING (gpo_id, ur_id)
+            ORDER BY gpo_id, ur_id, prg_id, spr_id, ue_id, py_id, oa_id, cfi_clave, pe_id, ced_id, nivel
+        ]||PARAMETROS[{"epg":"000030","ecf":"016294","ced":"1","gpo":"1","ur":"04"}]||ESTADO[]||[SIN OPCION][SIN METODO]
+26-05-2026 16:34:56CLASE[AccesoDatos]||CLIENTE[127.0.0.1]||USRSES[4118]||NOERROR[42S22]||ERROR[SQLSTATE[42S22]: Column not found: 1054 Unknown column 'otp_unidadMedida' in 'field list']||CONSULTA[
+            SELECT
+                gpo_id,
+                ur_clave,  ur_id,
+                ur_nombre, ue_id,
+                ue_nombre, epg_id,
+                prg_id, prg_nombre,
+                spr_id, spr_nombre,
+                py_id,  py_nombre,
+                oa_id,  oa_nombre,
+                pg_id,  pg_nombre,
+                cedula.pe_id,  pe_nombre,
+                ecf_id, ter_id,
+                ter_nombre,
+                cfi_clave,
+                cfi_nombre,
+                ced_id,
+                otp_unidadMedida, umv_nombre, otp_costo, otp_archivo, 
+                total, nivel
+            FROM (
+                SELECT
+                    gpo_id,
+                    ur_id,
+                    ue_id,
+                    epg_id,
+                    prg_id,
+                    spr_id,
+                    py_id,
+                    oa_id,
+                    pg_id, pe_id,
+                    ecf_id,
+                    ced_id, umv_nombre, otp_costo, otp_archivo, 
+                    SUM( mon_ene + mon_feb + mon_mar + mon_abr + mon_may + mon_jun + mon_jul + mon_ago + mon_sep + mon_oct + mon_nov + mon_dic ) AS total,
+                    9 AS nivel
+                FROM presupuesto 
+                    INNER JOIN poa_OtrasPartidas USING( gpo_id, ur_id, ue_id, epg_id, pg_id, pe_id, ecf_id )
+                    LEFT JOIN cat_UnidadMedidaVariable ON cat_UnidadMedidaVariable.umv_id = poa_OtrasPartidas.umv_id
+                    
+                WHERE gpo_id = :gpo
+                    AND ur_id = :ur
+                    
+                     AND ced_id = :ced
+                    
+                     AND epg_id = :epg
+                     AND ecf_id = :ecf
+                GROUP BY gpo_id, ur_id, prg_id, spr_id, ue_id, py_id, oa_id, ecf_id, pg_id, pe_id, ced_id 
+            )cedula
+                INNER JOIN enc_ClaveFinanciamiento USING (ecf_id)
+                INNER JOIN sinpres.cat_ClaveFinanciamiento2027 USING (cff_id, fte_id, sft_id, ori_id, sor_id, cfi_id, cfi_anio)
+                INNER JOIN sinpres.cat_SuborigenRecurso2027 cs USING (cff_id, fte_id, sft_id, ori_id, sor_id)
+                INNER JOIN sinpres.cat_TipoRecurso USING (ter_id)
+                INNER JOIN cat_PartidaGenerica USING (pg_id)
+                INNER JOIN cat_PartidaEspecifica USING (pg_id, pe_id)
+                INNER JOIN cat_ObraActividad USING (gpo_id, ur_id, prg_id, spr_id, py_id, oa_id, ue_id)
+                INNER JOIN cat_Proyecto USING (gpo_id, ur_id, prg_id, spr_id, py_id)
+                INNER JOIN cat_Subprograma USING (gpo_id, ur_id, prg_id, spr_id)
+                INNER JOIN cat_Programa USING (gpo_id, ur_id, prg_id)
+                INNER JOIN cat_UnidadEjecutora USING (gpo_id, ur_id, ue_id)
+                INNER JOIN cat_UnidadResponsable USING (gpo_id, ur_id)
+            ORDER BY gpo_id, ur_id, prg_id, spr_id, ue_id, py_id, oa_id, cfi_clave, pe_id, ced_id, nivel
+        ]||PARSEDQUERY[
+            SELECT
+                gpo_id,
+                ur_clave,  ur_id,
+                ur_nombre, ue_id,
+                ue_nombre, epg_id,
+                prg_id, prg_nombre,
+                spr_id, spr_nombre,
+                py_id,  py_nombre,
+                oa_id,  oa_nombre,
+                pg_id,  pg_nombre,
+                cedula.pe_id,  pe_nombre,
+                ecf_id, ter_id,
+                ter_nombre,
+                cfi_clave,
+                cfi_nombre,
+                ced_id,
+                otp_unidadMedida, umv_nombre, otp_costo, otp_archivo, 
+                total, nivel
+            FROM (
+                SELECT
+                    gpo_id,
+                    ur_id,
+                    ue_id,
+                    epg_id,
+                    prg_id,
+                    spr_id,
+                    py_id,
+                    oa_id,
+                    pg_id, pe_id,
+                    ecf_id,
+                    ced_id, umv_nombre, otp_costo, otp_archivo, 
+                    SUM( mon_ene + mon_feb + mon_mar + mon_abr + mon_may + mon_jun + mon_jul + mon_ago + mon_sep + mon_oct + mon_nov + mon_dic ) AS total,
+                    9 AS nivel
+                FROM presupuesto 
+                    INNER JOIN poa_OtrasPartidas USING( gpo_id, ur_id, ue_id, epg_id, pg_id, pe_id, ecf_id )
+                    LEFT JOIN cat_UnidadMedidaVariable ON cat_UnidadMedidaVariable.umv_id = poa_OtrasPartidas.umv_id
+                    
+                WHERE gpo_id = :gpo
+                    AND ur_id = :ur
+                    
+                     AND ced_id = :ced
+                    
+                     AND epg_id = :epg
+                     AND ecf_id = :ecf
+                GROUP BY gpo_id, ur_id, prg_id, spr_id, ue_id, py_id, oa_id, ecf_id, pg_id, pe_id, ced_id 
+            )cedula
+                INNER JOIN enc_ClaveFinanciamiento USING (ecf_id)
+                INNER JOIN sinpres.cat_ClaveFinanciamiento2027 USING (cff_id, fte_id, sft_id, ori_id, sor_id, cfi_id, cfi_anio)
+                INNER JOIN sinpres.cat_SuborigenRecurso2027 cs USING (cff_id, fte_id, sft_id, ori_id, sor_id)
+                INNER JOIN sinpres.cat_TipoRecurso USING (ter_id)
+                INNER JOIN cat_PartidaGenerica USING (pg_id)
+                INNER JOIN cat_PartidaEspecifica USING (pg_id, pe_id)
+                INNER JOIN cat_ObraActividad USING (gpo_id, ur_id, prg_id, spr_id, py_id, oa_id, ue_id)
+                INNER JOIN cat_Proyecto USING (gpo_id, ur_id, prg_id, spr_id, py_id)
+                INNER JOIN cat_Subprograma USING (gpo_id, ur_id, prg_id, spr_id)
+                INNER JOIN cat_Programa USING (gpo_id, ur_id, prg_id)
+                INNER JOIN cat_UnidadEjecutora USING (gpo_id, ur_id, ue_id)
+                INNER JOIN cat_UnidadResponsable USING (gpo_id, ur_id)
+            ORDER BY gpo_id, ur_id, prg_id, spr_id, ue_id, py_id, oa_id, cfi_clave, pe_id, ced_id, nivel
+        ]||PARAMETROS[{"epg":"000030","ecf":"016294","ced":"1","gpo":"1","ur":"04"}]||ESTADO[]||[SIN OPCION][SIN METODO]

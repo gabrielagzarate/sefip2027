@@ -1,0 +1,110 @@
+@font-face {
+  font-family: 'poa';
+  src: url('../font/poa.eot?26249215');
+  src: url('../font/poa.eot?26249215#iefix') format('embedded-opentype'),
+       url('../font/poa.woff2?26249215') format('woff2'),
+       url('../font/poa.woff?26249215') format('woff'),
+       url('../font/poa.ttf?26249215') format('truetype'),
+       url('../font/poa.svg?26249215#poa') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'poa';
+    src: url('../font/poa.svg?26249215#poa') format('svg');
+  }
+}
+*/
+ 
+ [class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "poa";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+ 
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+.icon-poa-avancegestion:before { content: '\e800'; } /* '' */
+.icon-poa-avancegestionactividades:before { content: '\e801'; } /* '' */
+.icon-poa-avancegestionactividadesconsulta:before { content: '\e802'; } /* '' */
+.icon-poa-avancegestioncomponentes:before { content: '\e803'; } /* '' */
+.icon-poa-avancegestionconsultacomponentes:before { content: '\e804'; } /* '' */
+.icon-poa-cierrepoa:before { content: '\e805'; } /* '' */
+.icon-poa-cierrepoacierrepoa-o:before { content: '\e806'; } /* '' */
+.icon-poa-cierrepoaentregapoa:before { content: '\e807'; } /* '' */
+.icon-poa-consulta:before { content: '\e808'; } /* '' */
+.icon-poa-consultaestructuraprogramatica:before { content: '\e809'; } /* '' */
+.icon-poa-institucion:before { content: '\e80a'; } /* '' */
+.icon-poa-mir:before { content: '\e80b'; } /* '' */
+.icon-poa-mir1ersemestre:before { content: '\e80c'; } /* '' */
+.icon-poa-mir2dosemestre:before { content: '\e80d'; } /* '' */
+.icon-poa-mir3ersemestre:before { content: '\e80e'; } /* '' */
+.icon-poa-mir4tosemestre:before { content: '\e80f'; } /* '' */
+.icon-poa-mircierre:before { content: '\e810'; } /* '' */
+.icon-poa-mirinicial:before { content: '\e811'; } /* '' */
+.icon-poa-presupuestacioncargarvehiculo:before { content: '\e812'; } /* '' */
+.icon-poa-presupuestacion:before { content: '\e813'; } /* '' */
+.icon-poa-presupuestacioncedulaalimentacion:before { content: '\e814'; } /* '' */
+.icon-poa-presupuestacioncedulainmuebles:before { content: '\e815'; } /* '' */
+.icon-poa-presupuestacioncedulaotras:before { content: '\e816'; } /* '' */
+.icon-poa-presupuestacioncedulaserviciospersonales:before { content: '\e817'; } /* '' */
+.icon-poa-presupuestacioncedulatelefonia:before { content: '\e818'; } /* '' */
+.icon-poa-presupuestacioncedulavehiculos:before { content: '\e819'; } /* '' */
+.icon-poa-presupuestacioncedulavigilancia:before { content: '\e81a'; } /* '' */
+.icon-poa-programacion:before { content: '\e81b'; } /* '' */
+.icon-poa-programacionactividadobra:before { content: '\e81c'; } /* '' */
+.icon-poa-programacionaltaprogsub:before { content: '\e81d'; } /* '' */
+.icon-poa-programacionasignapartidas:before { content: '\e81e'; } /* '' */
+.icon-poa-programacionproyectos:before { content: '\e81f'; } /* '' */
+.icon-poa-programacionrefrendo:before { content: '\e820'; } /* '' */
+.icon-poa-reportes:before { content: '\e821'; } /* '' */
+.icon-poa-reportesegresos:before { content: '\e822'; } /* '' */
+.icon-poa-seguimiento:before { content: '\e823'; } /* '' */
+.icon-poa-reportespoa:before { content: '\e824'; } /* '' */
+.icon-poa-seguimientoobservaravaceactividades:before { content: '\e825'; } /* '' */
+.icon-poa-seguimientogastosoperacion:before { content: '\e826'; } /* '' */
+.icon-poa-seguimientoobservaravacecomponetes:before { content: '\e827'; } /* '' */
+.icon-poa-seguimientoobservaravacefin:before { content: '\e828'; } /* '' */
+.icon-poa-seguimientoobservaravaceproposito:before { content: '\e829'; } /* '' */
+.icon-poa-seguimientoreportes:before { content: '\e82a'; } /* '' */
+.icon-poa-seguimientoreportesseggo:before { content: '\e82b'; } /* '' */
+.icon-poa-seguimientorevisaravaceactividades:before { content: '\e82c'; } /* '' */
+.icon-poa-seguimientorevisaravacecomponetes:before { content: '\e82d'; } /* '' */
+.icon-poa-seguimientorevisaravacefin:before { content: '\e82e'; } /* '' */
+.icon-poa-seguimientorevisaravaceproposito:before { content: '\e82f'; } /* '' */
+.icon-poa-seguimientorevisargastosoperacion:before { content: '\e830'; } /* '' */
+.icon-poa-ue-o:before { content: '\e831'; } /* '' */
+.icon-poa-ue:before { content: '\e832'; } /* '' */
+.icon-poa-ur-o:before { content: '\e833'; } /* '' */
+.icon-poa-ur:before { content: '\e834'; } /* '' */

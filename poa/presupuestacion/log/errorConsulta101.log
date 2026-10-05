@@ -1,0 +1,115 @@
+05-05-2026 17:31:45CLASE[ControladorArrendamiento]||CLIENTE[127.0.0.1]||USRSES[4116]||NOERROR[42S02]||ERROR[SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ctrl2027.poa_Arrendamiento' doesn't exist]||CONSULTA[SELECT SQL_CALC_FOUND_ROWS  a.ced_id,a.ccd_id,
+                    CONCAT( a.gpo_id, a.ur_id, "-", a.ue_id, "-", ep.prg_id, "-", ep.spr_id, "-", ep.py_id, "-", ep.oa_id ) AS programatico,
+                    CONCAT( cf.cff_id, "-", cf.fte_id, cf.sft_id, cf.ori_id, cf.sor_id, "-", cf.cfi_id, cf.cfi_anio ) AS cf,
+                    arr_inicioPeriodo,arr_terminoPeriodo,arr_uso,
+                    (a.uni_ene + a.uni_feb + a.uni_mar + a.uni_abr + a.uni_may + a.uni_jun + a.uni_jul + a.uni_ago + a.uni_sep + a.uni_oct + a.uni_nov + a.uni_dic) unidades,
+                    (a.mon_ene + a.mon_feb + a.mon_mar + a.mon_abr + a.mon_may + a.mon_jun + a.mon_jul + a.mon_ago + a.mon_sep + a.mon_oct + a.mon_nov + a.mon_dic) monto
+                    FROM poa_Arrendamiento a
+                    JOIN enc_Programatico ep USING( epg_id,gpo_id,ur_id )
+                    JOIN enc_ClaveFinanciamiento cf using (ecf_id)
+                    JOIN enc_PartEspCed pe USING(ccd_id,pg_id,pe_id)
+                    JOIN enc_PartGenUr pg using(gpo_id,ur_id)
+                    WHERE a.gpo_id=1 and a.ur_id=01  and cve_id=2
+                    GROUP BY ccd_id,ced_id,a.gpo_id,a.ur_id,ue_id
+                 LIMIT 0,100;]||PARSEDQUERY[SELECT SQL_CALC_FOUND_ROWS  a.ced_id,a.ccd_id,
+                    CONCAT( a.gpo_id, a.ur_id, "-", a.ue_id, "-", ep.prg_id, "-", ep.spr_id, "-", ep.py_id, "-", ep.oa_id ) AS programatico,
+                    CONCAT( cf.cff_id, "-", cf.fte_id, cf.sft_id, cf.ori_id, cf.sor_id, "-", cf.cfi_id, cf.cfi_anio ) AS cf,
+                    arr_inicioPeriodo,arr_terminoPeriodo,arr_uso,
+                    (a.uni_ene + a.uni_feb + a.uni_mar + a.uni_abr + a.uni_may + a.uni_jun + a.uni_jul + a.uni_ago + a.uni_sep + a.uni_oct + a.uni_nov + a.uni_dic) unidades,
+                    (a.mon_ene + a.mon_feb + a.mon_mar + a.mon_abr + a.mon_may + a.mon_jun + a.mon_jul + a.mon_ago + a.mon_sep + a.mon_oct + a.mon_nov + a.mon_dic) monto
+                    FROM poa_Arrendamiento a
+                    JOIN enc_Programatico ep USING( epg_id,gpo_id,ur_id )
+                    JOIN enc_ClaveFinanciamiento cf using (ecf_id)
+                    JOIN enc_PartEspCed pe USING(ccd_id,pg_id,pe_id)
+                    JOIN enc_PartGenUr pg using(gpo_id,ur_id)
+                    WHERE a.gpo_id=1 and a.ur_id=01  and cve_id=2
+                    GROUP BY ccd_id,ced_id,a.gpo_id,a.ur_id,ue_id
+                 LIMIT 0,100;]||ESTADO[]||[A_3_5][mainCedula]
+05-05-2026 17:32:06CLASE[ControladorVigilancia]||CLIENTE[127.0.0.1]||USRSES[4116]||NOERROR[42S02]||ERROR[SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ctrl2027.poa_ServicioVigilancia' doesn't exist]||CONSULTA[SELECT SQL_CALC_FOUND_ROWS  a.ced_id, a.ccd_id,
+                CONCAT( a.gpo_id, a.ur_id, "-", a.ue_id, "-", ep.prg_id, "-", ep.spr_id, "-", ep.py_id, "-", ep.oa_id ) AS programatico,
+                CONCAT( cf.cff_id, "-", cf.fte_id, cf.sft_id, cf.ori_id, cf.sor_id, "-", cf.cfi_id, cf.cfi_anio ) AS cf,
+                t.tct_id, t.tct_nombre, t.tct_costoMensual, a.svg_area,
+            FORMAT((a.uni_ene+ a.uni_feb+ a.uni_mar+ a.uni_abr+ a.uni_may+ a.uni_jun+ a.uni_jul+ a.uni_ago+ a.uni_sep+ a.uni_oct+ a.uni_nov+ a.uni_dic),0) AS cantidad,
+                (a.uni_ene+ a.uni_feb+ a.uni_mar+ a.uni_abr+ a.uni_may+ a.uni_jun+ a.uni_jul+ a.uni_ago+ a.uni_sep+ a.uni_oct+ a.uni_nov+ a.uni_dic)*tct_costoMensual AS total, pg_id,pe_id
+            FROM poa_ServicioVigilancia a
+                JOIN enc_Programatico ep USING( epg_id )
+                JOIN enc_ClaveFinanciamiento cf using (ecf_id)
+                JOIN cat_TipoContrato t USING(tct_id)
+            where a.gpo_id= ? and a.ur_id= ?  LIMIT 0,50;]||PARSEDQUERY[SELECT SQL_CALC_FOUND_ROWS  a.ced_id, a.ccd_id,
+                CONCAT( a.gpo_id, a.ur_id, "-", a.ue_id, "-", ep.prg_id, "-", ep.spr_id, "-", ep.py_id, "-", ep.oa_id ) AS programatico,
+                CONCAT( cf.cff_id, "-", cf.fte_id, cf.sft_id, cf.ori_id, cf.sor_id, "-", cf.cfi_id, cf.cfi_anio ) AS cf,
+                t.tct_id, t.tct_nombre, t.tct_costoMensual, a.svg_area,
+            FORMAT((a.uni_ene+ a.uni_feb+ a.uni_mar+ a.uni_abr+ a.uni_may+ a.uni_jun+ a.uni_jul+ a.uni_ago+ a.uni_sep+ a.uni_oct+ a.uni_nov+ a.uni_dic),0) AS cantidad,
+                (a.uni_ene+ a.uni_feb+ a.uni_mar+ a.uni_abr+ a.uni_may+ a.uni_jun+ a.uni_jul+ a.uni_ago+ a.uni_sep+ a.uni_oct+ a.uni_nov+ a.uni_dic)*tct_costoMensual AS total, pg_id,pe_id
+            FROM poa_ServicioVigilancia a
+                JOIN enc_Programatico ep USING( epg_id )
+                JOIN enc_ClaveFinanciamiento cf using (ecf_id)
+                JOIN cat_TipoContrato t USING(tct_id)
+            where a.gpo_id= 1 and a.ur_id= 01   LIMIT 0,50;]||PARAMETROS[["1","01 "]]||ESTADO[]||[A_3_7][SIN METODO]
+05-05-2026 17:32:07CLASE[ControladorVigilancia]||CLIENTE[127.0.0.1]||USRSES[4116]||NOERROR[42S02]||ERROR[SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ctrl2027.poa_ServicioVigilancia' doesn't exist]||CONSULTA[SELECT SQL_CALC_FOUND_ROWS  a.ced_id, a.ccd_id,
+                CONCAT( a.gpo_id, a.ur_id, "-", a.ue_id, "-", ep.prg_id, "-", ep.spr_id, "-", ep.py_id, "-", ep.oa_id ) AS programatico,
+                CONCAT( cf.cff_id, "-", cf.fte_id, cf.sft_id, cf.ori_id, cf.sor_id, "-", cf.cfi_id, cf.cfi_anio ) AS cf,
+                t.tct_id, t.tct_nombre, t.tct_costoMensual, a.svg_area,
+            FORMAT((a.uni_ene+ a.uni_feb+ a.uni_mar+ a.uni_abr+ a.uni_may+ a.uni_jun+ a.uni_jul+ a.uni_ago+ a.uni_sep+ a.uni_oct+ a.uni_nov+ a.uni_dic),0) AS cantidad,
+                (a.uni_ene+ a.uni_feb+ a.uni_mar+ a.uni_abr+ a.uni_may+ a.uni_jun+ a.uni_jul+ a.uni_ago+ a.uni_sep+ a.uni_oct+ a.uni_nov+ a.uni_dic)*tct_costoMensual AS total, pg_id,pe_id
+            FROM poa_ServicioVigilancia a
+                JOIN enc_Programatico ep USING( epg_id )
+                JOIN enc_ClaveFinanciamiento cf using (ecf_id)
+                JOIN cat_TipoContrato t USING(tct_id)
+            where a.gpo_id= ? and a.ur_id= ?  LIMIT 0,50;]||PARSEDQUERY[SELECT SQL_CALC_FOUND_ROWS  a.ced_id, a.ccd_id,
+                CONCAT( a.gpo_id, a.ur_id, "-", a.ue_id, "-", ep.prg_id, "-", ep.spr_id, "-", ep.py_id, "-", ep.oa_id ) AS programatico,
+                CONCAT( cf.cff_id, "-", cf.fte_id, cf.sft_id, cf.ori_id, cf.sor_id, "-", cf.cfi_id, cf.cfi_anio ) AS cf,
+                t.tct_id, t.tct_nombre, t.tct_costoMensual, a.svg_area,
+            FORMAT((a.uni_ene+ a.uni_feb+ a.uni_mar+ a.uni_abr+ a.uni_may+ a.uni_jun+ a.uni_jul+ a.uni_ago+ a.uni_sep+ a.uni_oct+ a.uni_nov+ a.uni_dic),0) AS cantidad,
+                (a.uni_ene+ a.uni_feb+ a.uni_mar+ a.uni_abr+ a.uni_may+ a.uni_jun+ a.uni_jul+ a.uni_ago+ a.uni_sep+ a.uni_oct+ a.uni_nov+ a.uni_dic)*tct_costoMensual AS total, pg_id,pe_id
+            FROM poa_ServicioVigilancia a
+                JOIN enc_Programatico ep USING( epg_id )
+                JOIN enc_ClaveFinanciamiento cf using (ecf_id)
+                JOIN cat_TipoContrato t USING(tct_id)
+            where a.gpo_id= 1 and a.ur_id= 01   LIMIT 0,50;]||PARAMETROS[["1","01 "]]||ESTADO[]||[A_3_7][SIN METODO]
+05-05-2026 17:32:17CLASE[ControladorOtrasPartidas]||CLIENTE[127.0.0.1]||USRSES[4116]||NOERROR[42S02]||ERROR[SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ctrl2027.poa_OtrasPartidas' doesn't exist]||CONSULTA[SELECT SQL_CALC_FOUND_ROWS  a.ced_id, a.ccd_id, a.epg_id, a.ecf_id,
+            CONCAT( gpo_id, ur_id, "-", ue_id, "-", prg_id, "-", spr_id, "-", py_id, "-", oa_id ) AS programatico,
+            cf.ecf_clave AS cf,
+            a.otp_archivo, a.pg_id, a.pe_id, a.otp_unidadMedida, a.otp_costo,fte_id,sft_id,ori_id,sor_id,0 as cso_id,cfi_id,cfi_anio,
+            format((a.uni_ene+ a.uni_feb+ a.uni_mar+ a.uni_abr+ a.uni_may+ a.uni_jun+ a.uni_jul+ a.uni_ago+ a.uni_sep+ a.uni_oct+ a.uni_nov+ a.uni_dic),0)  cantidad,
+            (a.uni_ene+ a.uni_feb+ a.uni_mar+ a.uni_abr+ a.uni_may+ a.uni_jun+ a.uni_jul+ a.uni_ago+ a.uni_sep+ a.uni_oct+ a.uni_nov+ a.uni_dic) * a.otp_costo  total
+            FROM poa_OtrasPartidas a
+            INNER JOIN enc_Programatico ep USING( gpo_id,ur_id,epg_id )
+            INNER JOIN enc_ClaveFinanciamiento cf using(ecf_id)
+            INNER JOIN sinpres.cat_ClaveFinanciamiento2027 USING( fte_id, sft_id, ori_id, sor_id, cfi_id, cfi_anio )
+            WHERE gpo_id= :gpo AND ur_id= :ur 
+            GROUP BY a.ccd_id, a.ced_id, a.gpo_id, a.ur_id, a.ue_id LIMIT 0,50;]||PARSEDQUERY[SELECT SQL_CALC_FOUND_ROWS  a.ced_id, a.ccd_id, a.epg_id, a.ecf_id,
+            CONCAT( gpo_id, ur_id, "-", ue_id, "-", prg_id, "-", spr_id, "-", py_id, "-", oa_id ) AS programatico,
+            cf.ecf_clave AS cf,
+            a.otp_archivo, a.pg_id, a.pe_id, a.otp_unidadMedida, a.otp_costo,fte_id,sft_id,ori_id,sor_id,0 as cso_id,cfi_id,cfi_anio,
+            format((a.uni_ene+ a.uni_feb+ a.uni_mar+ a.uni_abr+ a.uni_may+ a.uni_jun+ a.uni_jul+ a.uni_ago+ a.uni_sep+ a.uni_oct+ a.uni_nov+ a.uni_dic),0)  cantidad,
+            (a.uni_ene+ a.uni_feb+ a.uni_mar+ a.uni_abr+ a.uni_may+ a.uni_jun+ a.uni_jul+ a.uni_ago+ a.uni_sep+ a.uni_oct+ a.uni_nov+ a.uni_dic) * a.otp_costo  total
+            FROM poa_OtrasPartidas a
+            INNER JOIN enc_Programatico ep USING( gpo_id,ur_id,epg_id )
+            INNER JOIN enc_ClaveFinanciamiento cf using(ecf_id)
+            INNER JOIN sinpres.cat_ClaveFinanciamiento2027 USING( fte_id, sft_id, ori_id, sor_id, cfi_id, cfi_anio )
+            WHERE gpo_id= :gpo AND ur_id= :ur 
+            GROUP BY a.ccd_id, a.ced_id, a.gpo_id, a.ur_id, a.ue_id LIMIT 0,50;]||PARAMETROS[{":gpo":"1",":ur":"01"}]||ESTADO[]||[A_3_8][SIN METODO]
+05-05-2026 17:32:18CLASE[ControladorOtrasPartidas]||CLIENTE[127.0.0.1]||USRSES[4116]||NOERROR[42S02]||ERROR[SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ctrl2027.poa_OtrasPartidas' doesn't exist]||CONSULTA[SELECT SQL_CALC_FOUND_ROWS  a.ced_id, a.ccd_id, a.epg_id, a.ecf_id,
+            CONCAT( gpo_id, ur_id, "-", ue_id, "-", prg_id, "-", spr_id, "-", py_id, "-", oa_id ) AS programatico,
+            cf.ecf_clave AS cf,
+            a.otp_archivo, a.pg_id, a.pe_id, a.otp_unidadMedida, a.otp_costo,fte_id,sft_id,ori_id,sor_id,0 as cso_id,cfi_id,cfi_anio,
+            format((a.uni_ene+ a.uni_feb+ a.uni_mar+ a.uni_abr+ a.uni_may+ a.uni_jun+ a.uni_jul+ a.uni_ago+ a.uni_sep+ a.uni_oct+ a.uni_nov+ a.uni_dic),0)  cantidad,
+            (a.uni_ene+ a.uni_feb+ a.uni_mar+ a.uni_abr+ a.uni_may+ a.uni_jun+ a.uni_jul+ a.uni_ago+ a.uni_sep+ a.uni_oct+ a.uni_nov+ a.uni_dic) * a.otp_costo  total
+            FROM poa_OtrasPartidas a
+            INNER JOIN enc_Programatico ep USING( gpo_id,ur_id,epg_id )
+            INNER JOIN enc_ClaveFinanciamiento cf using(ecf_id)
+            INNER JOIN sinpres.cat_ClaveFinanciamiento2027 USING( fte_id, sft_id, ori_id, sor_id, cfi_id, cfi_anio )
+            WHERE gpo_id= :gpo AND ur_id= :ur 
+            GROUP BY a.ccd_id, a.ced_id, a.gpo_id, a.ur_id, a.ue_id LIMIT 0,50;]||PARSEDQUERY[SELECT SQL_CALC_FOUND_ROWS  a.ced_id, a.ccd_id, a.epg_id, a.ecf_id,
+            CONCAT( gpo_id, ur_id, "-", ue_id, "-", prg_id, "-", spr_id, "-", py_id, "-", oa_id ) AS programatico,
+            cf.ecf_clave AS cf,
+            a.otp_archivo, a.pg_id, a.pe_id, a.otp_unidadMedida, a.otp_costo,fte_id,sft_id,ori_id,sor_id,0 as cso_id,cfi_id,cfi_anio,
+            format((a.uni_ene+ a.uni_feb+ a.uni_mar+ a.uni_abr+ a.uni_may+ a.uni_jun+ a.uni_jul+ a.uni_ago+ a.uni_sep+ a.uni_oct+ a.uni_nov+ a.uni_dic),0)  cantidad,
+            (a.uni_ene+ a.uni_feb+ a.uni_mar+ a.uni_abr+ a.uni_may+ a.uni_jun+ a.uni_jul+ a.uni_ago+ a.uni_sep+ a.uni_oct+ a.uni_nov+ a.uni_dic) * a.otp_costo  total
+            FROM poa_OtrasPartidas a
+            INNER JOIN enc_Programatico ep USING( gpo_id,ur_id,epg_id )
+            INNER JOIN enc_ClaveFinanciamiento cf using(ecf_id)
+            INNER JOIN sinpres.cat_ClaveFinanciamiento2027 USING( fte_id, sft_id, ori_id, sor_id, cfi_id, cfi_anio )
+            WHERE gpo_id= :gpo AND ur_id= :ur 
+            GROUP BY a.ccd_id, a.ced_id, a.gpo_id, a.ur_id, a.ue_id LIMIT 0,50;]||PARAMETROS[{":gpo":"1",":ur":"01"}]||ESTADO[]||[A_3_8][SIN METODO]

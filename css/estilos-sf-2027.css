@@ -1,0 +1,984 @@
+/*!
+ * Estilos Sefip 2024 -two
+ */
+/*
+   1.0   GLOBAL - Color system
+   2.0   GLOBAL - RTL Settings
+   3.0   GLOBAL - Component Color 
+   4.0   GLOBAL - Link Color 
+   5.0   GLOBAL - Grid & Container
+   6.0   GLOBAL - Body
+   7.0   GLOBAL - Font   
+   8.0   GLOBAL - Border Color   
+   9.0   GLOBAL - Radius   
+   10.0  GLOBAL - Box Shadow   
+   11.0  GLOBAL - Enable Caret / Negative Margin
+   12.0  App - Header / Top Menu / Sidebar / Content / Page Header
+   13.0  App - POS System
+   14.0  App - Login Register
+   15.0   UI - Buttons + Forms
+   16.0   UI - Buttons
+   17.0   UI - Forms
+   18.0   UI - Form Check
+   19.0   UI - Form Switch
+   20.0   UI - Form Input Group
+   21.0   UI - Form Select
+   22.0   UI - Form Range
+   23.0   UI - Form File
+   24.0   UI - Form Floating
+   25.0   UI - Form Feedback & Validation
+   26.0   UI - Table
+   27.0   UI - Pagination
+   28.0   UI - Modal
+   29.0   UI - List Group
+   30.0   UI - Alert
+   31.0   UI - Card
+   32.0   UI - Accordion
+   33.0   UI - Dropdown
+   34.0   UI - Progress Bar
+   35.0   UI - Toasts
+   36.0   UI - Badges
+   37.0   UI - Nav Link
+   38.0   UI - Nav Tabs
+   39.0   UI - Nav Pills
+   40.0   UI - Navbar
+   41.0   UI - Tooltip
+   42.0   UI - Popover
+   43.0   UI - Image Thumbnail
+   44.0   UI - Figure
+   45.0   UI - Breadcrumb
+   46.0   UI - Carousel
+   47.0   UI - Spinners
+   48.0   UI - Close Button
+   49.0   UI - Offcanvas
+   50.0   UI - Code
+   51.0   UI - Hr
+   52.0   UI - Panel
+*/
+/*
+sefip tema two
+*/
+/*
+   1.0   GLOBAL - Color system
+   2.0   GLOBAL - RTL Settings
+   3.0   GLOBAL - Component Color 
+   4.0   GLOBAL - Link Color 
+   5.0   GLOBAL - Grid & Container
+   6.0   GLOBAL - Body
+   7.0   GLOBAL - Font   
+   8.0   GLOBAL - Border Color   
+   9.0   GLOBAL - Radius   
+   10.0  GLOBAL - Box Shadow   
+   11.0  GLOBAL - Enable Caret / Negative Margin
+   12.0  App - Header / Top Menu / Sidebar / Content / Page Header
+   13.0  App - POS System
+   14.0  App - Login Register
+   15.0   UI - Buttons + Forms
+   16.0   UI - Buttons
+   17.0   UI - Forms
+   18.0   UI - Form Check
+   19.0   UI - Form Switch
+   20.0   UI - Form Input Group
+   21.0   UI - Form Select
+   22.0   UI - Form Range
+   23.0   UI - Form File
+   24.0   UI - Form Floating
+   25.0   UI - Form Feedback & Validation
+   26.0   UI - Table
+   27.0   UI - Pagination
+   28.0   UI - Modal
+   29.0   UI - List Group
+   30.0   UI - Alert
+   31.0   UI - Card
+   32.0   UI - Accordion
+   33.0   UI - Dropdown
+   34.0   UI - Progress Bar
+   35.0   UI - Toasts
+   36.0   UI - Badges
+   37.0   UI - Nav Link
+   38.0   UI - Nav Tabs
+   39.0   UI - Nav Pills
+   40.0   UI - Navbar
+   41.0   UI - Tooltip
+   42.0   UI - Popover
+   43.0   UI - Image Thumbnail
+   44.0   UI - Figure
+   45.0   UI - Breadcrumb
+   46.0   UI - Carousel
+   47.0   UI - Spinners
+   48.0   UI - Close Button
+   49.0   UI - Offcanvas
+   50.0   UI - Code
+   51.0   UI - Hr
+   52.0   UI - Panel
+*/
+/*
+   1.0   GLOBAL - Color system
+   2.0   GLOBAL - RTL Settings
+   3.0   GLOBAL - Component Color 
+   4.0   GLOBAL - Link Color 
+   5.0   GLOBAL - Grid & Container
+   6.0   GLOBAL - Body
+   7.0   GLOBAL - Font   
+   8.0   GLOBAL - Border Color   
+   9.0   GLOBAL - Radius   
+   10.0  GLOBAL - Box Shadow   
+   11.0  GLOBAL - Enable Caret / Negative Margin
+   12.0  App - Header / Top Menu / Sidebar / Content / Page Header
+   13.0  App - POS System
+   14.0  App - Login Register
+   15.0   UI - Buttons + Forms
+   16.0   UI - Buttons
+   17.0   UI - Forms
+   18.0   UI - Form Check
+   19.0   UI - Form Switch
+   20.0   UI - Form Input Group
+   21.0   UI - Form Select
+   22.0   UI - Form Range
+   23.0   UI - Form File
+   24.0   UI - Form Floating
+   25.0   UI - Form Feedback & Validation
+   26.0   UI - Table
+   27.0   UI - Pagination
+   28.0   UI - Modal
+   29.0   UI - List Group
+   30.0   UI - Alert
+   31.0   UI - Card
+   32.0   UI - Accordion
+   33.0   UI - Dropdown
+   34.0   UI - Progress Bar
+   35.0   UI - Toasts
+   36.0   UI - Badges
+   37.0   UI - Nav Link
+   38.0   UI - Nav Tabs
+   39.0   UI - Nav Pills
+   40.0   UI - Navbar
+   41.0   UI - Tooltip
+   42.0   UI - Popover
+   43.0   UI - Image Thumbnail
+   44.0   UI - Figure
+   45.0   UI - Breadcrumb
+   46.0   UI - Carousel
+   47.0   UI - Spinners
+   48.0   UI - Close Button
+   49.0   UI - Offcanvas
+   50.0   UI - Code
+   51.0   UI - Hr
+   52.0   UI - Panel
+*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/Monserrat/Montserrat-Italic-VariableFont_wght.ttf);
+  font-style: italic;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/Monserrat/Montserrat-VariableFont_wght.ttf);
+  font-weight: normal;
+}
+body {
+  font-family: "Montserrat";
+  background-color: #fff;
+  background: url(../images/bg-sistema-2027.png) repeat 0 0 fixed;
+}
+
+.bg-uat {
+  background: url(../images/bg-sistema_uat-1.png) repeat 0 0 fixed !important;
+  background-size: cover;
+}
+
+.bg-uat .app-sidebar {
+  background: url(../images/bg-sidebar_uat-1.png) left top #f2f3f4 !important;
+}
+
+.app-header {
+  background-color: transparent !important;
+  background: linear-gradient(to right, rgb(85.2, 39, 84.6) 0%, #8e418d 100px, rgba(142, 65, 141, 0) 220px, rgba(255, 255, 255, 0) 220px, rgba(255, 255, 255, 0) 100%) !important;
+}
+.app-header .navbar-brand {
+  padding: 5px 20px;
+  height: 50px;
+}
+
+.app-header-shadow .app-header, .has-scroll .app-header {
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.15);
+  background-color: transparent;
+  background: linear-gradient(to right, rgb(85.2, 39, 84.6) 0%, #8e418d 100px, white 220px, white 220px, white 100%) !important;
+}
+
+.page-header {
+  display: inline-block;
+  background-color: #FFF;
+  color: #8E418D;
+  padding: 5px 10px 5px 25px;
+  border-radius: 0 0px 0px 0;
+  border-radius: 0px 5px 0px 0px;
+  border: 0;
+  border-bottom: 2px solid #f6f6f6;
+}
+
+.panel > .panel-heading {
+  background: rgba(255, 255, 255, 0.5);
+  color: #545454;
+  border: 0;
+  border-bottom: 2px solid #8E418D;
+  position: relative;
+  box-shadow: 1px 1px 5px rgba(180, 180, 180, 0.75);
+  -o-border-image: linear-gradient(to left, rgb(159.4927536232, 73.0072463768, 158.3695652174) 0%, #8E418D 50%, rgb(124.5072463768, 56.9927536232, 123.6304347826) 100%) 100% 1;
+     border-image: linear-gradient(to left, rgb(159.4927536232, 73.0072463768, 158.3695652174) 0%, #8E418D 50%, rgb(124.5072463768, 56.9927536232, 123.6304347826) 100%) 100% 1;
+}
+
+.panel > .panel-heading hr {
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  margin: 0px 0px 0px 0px;
+  background: linear-gradient(to right, #8E418D 0%, #8E418D 10%, #8D3B88 10%, #8D3B88 20%, #9D2449 20%, #9D2449 30%, #F44C63 30%, #F44C63 40%, #F98927 40%, #F98927 50%, #E6AD2F 50%, #E6AD2F 60%, #59B038 60%, #59B038 70%, #285C4D 70%, #285C4D 80%, #00B0A6 80%, #00B0A6 90%, #8E418D 90%, #8E418D 100%);
+}
+
+.app-sidebar-float-submenu-container {
+  background: #8E418D;
+  border-radius: 0 0.75rem 0.75rem 0;
+}
+.app-sidebar-float-submenu-container .app-sidebar-float-submenu {
+  background: #8E418D;
+  border-radius: 0 0.75rem 0.75rem 0;
+  background: linear-gradient(to right, rgb(85.2, 39, 84.6) 0%, #8e418d 100%);
+}
+.app-sidebar-float-submenu-container .app-sidebar-float-submenu .menu-item:before {
+  background: #8E418D;
+}
+.app-sidebar-float-submenu-container .app-sidebar-float-submenu .menu-item .menu-link:after {
+  background: #8E418D;
+}
+.app-sidebar-float-submenu-container .app-sidebar-float-submenu .menu-item:after {
+  border: 1px solid #e8d4b8;
+  background: #8E418D;
+}
+.app-sidebar-float-submenu-container .app-sidebar-float-submenu .menu-item .menu-link {
+  padding: 3px 20px 3px 15px;
+  line-height: 18px;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.app-sidebar-float-submenu-arrow {
+  background-color: #8E418D !important;
+}
+
+.app-sidebar {
+  box-shadow: 1px 1px 3px rgba(200, 200, 200, 0.7);
+  background: url(../images/bg-sidebar_2027.png) left top, linear-gradient(to bottom, rgba(85.2, 39, 84.6, 0) 0%, #8e418d);
+  position: relative;
+}
+.app-sidebar::after {
+  content: "";
+  position: absolute;
+  background-color: #8E418D;
+  mix-blend-mode: multiply;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+.app-sidebar .app-sidebar-content {
+  z-index: 10;
+}
+.app-sidebar .menu {
+  background: linear-gradient(to bottom, rgba(36, 36, 36, 0) 0%, rgba(36, 36, 36, 0.25) 20%, rgba(36, 36, 36, 0.25) 80%, rgba(36, 36, 36, 0) 100%);
+}
+.app-sidebar .menu .menu-item .menu-submenu .menu-item:before {
+  color: #B38E5D !important;
+}
+.app-sidebar .menu .menu-item .menu-submenu .menu-item:before {
+  background: #B38E5D !important;
+}
+.app-sidebar .menu .menu-item .menu-submenu .menu-item:after {
+  border: 1px solid #e8d4b8 !important;
+  background: #B38E5D !important;
+}
+.app-sidebar .menu .menu-item .menu-submenu .menu-item .menu-link:after {
+  background: #B38E5D !important;
+}
+.app-sidebar .menu .menu-item .menu-link {
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 500;
+}
+.app-sidebar .menu .menu-item .menu-submenu .menu-item:before {
+  background: rgb(72.0289855072, 32.9710144928, 71.5217391304);
+}
+.app-sidebar .menu .menu-item .menu-submenu .menu-item:after {
+  border: 1px solid #e8d4b8;
+  background: rgb(72.0289855072, 32.9710144928, 71.5217391304);
+}
+.app-sidebar .menu .menu-item .menu-submenu .menu-item .menu-link {
+  color: rgba(255, 255, 255, 0.7);
+  color: rgb(211.5714285714, 190.4285714286, 162.4285714286);
+}
+.app-sidebar .menu .menu-item .menu-submenu .menu-item .menu-link:after {
+  background: rgb(72.0289855072, 32.9710144928, 71.5217391304);
+}
+.app-sidebar .menu .menu-item.active > .menu-link {
+  color: rgba(255, 255, 255, 0.9);
+  background-color: rgb(107.0144927536, 48.9855072464, 106.2608695652);
+}
+.app-sidebar .menu .menu-item.active > .menu-link .menu-icon {
+  color: #FFFFFF;
+}
+.app-sidebar .menu .menu-item.active > .menu-link:hover {
+  background-color: rgb(89.5217391304, 40.9782608696, 88.8913043478);
+}
+.app-sidebar .app-sidebar-minify-btn {
+  background-color: rgb(107.0144927536, 48.9855072464, 106.2608695652);
+  box-shadow: 0 0 15px rgba(36, 36, 36, 0.75);
+}
+.app-sidebar .app-sidebar-minify-btn:hover, .app-sidebar .app-sidebar-minify-btn:focus, .app-sidebar .app-sidebar-minify-btn.active {
+  background-color: rgb(89.5217391304, 40.9782608696, 88.8913043478);
+}
+.app-sidebar .menu .menu-profile {
+  background: transparent;
+}
+.app-sidebar .menu .menu-profile .menu-profile-cover {
+  background-image: none;
+}
+.app-sidebar .menu .menu-profile .menu-profile-cover.with-shadow:before {
+  background: transparent;
+}
+.app-sidebar .menu .menu-profile .menu-profile-info .small,
+.app-sidebar .app-sidebar .menu .menu-profile .menu-profile-info small {
+  color: #545454;
+}
+
+.app-sidebar.poa .menu .menu-item.active > .menu-link,
+.app-sidebar.poa .menu .menu-item > .menu-link:hover {
+  border-left: 2px solid #F44C63;
+}
+
+.app-sidebar.scg .menu .menu-item.active > .menu-link,
+.app-sidebar.scg .menu .menu-item > .menu-link:hover {
+  border-left: 2px solid #8E418D;
+}
+
+.app-sidebar.si .menu .menu-item.active > .menu-link,
+.app-sidebar.si .menu .menu-item > .menu-link:hover {
+  border-left: 2px solid #5B78BB;
+}
+
+.app-sidebar.mga .menu .menu-item.active > .menu-link,
+.app-sidebar.mga .menu .menu-item > .menu-link:hover {
+  border-left: 2px solid #0098D4;
+}
+
+.app-sidebar.sop .menu .menu-item.active > .menu-link,
+.app-sidebar.sop .menu .menu-item > .menu-link:hover {
+  border-left: 2px solid #F98927;
+}
+
+.app-sidebar.scp .menu .menu-item.active > .menu-link,
+.app-sidebar.scp .menu .menu-item > .menu-link:hover {
+  border-left: 2px solid #E6AD2F;
+}
+
+.app-sidebar.tes .menu .menu-item.active > .menu-link,
+.app-sidebar.tes .menu .menu-item > .menu-link:hover {
+  border-left: 2px solid #59B038;
+}
+
+.app-sidebar.srv .menu .menu-item.active > .menu-link,
+.app-sidebar.srv .menu .menu-item > .menu-link:hover {
+  border-left: 2px solid #285C4D;
+}
+
+.app-sidebar.mcs .menu .menu-item.active > .menu-link,
+.app-sidebar.mcs .menu .menu-item > .menu-link:hover {
+  border-left: 2px solid #00B0A6;
+}
+
+.app-sidebar.siox .menu .menu-item.active > .menu-link,
+.app-sidebar.siox .menu .menu-item > .menu-link:hover {
+  border-left: 2px solid #9D2449;
+}
+
+.menu-submenu .menu-item.active > .menu-link,
+.menu-submenu .menu-item > .menu-link:hover {
+  border: none !important;
+}
+
+.app-header .navbar-sefip .navbar-item {
+  background-color: white;
+  border-top: 0;
+  border-top: 3px solid;
+  border-top-color: #dddddd;
+  border-radius: 0 0 0.5rem 0.5rem;
+  font-weight: 600;
+  margin-left: 1px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+.app-header .navbar-sefip .navbar-item .navbar-link {
+  padding: 5px 5px;
+  color: #545454;
+}
+@media (min-width: 768px) {
+  .app-header .navbar-sefip .navbar-item .navbar-link {
+    padding: 5px 12px;
+  }
+}
+.app-header .navbar-sefip .navbar-item .navbar-link:hover {
+  color: #FFFFFF;
+  opacity: 1;
+}
+.app-header .navbar-sefip .navbar-item.active > a {
+  color: rgb(72.0289855072, 32.9710144928, 71.5217391304);
+}
+
+@media (max-width: 768px) {
+  .navbar-brand {
+    width: 150px;
+    background: url(../images/logo_sefip_2027-navbar-w.png) 0 10px no-repeat;
+    background-size: auto 40px;
+  }
+  .navbar-brand img {
+    display: none;
+  }
+}
+.app-header .navbar-sefip-right {
+  padding-right: 20px;
+  border: none;
+}
+.app-header .navbar-sefip-right .navbar-item:last-child .navbar-link {
+  margin-right: 0px;
+}
+.app-header .navbar-sefip-right .navbar-item .navbar-link {
+  height: 30px;
+  width: 30px;
+  padding: 0;
+  font-size: 10px;
+  border: 1px solid #a8a8a8;
+  display: flex;
+  border-radius: 50%;
+  margin-right: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0 0 0 1px #c0c0c0, 0 0 5px #f6f6f6;
+  color: #8E418D;
+}
+.app-header .navbar-sefip-right .navbar-item .navbar-link:hover, .app-header .navbar-sefip-right .navbar-item .navbar-link.active, .app-header .navbar-sefip-right .navbar-item .navbar-link:focus {
+  color: #FFFFFF !important;
+  opacity: 1;
+}
+.app-header .navbar-sefip-right .navbar-item:nth-child(1) .navbar-link {
+  color: rgb(244.5905263158, 85.6094736842, 107.3747368421) !important;
+}
+.app-header .navbar-sefip-right .navbar-item:nth-child(1) .navbar-link:hover, .app-header .navbar-sefip-right .navbar-item:nth-child(1) .navbar-link.active, .app-header .navbar-sefip-right .navbar-item:nth-child(1) .navbar-link:focus {
+  background-color: rgb(244.5905263158, 85.6094736842, 107.3747368421) !important;
+  color: #FFFFFF !important;
+}
+.app-header .navbar-sefip-right .navbar-item:nth-child(2) .navbar-link {
+  color: rgb(0, 166.6264150943, 232.4) !important;
+}
+.app-header .navbar-sefip-right .navbar-item:nth-child(2) .navbar-link:hover, .app-header .navbar-sefip-right .navbar-item:nth-child(2) .navbar-link.active, .app-header .navbar-sefip-right .navbar-item:nth-child(2) .navbar-link:focus {
+  background-color: rgb(0, 166.6264150943, 232.4) !important;
+  color: #FFFFFF !important;
+}
+.app-header .navbar-sefip-right .navbar-item:nth-child(3) .navbar-link {
+  color: rgb(0, 206.6, 194.8613636364) !important;
+}
+.app-header .navbar-sefip-right .navbar-item:nth-child(3) .navbar-link:hover, .app-header .navbar-sefip-right .navbar-item:nth-child(3) .navbar-link.active, .app-header .navbar-sefip-right .navbar-item:nth-child(3) .navbar-link:focus {
+  background-color: rgb(0, 206.6, 194.8613636364) !important;
+  color: #FFFFFF !important;
+}
+.app-header .navbar-sefip-right .navbar-item:nth-child(4) .navbar-link {
+  color: rgb(169.9884057971, 77.8115942029, 168.7913043478) !important;
+}
+.app-header .navbar-sefip-right .navbar-item:nth-child(4) .navbar-link:hover, .app-header .navbar-sefip-right .navbar-item:nth-child(4) .navbar-link.active, .app-header .navbar-sefip-right .navbar-item:nth-child(4) .navbar-link:focus {
+  background-color: rgb(169.9884057971, 77.8115942029, 168.7913043478) !important;
+  color: #FFFFFF !important;
+}
+.app-header .navbar-sefip-right .navbar-item:nth-child(5) .navbar-link {
+  color: rgb(127.0517241379, 149.6767241379, 201.9482758621) !important;
+}
+.app-header .navbar-sefip-right .navbar-item:nth-child(5) .navbar-link:hover, .app-header .navbar-sefip-right .navbar-item:nth-child(5) .navbar-link.active, .app-header .navbar-sefip-right .navbar-item:nth-child(5) .navbar-link:focus {
+  background-color: rgb(127.0517241379, 149.6767241379, 201.9482758621) !important;
+  color: #FFFFFF !important;
+}
+.app-header .navbar-sefip-right .navbar-item:nth-child(6) .navbar-link {
+  color: rgb(236.5665236052, 194.5381974249, 101.6334763948) !important;
+}
+.app-header .navbar-sefip-right .navbar-item:nth-child(6) .navbar-link:hover, .app-header .navbar-sefip-right .navbar-item:nth-child(6) .navbar-link.active, .app-header .navbar-sefip-right .navbar-item:nth-child(6) .navbar-link:focus {
+  background-color: rgb(236.5665236052, 194.5381974249, 101.6334763948) !important;
+  color: #FFFFFF !important;
+}
+.app-header .navbar-sefip-right .navbar-item:nth-child(7) .navbar-link {
+  color: rgb(61.6363636364, 141.7636363636, 118.65) !important;
+}
+.app-header .navbar-sefip-right .navbar-item:nth-child(7) .navbar-link:hover, .app-header .navbar-sefip-right .navbar-item:nth-child(7) .navbar-link.active, .app-header .navbar-sefip-right .navbar-item:nth-child(7) .navbar-link:focus {
+  background-color: rgb(61.6363636364, 141.7636363636, 118.65) !important;
+  color: #FFFFFF !important;
+}
+.app-header .navbar-sefip-right .navbar-item:nth-child(8) .navbar-link {
+  color: rgb(251.2054054054, 180.372972973, 118.3945945946) !important;
+}
+.app-header .navbar-sefip-right .navbar-item:nth-child(8) .navbar-link:hover, .app-header .navbar-sefip-right .navbar-item:nth-child(8) .navbar-link.active, .app-header .navbar-sefip-right .navbar-item:nth-child(8) .navbar-link:focus {
+  background-color: rgb(251.2054054054, 180.372972973, 118.3945945946) !important;
+  color: #FFFFFF !important;
+}
+.app-header .navbar-sefip-right .navbar-item:nth-child(9) .navbar-link {
+  color: rgb(188.6811594203, 110.1188405797, 187.6608695652) !important;
+}
+.app-header .navbar-sefip-right .navbar-item:nth-child(9) .navbar-link:hover, .app-header .navbar-sefip-right .navbar-item:nth-child(9) .navbar-link.active, .app-header .navbar-sefip-right .navbar-item:nth-child(9) .navbar-link:focus {
+  background-color: rgb(188.6811594203, 110.1188405797, 187.6608695652) !important;
+  color: #FFFFFF !important;
+}
+
+/*links por sistema
+------------------------------------------------------*/
+.app-header .navbar-sefip .item-poa {
+  border-top-color: #F44C63;
+  color: #F44C63;
+}
+.app-header .navbar-sefip .item-poa .navbar-link {
+  color: #8E418D;
+}
+.app-header .navbar-sefip .item-poa:hover {
+  background-color: #F44C63;
+}
+.app-header .navbar-sefip .item-poa.active {
+  background: linear-gradient(to top, rgba(209.8, 179, 209.4, 0.75) 0%, rgba(243.7, 236, 243.6, 0.5) 100%);
+  color: #F44C63 !important;
+}
+.app-header .navbar-sefip .item-poa.active:hover {
+  background: #F44C63;
+}
+.app-header .navbar-sefip .item-scg {
+  border-top-color: #8E418D;
+  color: #8E418D;
+}
+.app-header .navbar-sefip .item-scg .navbar-link {
+  color: #8E418D;
+}
+.app-header .navbar-sefip .item-scg:hover {
+  background-color: #8E418D;
+}
+.app-header .navbar-sefip .item-scg.active {
+  background: linear-gradient(to top, rgba(209.8, 179, 209.4, 0.75) 0%, rgba(243.7, 236, 243.6, 0.5) 100%);
+  color: #8E418D !important;
+}
+.app-header .navbar-sefip .item-scg.active:hover {
+  background: #8E418D;
+}
+.app-header .navbar-sefip .item-si {
+  border-top-color: #5B78BB;
+  color: #5B78BB;
+}
+.app-header .navbar-sefip .item-si .navbar-link {
+  color: #8E418D;
+}
+.app-header .navbar-sefip .item-si:hover {
+  background-color: #5B78BB;
+}
+.app-header .navbar-sefip .item-si.active {
+  background: linear-gradient(to top, rgba(209.8, 179, 209.4, 0.75) 0%, rgba(243.7, 236, 243.6, 0.5) 100%);
+  color: #5B78BB !important;
+}
+.app-header .navbar-sefip .item-si.active:hover {
+  background: #5B78BB;
+}
+.app-header .navbar-sefip .item-mga {
+  border-top-color: #0098D4;
+  color: #0098D4;
+}
+.app-header .navbar-sefip .item-mga .navbar-link {
+  color: #8E418D;
+}
+.app-header .navbar-sefip .item-mga:hover {
+  background-color: #0098D4;
+}
+.app-header .navbar-sefip .item-mga.active {
+  background: linear-gradient(to top, rgba(209.8, 179, 209.4, 0.75) 0%, rgba(243.7, 236, 243.6, 0.5) 100%);
+  color: #0098D4 !important;
+}
+.app-header .navbar-sefip .item-mga.active:hover {
+  background: #0098D4;
+}
+.app-header .navbar-sefip .item-sop {
+  border-top-color: #F98927;
+  color: #F98927;
+}
+.app-header .navbar-sefip .item-sop .navbar-link {
+  color: #8E418D;
+}
+.app-header .navbar-sefip .item-sop:hover {
+  background-color: #F98927;
+}
+.app-header .navbar-sefip .item-sop.active {
+  background: linear-gradient(to top, rgba(209.8, 179, 209.4, 0.75) 0%, rgba(243.7, 236, 243.6, 0.5) 100%);
+  color: #F98927 !important;
+}
+.app-header .navbar-sefip .item-sop.active:hover {
+  background: #F98927;
+}
+.app-header .navbar-sefip .item-scp {
+  border-top-color: #E6AD2F;
+  color: #E6AD2F;
+}
+.app-header .navbar-sefip .item-scp .navbar-link {
+  color: #8E418D;
+}
+.app-header .navbar-sefip .item-scp:hover {
+  background-color: #E6AD2F;
+}
+.app-header .navbar-sefip .item-scp.active {
+  background: linear-gradient(to top, rgba(209.8, 179, 209.4, 0.75) 0%, rgba(243.7, 236, 243.6, 0.5) 100%);
+  color: #E6AD2F !important;
+}
+.app-header .navbar-sefip .item-scp.active:hover {
+  background: #E6AD2F;
+}
+.app-header .navbar-sefip .item-tes {
+  border-top-color: #59B038;
+  color: #59B038;
+}
+.app-header .navbar-sefip .item-tes .navbar-link {
+  color: #8E418D;
+}
+.app-header .navbar-sefip .item-tes:hover {
+  background-color: #59B038;
+}
+.app-header .navbar-sefip .item-tes.active {
+  background: linear-gradient(to top, rgba(209.8, 179, 209.4, 0.75) 0%, rgba(243.7, 236, 243.6, 0.5) 100%);
+  color: #59B038 !important;
+}
+.app-header .navbar-sefip .item-tes.active:hover {
+  background: #59B038;
+}
+.app-header .navbar-sefip .item-srv {
+  border-top-color: #285C4D;
+  color: #285C4D;
+}
+.app-header .navbar-sefip .item-srv .navbar-link {
+  color: #8E418D;
+}
+.app-header .navbar-sefip .item-srv:hover {
+  background-color: #285C4D;
+}
+.app-header .navbar-sefip .item-srv.active {
+  background: linear-gradient(to top, rgba(209.8, 179, 209.4, 0.75) 0%, rgba(243.7, 236, 243.6, 0.5) 100%);
+  color: #285C4D !important;
+}
+.app-header .navbar-sefip .item-srv.active:hover {
+  background: #285C4D;
+}
+.app-header .navbar-sefip .item-mcs {
+  border-top-color: #00B0A6;
+  color: #00B0A6;
+}
+.app-header .navbar-sefip .item-mcs .navbar-link {
+  color: #8E418D;
+}
+.app-header .navbar-sefip .item-mcs:hover {
+  background-color: #00B0A6;
+}
+.app-header .navbar-sefip .item-mcs.active {
+  background: linear-gradient(to top, rgba(209.8, 179, 209.4, 0.75) 0%, rgba(243.7, 236, 243.6, 0.5) 100%);
+  color: #00B0A6 !important;
+}
+.app-header .navbar-sefip .item-mcs.active:hover {
+  background: #00B0A6;
+}
+.app-header .navbar-sefip .item-siox {
+  border-top-color: #9D2449;
+  color: #9D2449;
+}
+.app-header .navbar-sefip .item-siox .navbar-link {
+  color: #8E418D;
+}
+.app-header .navbar-sefip .item-siox:hover {
+  background-color: #9D2449;
+}
+.app-header .navbar-sefip .item-siox.active {
+  background: linear-gradient(to top, rgba(209.8, 179, 209.4, 0.75) 0%, rgba(243.7, 236, 243.6, 0.5) 100%);
+  color: #9D2449 !important;
+}
+.app-header .navbar-sefip .item-siox.active:hover {
+  background: #9D2449;
+}
+
+.app-sidebar-float-submenu-container {
+  background: #8E418D;
+  border-radius: 0 0.75rem 0.75rem 0;
+}
+.app-sidebar-float-submenu-container .app-sidebar-float-submenu {
+  background: #8E418D;
+  border-radius: 0 0.75rem 0.75rem 0;
+  background: linear-gradient(to right, rgb(85.2, 39, 84.6) 0%, #8e418d 100%);
+}
+.app-sidebar-float-submenu-container .app-sidebar-float-submenu .menu-item:before {
+  background: #8E418D;
+}
+.app-sidebar-float-submenu-container .app-sidebar-float-submenu .menu-item .menu-link:after {
+  background: #8E418D;
+}
+.app-sidebar-float-submenu-container .app-sidebar-float-submenu .menu-item:after {
+  border: 1px solid #e8d4b8;
+  background: #8E418D;
+}
+.app-sidebar-float-submenu-container .app-sidebar-float-submenu .menu-item .menu-link {
+  padding: 3px 20px 3px 15px;
+  line-height: 18px;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.app-sidebar-float-submenu-arrow {
+  background-color: #8E418D !important;
+}
+
+.app-sidebar {
+  box-shadow: 1px 1px 3px rgba(200, 200, 200, 0.7);
+  background: url(../images/bg-sidebar_2027.png) left top, linear-gradient(to bottom, rgba(85.2, 39, 84.6, 0) 0%, #8e418d);
+  position: relative;
+}
+.app-sidebar::after {
+  content: "";
+  position: absolute;
+  background-color: #8E418D;
+  mix-blend-mode: multiply;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+.app-sidebar .app-sidebar-content {
+  z-index: 10;
+}
+.app-sidebar .menu {
+  background: linear-gradient(to bottom, rgba(36, 36, 36, 0) 0%, rgba(36, 36, 36, 0.25) 20%, rgba(36, 36, 36, 0.25) 80%, rgba(36, 36, 36, 0) 100%);
+}
+.app-sidebar .menu .menu-item .menu-submenu .menu-item:before {
+  color: #B38E5D !important;
+}
+.app-sidebar .menu .menu-item .menu-submenu .menu-item:before {
+  background: #B38E5D !important;
+}
+.app-sidebar .menu .menu-item .menu-submenu .menu-item:after {
+  border: 1px solid #e8d4b8 !important;
+  background: #B38E5D !important;
+}
+.app-sidebar .menu .menu-item .menu-submenu .menu-item .menu-link:after {
+  background: #B38E5D !important;
+}
+.app-sidebar .menu .menu-item .menu-link {
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 500;
+}
+.app-sidebar .menu .menu-item .menu-submenu .menu-item:before {
+  background: rgb(72.0289855072, 32.9710144928, 71.5217391304);
+}
+.app-sidebar .menu .menu-item .menu-submenu .menu-item:after {
+  border: 1px solid #e8d4b8;
+  background: rgb(72.0289855072, 32.9710144928, 71.5217391304);
+}
+.app-sidebar .menu .menu-item .menu-submenu .menu-item .menu-link {
+  color: rgba(255, 255, 255, 0.7);
+  color: rgb(211.5714285714, 190.4285714286, 162.4285714286);
+}
+.app-sidebar .menu .menu-item .menu-submenu .menu-item .menu-link:after {
+  background: rgb(72.0289855072, 32.9710144928, 71.5217391304);
+}
+.app-sidebar .menu .menu-item.active > .menu-link {
+  color: rgba(255, 255, 255, 0.9);
+  background-color: rgb(107.0144927536, 48.9855072464, 106.2608695652);
+}
+.app-sidebar .menu .menu-item.active > .menu-link .menu-icon {
+  color: #FFFFFF;
+}
+.app-sidebar .menu .menu-item.active > .menu-link:hover {
+  background-color: rgb(89.5217391304, 40.9782608696, 88.8913043478);
+}
+.app-sidebar .app-sidebar-minify-btn {
+  background-color: rgb(107.0144927536, 48.9855072464, 106.2608695652);
+  box-shadow: 0 0 15px rgba(36, 36, 36, 0.75);
+}
+.app-sidebar .app-sidebar-minify-btn:hover, .app-sidebar .app-sidebar-minify-btn:focus, .app-sidebar .app-sidebar-minify-btn.active {
+  background-color: rgb(89.5217391304, 40.9782608696, 88.8913043478);
+}
+.app-sidebar .menu .menu-profile {
+  background: transparent;
+}
+.app-sidebar .menu .menu-profile .menu-profile-cover {
+  background-image: none;
+}
+.app-sidebar .menu .menu-profile .menu-profile-cover.with-shadow:before {
+  background: transparent;
+}
+.app-sidebar .menu .menu-profile .menu-profile-info .small,
+.app-sidebar .app-sidebar .menu .menu-profile .menu-profile-info small {
+  color: #545454;
+}
+
+.app-sidebar.poa .menu .menu-item.active > .menu-link,
+.app-sidebar.poa .menu .menu-item > .menu-link:hover {
+  border-left: 2px solid #F44C63;
+}
+
+.app-sidebar.scg .menu .menu-item.active > .menu-link,
+.app-sidebar.scg .menu .menu-item > .menu-link:hover {
+  border-left: 2px solid #8E418D;
+}
+
+.app-sidebar.si .menu .menu-item.active > .menu-link,
+.app-sidebar.si .menu .menu-item > .menu-link:hover {
+  border-left: 2px solid #5B78BB;
+}
+
+.app-sidebar.mga .menu .menu-item.active > .menu-link,
+.app-sidebar.mga .menu .menu-item > .menu-link:hover {
+  border-left: 2px solid #0098D4;
+}
+
+.app-sidebar.sop .menu .menu-item.active > .menu-link,
+.app-sidebar.sop .menu .menu-item > .menu-link:hover {
+  border-left: 2px solid #F98927;
+}
+
+.app-sidebar.scp .menu .menu-item.active > .menu-link,
+.app-sidebar.scp .menu .menu-item > .menu-link:hover {
+  border-left: 2px solid #E6AD2F;
+}
+
+.app-sidebar.tes .menu .menu-item.active > .menu-link,
+.app-sidebar.tes .menu .menu-item > .menu-link:hover {
+  border-left: 2px solid #59B038;
+}
+
+.app-sidebar.srv .menu .menu-item.active > .menu-link,
+.app-sidebar.srv .menu .menu-item > .menu-link:hover {
+  border-left: 2px solid #285C4D;
+}
+
+.app-sidebar.mcs .menu .menu-item.active > .menu-link,
+.app-sidebar.mcs .menu .menu-item > .menu-link:hover {
+  border-left: 2px solid #00B0A6;
+}
+
+.app-sidebar.siox .menu .menu-item.active > .menu-link,
+.app-sidebar.siox .menu .menu-item > .menu-link:hover {
+  border-left: 2px solid #9D2449;
+}
+
+.menu-submenu .menu-item.active > .menu-link,
+.menu-submenu .menu-item > .menu-link:hover {
+  border: none !important;
+}
+
+.footer-creditos {
+  background: linear-gradient(to bottom, #8e418d 0%, rgb(56.8, 26, 56.4) 100%);
+  color: rgba(255, 255, 255, 0.9);
+}
+@media (min-width: 768px) {
+  .footer-creditos {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: 10000;
+  }
+}
+.footer-creditos * {
+  padding: 0;
+  margin: 0;
+}
+.footer-creditos .footer {
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-flow: row wrap;
+}
+.footer-creditos .footer img {
+  height: 25px;
+  display: block;
+  margin-right: 0.5rem;
+}
+.footer-creditos .footer p {
+  flex: 1;
+  padding: 0 0.5rem;
+}
+
+.btn-scroll-to-top {
+  z-index: 10001;
+}
+
+.footer-creditos {
+  background: linear-gradient(to bottom, #8e418d 0%, rgb(56.8, 26, 56.4) 100%);
+}
+
+/* ============================================================
+   SIDEBAR 2027 - Color morado en la capa app-sidebar-bg
+   El template base (Color Admin) usa <div class="app-sidebar-bg"></div>
+   como capa de fondo absoluta sobre el .app-sidebar. Aquí
+   sobrescribimos las variables del tema y las reglas con
+   selectores más específicos.
+   ============================================================ */
+:root {
+  --app-sidebar-bg: #8e418d;
+  --app-sidebar-bg-rgb: 142, 65, 141;
+  --app-sidebar-component-color: #fff;
+  --app-sidebar-component-color-rgb: 255, 255, 255;
+  --app-sidebar-active-component-bg: rgb(107, 49, 106);
+  --app-sidebar-minify-btn-bg: rgb(107, 49, 106);
+  --app-sidebar-minify-btn-hover-bg: rgb(85, 39, 84);
+}
+
+.app-sidebar-bg,
+.app-with-light-sidebar .app-sidebar-bg,
+#app.app-with-light-sidebar .app-sidebar-bg {
+  background: url(../images/bg-sidebar_2027.png) left top, linear-gradient(to bottom, rgb(85, 39, 84) 0%, #8e418d 100%) !important;
+  background-color: #8e418d !important;
+}
+
+.app-with-light-sidebar .app-sidebar .menu .menu-item > .menu-link {
+  color: rgba(255, 255, 255, 0.95) !important;
+}
+
+.app-with-light-sidebar .app-sidebar .menu .menu-item .menu-submenu > .menu-item > .menu-link {
+  color: #B38E5D !important;
+}
+
+.app-with-light-sidebar .app-sidebar .menu .menu-item.active > .menu-link {
+  color: #fff !important;
+  background-color: rgb(107, 49, 106) !important;
+}
+
+.app-with-light-sidebar .app-sidebar .menu .menu-item .menu-submenu > .menu-item.active > .menu-link,
+.app-with-light-sidebar .app-sidebar .menu .menu-item .menu-submenu > .menu-item > .menu-link:focus,
+.app-with-light-sidebar .app-sidebar .menu .menu-item .menu-submenu > .menu-item > .menu-link:hover {
+  color: #d4be8e !important;
+  background: rgba(179, 142, 93, 0.12) !important;
+}
+
+.app-with-light-sidebar .app-sidebar .menu .menu-item > .menu-link:focus,
+.app-with-light-sidebar .app-sidebar .menu .menu-item > .menu-link:hover {
+  color: #fff !important;
+  background: rgba(255, 255, 255, 0.1) !important;
+}
+
+.app-with-light-sidebar .app-sidebar .menu .menu-item > .menu-link .menu-icon,
+.app-with-light-sidebar .app-sidebar .menu .menu-item > .menu-link .menu-icon i {
+  color: rgba(255, 255, 255, 0.95) !important;
+}
+
+.app-with-light-sidebar .app-sidebar .menu .menu-item .menu-submenu > .menu-item > .menu-link .menu-icon,
+.app-with-light-sidebar .app-sidebar .menu .menu-item .menu-submenu > .menu-item > .menu-link .menu-icon i {
+  color: #B38E5D !important;
+}
+
+.app-with-light-sidebar .app-sidebar .menu .menu-item .menu-submenu > .menu-item.active > .menu-link .menu-icon,
+.app-with-light-sidebar .app-sidebar .menu .menu-item .menu-submenu > .menu-item.active > .menu-link .menu-icon i,
+.app-with-light-sidebar .app-sidebar .menu .menu-item .menu-submenu > .menu-item > .menu-link:hover .menu-icon,
+.app-with-light-sidebar .app-sidebar .menu .menu-item .menu-submenu > .menu-item > .menu-link:hover .menu-icon i {
+  color: #d4be8e !important;
+}

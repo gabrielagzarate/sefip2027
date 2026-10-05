@@ -1,0 +1,127 @@
+@font-face {
+  font-family: 'scp';
+  src: url('../font/scp.eot?52248142');
+  src: url('../font/scp.eot?52248142#iefix') format('embedded-opentype'),
+       url('../font/scp.woff2?52248142') format('woff2'),
+       url('../font/scp.woff?52248142') format('woff'),
+       url('../font/scp.ttf?52248142') format('truetype'),
+       url('../font/scp.svg?52248142#scp') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'scp';
+    src: url('../font/scp.svg?52248142#scp') format('svg');
+  }
+}
+*/
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "scp";
+  font-style: normal;
+  font-weight: normal;
+  speak: never;
+
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.icon-sound:before { content: '\e800'; } /* '' */
+.icon-scp-consultasconsultaclcs:before { content: '\e801'; } /* '' */
+.icon-scp-consultasconsultacontrato:before { content: '\e802'; } /* '' */
+.icon-scp-consultasconsultaejecresumenclc:before { content: '\e803'; } /* '' */
+.icon-scp-consultasconsultaejecutiva:before { content: '\e804'; } /* '' */
+.icon-scp-consultasconsultaejecutivaur:before { content: '\e805'; } /* '' */
+.icon-scp-consultasconsultaepdesdeprograma:before { content: '\e806'; } /* '' */
+.icon-scp-consultasconsultaestructuraprogramatica:before { content: '\e807'; } /* '' */
+.icon-scp-consultasconsultafolios:before { content: '\e808'; } /* '' */
+.icon-scp-consultasconsultanumerocontrol:before { content: '\e809'; } /* '' */
+.icon-scp-consultasconsultaproveedores:before { content: '\e80a'; } /* '' */
+.icon-scp-consultasconsultarectificaciones:before { content: '\e80b'; } /* '' */
+.icon-scp-consultasconsultasaldos:before { content: '\e80c'; } /* '' */
+.icon-scp-consultasconsultasaldosrectificacion:before { content: '\e80d'; } /* '' */
+.icon-scp-consultasconsultasavancemetas:before { content: '\e80e'; } /* '' */
+.icon-scp-consultasmovimentocuentacontable:before { content: '\e80f'; } /* '' */
+.icon-scp-consultasmovimentocuentapresupuetal:before { content: '\e810'; } /* '' */
+.icon-scp-consultasseguimientopreevisiones:before { content: '\e811'; } /* '' */
+.icon-scp-consultassegumientofolios:before { content: '\e812'; } /* '' */
+.icon-scp-reportes:before { content: '\e813'; } /* '' */
+.icon-scp-reportespresupuesto:before { content: '\e814'; } /* '' */
+.icon-scp-reportesreportedeclcscanceladas:before { content: '\e815'; } /* '' */
+.icon-scp-reportesreporteobrapublica:before { content: '\e816'; } /* '' */
+.icon-scp-reportesresumenclcs:before { content: '\e817'; } /* '' */
+.icon-scp-reportesresumenmodificaciones:before { content: '\e818'; } /* '' */
+.icon-scp-reportesresumenrectificaciones:before { content: '\e819'; } /* '' */
+.icon-scp:before { content: '\e81a'; } /* '' */
+.icon-scp-adecuacionespresupuestales:before { content: '\e81b'; } /* '' */
+.icon-scp-adecuacionespresupuestalesadministracion:before { content: '\e81c'; } /* '' */
+.icon-scp-adecuacionespresupuestalesbancodocumentos:before { content: '\e81d'; } /* '' */
+.icon-scp-adecuacionespresupuestalescancelarclc:before { content: '\e81e'; } /* '' */
+.icon-scp-adecuacionespresupuestalesclcautomatica:before { content: '\e81f'; } /* '' */
+.icon-scp-adecuacionespresupuestalesgenerarcere:before { content: '\e820'; } /* '' */
+.icon-scp-adecuacionespresupuestalesgenerarcereco:before { content: '\e821'; } /* '' */
+.icon-scp-adecuacionespresupuestalesgenerarcompromiso:before { content: '\e822'; } /* '' */
+.icon-scp-adecuacionespresupuestalesgenerarrelacioncere:before { content: '\e823'; } /* '' */
+.icon-scp-adecuacionespresupuestalesgenerarrelacioncereco:before { content: '\e824'; } /* '' */
+.icon-scp-adecuacionespresupuestalesloterectificaciones:before { content: '\e825'; } /* '' */
+.icon-scp-adecuacionespresupuestalesprocesoclc:before { content: '\e826'; } /* '' */
+.icon-scp-adecuacionespresupuestalesrechazarcargamasiva:before { content: '\e827'; } /* '' */
+.icon-scp-adecuacionespresupuestalesrechazarcere:before { content: '\e828'; } /* '' */
+.icon-scp-adecuacionespresupuestalesrechazarcereco:before { content: '\e829'; } /* '' */
+.icon-scp-reportesreportedeclcsrecibidas:before { content: '\e82a'; } /* '' */
+.icon-scp-adecuacionespresupuestalesrechazarclcsdesfazadas:before { content: '\e82b'; } /* '' */
+.icon-scp-adecuacionespresupuestalesrectificacionclc:before { content: '\e82c'; } /* '' */
+.icon-scp-adecuacionespresupuestalesreembolsos:before { content: '\e82d'; } /* '' */
+.icon-scp-adecuacionespresupuestalesregistroafectaciones:before { content: '\e82e'; } /* '' */
+.icon-scp-adecuacionespresupuestalesregistrocontrato:before { content: '\e82f'; } /* '' */
+.icon-scp-adecuacionespresupuestalesregistrogarantias:before { content: '\e830'; } /* '' */
+.icon-scp-adecuacionespresupuestalesvalidarcere:before { content: '\e831'; } /* '' */
+.icon-scp-adecuacionespresupuestalesvalidarcereco:before { content: '\e832'; } /* '' */
+.icon-scp-administracion:before { content: '\e833'; } /* '' */
+.icon-scp-administracioncargamasiva:before { content: '\e834'; } /* '' */
+.icon-scp-administracioncargamasivaclcconsolidada:before { content: '\e835'; } /* '' */
+.icon-scp-administracionconsultapresupesto:before { content: '\e836'; } /* '' */
+.icon-scp-administracionpartidasconsolidadas:before { content: '\e837'; } /* '' */
+.icon-scp-afectacionespresupuestales:before { content: '\e838'; } /* '' */
+.icon-scp-afectacionespresupuestales-administracionadecuaciones:before { content: '\e839'; } /* '' */
+.icon-scp-afectacionespresupuestales-altaclavepresupuestal:before { content: '\e83a'; } /* '' */
+.icon-scp-afectacionespresupuestales-asignacionpreviciones:before { content: '\e83b'; } /* '' */
+.icon-scp-afectacionespresupuestales-calendarioautomatico:before { content: '\e83c'; } /* '' */
+.icon-scp-afectacionespresupuestales-modificaciondefoliosautorizados:before { content: '\e83d'; } /* '' */
+.icon-scp-catalogos:before { content: '\e83e'; } /* '' */
+.icon-scp-catalogosbancosur:before { content: '\e83f'; } /* '' */
+.icon-scp-catalogoscatalogocuentasreceptoras:before { content: '\e840'; } /* '' */
+.icon-scp-catalogoscatalogoproveedores:before { content: '\e841'; } /* '' */
+.icon-scp-consultas:before { content: '\e842'; } /* '' */
+.icon-scp-consultasconsultacerecos:before { content: '\e843'; } /* '' */
+.icon-scp-consultasconsultaceres:before { content: '\e844'; } /* '' */
+.icon-scp-consultasconsultaclavepresupuestal:before { content: '\e845'; } /* '' */
+.icon-scp-consultasconsultaclc:before { content: '\e846'; } /* '' */

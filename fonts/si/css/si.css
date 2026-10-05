@@ -1,0 +1,134 @@
+@font-face {
+  font-family: 'si';
+  src: url('../font/si.eot?78360603');
+  src: url('../font/si.eot?78360603#iefix') format('embedded-opentype'),
+       url('../font/si.woff2?78360603') format('woff2'),
+       url('../font/si.woff?78360603') format('woff'),
+       url('../font/si.ttf?78360603') format('truetype'),
+       url('../font/si.svg?78360603#si') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'si';
+    src: url('../font/si.svg?78360603#si') format('svg');
+  }
+}
+*/
+ 
+ [class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "si";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+ 
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+.icon-si-administracion:before { content: '\e800'; } /* '' */
+.icon-si-administracionadecuacionobras:before { content: '\e801'; } /* '' */
+.icon-si-administracionavisos:before { content: '\e802'; } /* '' */
+.icon-si-administracionretrocesoproyectos:before { content: '\e803'; } /* '' */
+.icon-si-administracionsincronizacion:before { content: '\e804'; } /* '' */
+.icon-si-banco-copia-2:before { content: '\e805'; } /* '' */
+.icon-si-banco:before { content: '\e806'; } /* '' */
+.icon-si-bancoconsulta:before { content: '\e807'; } /* '' */
+.icon-si-bancogestion:before { content: '\e808'; } /* '' */
+.icon-si-bancomibanco:before { content: '\e809'; } /* '' */
+.icon-si-capturacomponentes:before { content: '\e80a'; } /* '' */
+.icon-si-capturacomponentesavisos:before { content: '\e80b'; } /* '' */
+.icon-si-capturacomponentesdesglose:before { content: '\e80c'; } /* '' */
+.icon-emo-angry:before { content: '\e80d'; } /* '' */
+.icon-emo-saint:before { content: '\e80e'; } /* '' */
+.icon-si-capturacomponentesevaluacion:before { content: '\e80f'; } /* '' */
+.icon-si-capturacomponentesexportar:before { content: '\e810'; } /* '' */
+.icon-si-capturacomponentesmisavisos:before { content: '\e811'; } /* '' */
+.icon-si-capturacomponentespropuestas-copia:before { content: '\e812'; } /* '' */
+.icon-si-capturacomponentesrubrica:before { content: '\e813'; } /* '' */
+.icon-si-capturacomponentesvalidacion:before { content: '\e814'; } /* '' */
+.icon-si-capturacomponentesreportecambio:before { content: '\e815'; } /* '' */
+.icon-si-capturacomponentesventanilladesglose:before { content: '\e816'; } /* '' */
+.icon-si-catera:before { content: '\e817'; } /* '' */
+.icon-si-capturacomponentesvobodesglose:before { content: '\e818'; } /* '' */
+.icon-si-cateracontrol:before { content: '\e819'; } /* '' */
+.icon-si-cateramissolicitudes:before { content: '\e81a'; } /* '' */
+.icon-si-capturacomponentespropuestas:before { content: '\e81b'; } /* '' */
+.icon-si-consultapropuestas:before { content: '\e81c'; } /* '' */
+.icon-si-consultapropuestasconsultaplaneacion:before { content: '\e81d'; } /* '' */
+.icon-si-consultapropuestasconsultaur:before { content: '\e81e'; } /* '' */
+.icon-si-consultapropuestasseguimiento-capturiata:before { content: '\e81f'; } /* '' */
+.icon-si-convenios:before { content: '\e820'; } /* '' */
+.icon-si-conveniosavisos:before { content: '\e821'; } /* '' */
+.icon-si-conveniosconsulta:before { content: '\e822'; } /* '' */
+.icon-si-conveniosmisavisos:before { content: '\e823'; } /* '' */
+.icon-si-conveniosregistro:before { content: '\e824'; } /* '' */
+.icon-si-conveniosrevision:before { content: '\e825'; } /* '' */
+.icon-si-conveniosventanilla:before { content: '\e826'; } /* '' */
+.icon-si-conveniosvistobueno:before { content: '\e827'; } /* '' */
+.icon-si-fichasimplificada:before { content: '\e828'; } /* '' */
+.icon-si-fichasimplificadacapturaactividades:before { content: '\e829'; } /* '' */
+.icon-si-fichasimplificadacapturaproyecto:before { content: '\e82a'; } /* '' */
+.icon-si-fichasimplificadavalidacion:before { content: '\e82b'; } /* '' */
+.icon-si-homologacionbanco:before { content: '\e82c'; } /* '' */
+.icon-si-homologacionbancobanco-alineacionproyecto:before { content: '\e82d'; } /* '' */
+.icon-si-homologacionbancobancocomplementoproyecto:before { content: '\e82e'; } /* '' */
+.icon-si-homologacionbancoobjetogasto:before { content: '\e82f'; } /* '' */
+.icon-si-homologacionbancoproductosintermedios:before { content: '\e830'; } /* '' */
+.icon-si-homologacionbancovalidacion:before { content: '\e831'; } /* '' */
+.icon-si-moduloseguimiento:before { content: '\e832'; } /* '' */
+.icon-si-moduloseguimientoacuse:before { content: '\e833'; } /* '' */
+.icon-si-moduloseguimientocaptura:before { content: '\e834'; } /* '' */
+.icon-si-moduloseguimientoconsulta:before { content: '\e835'; } /* '' */
+.icon-si-moduloseguimientoreabrir:before { content: '\e836'; } /* '' */
+.icon-si-moduloseguimientoreimprimir:before { content: '\e837'; } /* '' */
+.icon-si-moduloseguimientoreporteador:before { content: '\e838'; } /* '' */
+.icon-si-refrendo-2:before { content: '\e839'; } /* '' */
+.icon-si-refrendo:before { content: '\e83a'; } /* '' */
+.icon-si-refrendoajustefficalendario:before { content: '\e83b'; } /* '' */
+.icon-si-refrendoalineacionproductosintermedios:before { content: '\e83c'; } /* '' */
+.icon-si-refrendoalinear-obra:before { content: '\e83d'; } /* '' */
+.icon-si-refrendoalinear-proyecto:before { content: '\e83e'; } /* '' */
+.icon-si-refrendocomplementodatosproyecto:before { content: '\e83f'; } /* '' */
+.icon-si-refrendoconsulta:before { content: '\e840'; } /* '' */
+.icon-si-refrendovalidaciondatosproyecto:before { content: '\e841'; } /* '' */
+.icon-si-refrendovalidacionestructuraprogramatica-obra:before { content: '\e842'; } /* '' */
+.icon-si-refrendovalidacionestructuraprogramatica-proyecto:before { content: '\e843'; } /* '' */
+.icon-si-refrendovalidacionfuentescalendariofinanciero:before { content: '\e844'; } /* '' */
+.icon-si-refrendovalidacionproductosintermedios:before { content: '\e845'; } /* '' */
+.icon-si-registropropuestas:before { content: '\e846'; } /* '' */
+.icon-si-registropropuestasavisospropuestas:before { content: '\e847'; } /* '' */
+.icon-si-registropropuestasmisavisospropuesta:before { content: '\e848'; } /* '' */
+.icon-si-registropropuestasregistro:before { content: '\e849'; } /* '' */
+.icon-si-registropropuestasventanillaregistro:before { content: '\e84a'; } /* '' */
+.icon-si-registropropuestasrevision:before { content: '\e84b'; } /* '' */
+.icon-si-registropropuestasvoboregistro:before { content: '\e84c'; } /* '' */

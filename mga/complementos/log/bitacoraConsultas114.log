@@ -1,0 +1,1417 @@
+27-05-2026 17:57:23CLASE[ServicioUsuario]||CLIENTE[127.0.0.1]||USRSES[498]||NOERROR[0]||ERROR[]||CONSULTA[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARSEDQUERY[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARAMETROS[{":pass":"63e53b261d7ba68f6c1f7b57ca2f60a05f889ac54517056aab213bd632a46056",":usr_id":5477,":ejercicio":2027,":date":"2026-04-26 17:57:23"}]||ESTADO[]|| BITACORA DE AFECTACION DE TABLAS 
+27-05-2026 18:01:47CLASE[ServicioUsuario]||CLIENTE[127.0.0.1]||USRSES[498]||NOERROR[0]||ERROR[]||CONSULTA[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARSEDQUERY[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARAMETROS[{":pass":"840424b0717500bef44873b2557184dcd28a0acf82ce794a0eaca78baf59acf1",":usr_id":5477,":ejercicio":2027,":date":"2026-04-26 18:01:47"}]||ESTADO[]|| BITACORA DE AFECTACION DE TABLAS 
+27-05-2026 18:01:48CLASE[ServicioUsuario]||CLIENTE[127.0.0.1]||USRSES[498]||NOERROR[0]||ERROR[]||CONSULTA[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARSEDQUERY[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARAMETROS[{":pass":"b436af05fdefe269ffd83e7587f621fab4f5a270eb6487f20e5936c3d7a5ebb0",":usr_id":5478,":ejercicio":2027,":date":"2026-04-26 18:01:48"}]||ESTADO[]|| BITACORA DE AFECTACION DE TABLAS 
+27-05-2026 18:01:48CLASE[ServicioUsuario]||CLIENTE[127.0.0.1]||USRSES[498]||NOERROR[0]||ERROR[]||CONSULTA[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARSEDQUERY[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARAMETROS[{":pass":"3f77adc06bb4d23dff012142df53b79f551fc59d34ad98c88a93dbf5d4355e6d",":usr_id":5479,":ejercicio":2027,":date":"2026-04-26 18:01:48"}]||ESTADO[]|| BITACORA DE AFECTACION DE TABLAS 
+27-05-2026 18:01:49CLASE[ServicioUsuario]||CLIENTE[127.0.0.1]||USRSES[498]||NOERROR[0]||ERROR[]||CONSULTA[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARSEDQUERY[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARAMETROS[{":pass":"c3606f2ba50b9dbdc484eb005544698b04b5cea6bb6d6ebbef57898bd962ad8e",":usr_id":5480,":ejercicio":2027,":date":"2026-04-26 18:01:49"}]||ESTADO[]|| BITACORA DE AFECTACION DE TABLAS 
+27-05-2026 18:01:49CLASE[ServicioUsuario]||CLIENTE[127.0.0.1]||USRSES[498]||NOERROR[0]||ERROR[]||CONSULTA[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARSEDQUERY[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARAMETROS[{":pass":"125f07242cf5bf49c41378d9730db253526188c14a783cda957618219f39ffdd",":usr_id":5481,":ejercicio":2027,":date":"2026-04-26 18:01:49"}]||ESTADO[]|| BITACORA DE AFECTACION DE TABLAS 
+27-05-2026 18:01:49CLASE[ServicioUsuario]||CLIENTE[127.0.0.1]||USRSES[498]||NOERROR[0]||ERROR[]||CONSULTA[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARSEDQUERY[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARAMETROS[{":pass":"bd9a14865a86dfa36c3250f1a687e270beab2939cd0386dd3c27e70fc2dfa75c",":usr_id":5482,":ejercicio":2027,":date":"2026-04-26 18:01:49"}]||ESTADO[]|| BITACORA DE AFECTACION DE TABLAS 
+27-05-2026 18:01:50CLASE[ServicioUsuario]||CLIENTE[127.0.0.1]||USRSES[498]||NOERROR[0]||ERROR[]||CONSULTA[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARSEDQUERY[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARAMETROS[{":pass":"b1c6521c11ca59839f72058829d9c43e6ffd49dd436e65d2efdfa5987da3f733",":usr_id":5483,":ejercicio":2027,":date":"2026-04-26 18:01:50"}]||ESTADO[]|| BITACORA DE AFECTACION DE TABLAS 
+27-05-2026 18:01:50CLASE[ServicioUsuario]||CLIENTE[127.0.0.1]||USRSES[498]||NOERROR[0]||ERROR[]||CONSULTA[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARSEDQUERY[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARAMETROS[{":pass":"1420d4e4bbd1d11eabb57b726c4ad0a45924a2e93076aabf4fccdc0c4aa7c357",":usr_id":5484,":ejercicio":2027,":date":"2026-04-26 18:01:50"}]||ESTADO[]|| BITACORA DE AFECTACION DE TABLAS 
+27-05-2026 18:01:51CLASE[ServicioUsuario]||CLIENTE[127.0.0.1]||USRSES[498]||NOERROR[0]||ERROR[]||CONSULTA[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARSEDQUERY[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARAMETROS[{":pass":"3203e214593b17e3ed72053b752e59b685c8cb6262a253e35057510349244a0c",":usr_id":5485,":ejercicio":2027,":date":"2026-04-26 18:01:51"}]||ESTADO[]|| BITACORA DE AFECTACION DE TABLAS 
+27-05-2026 18:01:51CLASE[ServicioUsuario]||CLIENTE[127.0.0.1]||USRSES[498]||NOERROR[0]||ERROR[]||CONSULTA[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARSEDQUERY[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARAMETROS[{":pass":"b851f9a9386db21b248294d8658762998dedc5ea96242f29e26e612d329ef283",":usr_id":5486,":ejercicio":2027,":date":"2026-04-26 18:01:51"}]||ESTADO[]|| BITACORA DE AFECTACION DE TABLAS 
+27-05-2026 18:01:52CLASE[ServicioUsuario]||CLIENTE[127.0.0.1]||USRSES[498]||NOERROR[0]||ERROR[]||CONSULTA[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARSEDQUERY[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARAMETROS[{":pass":"3546ae61ddf17bd6818d1c2db9d81b5e36fe46d544306252a47988fb32f3f4ef",":usr_id":5487,":ejercicio":2027,":date":"2026-04-26 18:01:52"}]||ESTADO[]|| BITACORA DE AFECTACION DE TABLAS 
+27-05-2026 18:01:52CLASE[ServicioUsuario]||CLIENTE[127.0.0.1]||USRSES[498]||NOERROR[0]||ERROR[]||CONSULTA[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARSEDQUERY[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARAMETROS[{":pass":"f3f35ca360ebd026c2e49b30c3c82af6a41f0c4d0d2898f10f1083b48aea0699",":usr_id":5488,":ejercicio":2027,":date":"2026-04-26 18:01:52"}]||ESTADO[]|| BITACORA DE AFECTACION DE TABLAS 
+27-05-2026 18:01:53CLASE[ServicioUsuario]||CLIENTE[127.0.0.1]||USRSES[498]||NOERROR[0]||ERROR[]||CONSULTA[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARSEDQUERY[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARAMETROS[{":pass":"1d23ecd110f206df447b51f726308dd1f33698de879eb0ae643021019c0e5241",":usr_id":5489,":ejercicio":2027,":date":"2026-04-26 18:01:52"}]||ESTADO[]|| BITACORA DE AFECTACION DE TABLAS 
+27-05-2026 18:01:53CLASE[ServicioUsuario]||CLIENTE[127.0.0.1]||USRSES[498]||NOERROR[0]||ERROR[]||CONSULTA[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARSEDQUERY[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARAMETROS[{":pass":"3d43442ce9be7fd7585ff611dbc85a6e980dc2a3bcca1bc2dccfee843b1444b7",":usr_id":5490,":ejercicio":2027,":date":"2026-04-26 18:01:53"}]||ESTADO[]|| BITACORA DE AFECTACION DE TABLAS 
+27-05-2026 18:01:53CLASE[ServicioUsuario]||CLIENTE[127.0.0.1]||USRSES[498]||NOERROR[0]||ERROR[]||CONSULTA[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARSEDQUERY[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARAMETROS[{":pass":"faca848f22a120419d16ae6a991bf965adfea4cdd6f732876f2d30d8b3a1ff33",":usr_id":5491,":ejercicio":2027,":date":"2026-04-26 18:01:53"}]||ESTADO[]|| BITACORA DE AFECTACION DE TABLAS 
+27-05-2026 18:01:54CLASE[ServicioUsuario]||CLIENTE[127.0.0.1]||USRSES[498]||NOERROR[0]||ERROR[]||CONSULTA[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARSEDQUERY[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARAMETROS[{":pass":"ce5e89867e30f0b9fca38c46396ec3b08d76549873c9f6bc98e2ef6f3547f51d",":usr_id":5492,":ejercicio":2027,":date":"2026-04-26 18:01:54"}]||ESTADO[]|| BITACORA DE AFECTACION DE TABLAS 
+27-05-2026 18:01:54CLASE[ServicioUsuario]||CLIENTE[127.0.0.1]||USRSES[498]||NOERROR[0]||ERROR[]||CONSULTA[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARSEDQUERY[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARAMETROS[{":pass":"861930b12f56ef68a88926f40e5ab274f98bf3b26caa6e4200c28c1cbc3b16c3",":usr_id":5493,":ejercicio":2027,":date":"2026-04-26 18:01:54"}]||ESTADO[]|| BITACORA DE AFECTACION DE TABLAS 
+27-05-2026 18:01:55CLASE[ServicioUsuario]||CLIENTE[127.0.0.1]||USRSES[498]||NOERROR[0]||ERROR[]||CONSULTA[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARSEDQUERY[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARAMETROS[{":pass":"60e03520c9c2326749c8c93c0dc68e6e56357316d7d8558fd76e7ccffc0d1c43",":usr_id":5494,":ejercicio":2027,":date":"2026-04-26 18:01:55"}]||ESTADO[]|| BITACORA DE AFECTACION DE TABLAS 
+27-05-2026 18:01:55CLASE[ServicioUsuario]||CLIENTE[127.0.0.1]||USRSES[498]||NOERROR[0]||ERROR[]||CONSULTA[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARSEDQUERY[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARAMETROS[{":pass":"89de3304b5f57688b854f8fd0e5a7580dab089e108c624c1e449cab7ae4c0028",":usr_id":5495,":ejercicio":2027,":date":"2026-04-26 18:01:55"}]||ESTADO[]|| BITACORA DE AFECTACION DE TABLAS 
+27-05-2026 18:01:55CLASE[ServicioUsuario]||CLIENTE[127.0.0.1]||USRSES[498]||NOERROR[0]||ERROR[]||CONSULTA[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARSEDQUERY[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARAMETROS[{":pass":"64f6c73d14215d1d02480f32777fcedb1cb6dd1a00d808f3df57f0b09f9adf92",":usr_id":5496,":ejercicio":2027,":date":"2026-04-26 18:01:55"}]||ESTADO[]|| BITACORA DE AFECTACION DE TABLAS 
+27-05-2026 18:01:56CLASE[ServicioUsuario]||CLIENTE[127.0.0.1]||USRSES[498]||NOERROR[0]||ERROR[]||CONSULTA[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARSEDQUERY[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARAMETROS[{":pass":"24a2183867c5a4000dfc6e1706c4e7eb29c1b409e6a53cac3dbe9d05f5f1fa64",":usr_id":5497,":ejercicio":2027,":date":"2026-04-26 18:01:56"}]||ESTADO[]|| BITACORA DE AFECTACION DE TABLAS 
+27-05-2026 18:01:56CLASE[ServicioUsuario]||CLIENTE[127.0.0.1]||USRSES[498]||NOERROR[0]||ERROR[]||CONSULTA[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARSEDQUERY[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARAMETROS[{":pass":"dbce2221dd104a1bd21610a1dce7e681578be206f997766d38b35061c1eed7f0",":usr_id":5498,":ejercicio":2027,":date":"2026-04-26 18:01:56"}]||ESTADO[]|| BITACORA DE AFECTACION DE TABLAS 
+27-05-2026 18:01:57CLASE[ServicioUsuario]||CLIENTE[127.0.0.1]||USRSES[498]||NOERROR[0]||ERROR[]||CONSULTA[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARSEDQUERY[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARAMETROS[{":pass":"e32f5a29103d5d2893d00a13007ca5c1ad147f91a3d4ea320b13aadcce5d7b05",":usr_id":5499,":ejercicio":2027,":date":"2026-04-26 18:01:57"}]||ESTADO[]|| BITACORA DE AFECTACION DE TABLAS 
+27-05-2026 18:01:58CLASE[ServicioUsuario]||CLIENTE[127.0.0.1]||USRSES[498]||NOERROR[0]||ERROR[]||CONSULTA[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARSEDQUERY[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARAMETROS[{":pass":"2b61dd0f1b012719b4e3d53614fc52588f7227497e929b0670d2f14895666bf1",":usr_id":5500,":ejercicio":2027,":date":"2026-04-26 18:01:57"}]||ESTADO[]|| BITACORA DE AFECTACION DE TABLAS 
+27-05-2026 18:01:58CLASE[ServicioUsuario]||CLIENTE[127.0.0.1]||USRSES[498]||NOERROR[0]||ERROR[]||CONSULTA[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARSEDQUERY[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARAMETROS[{":pass":"171c24d023aa0818f3407606dea4bb84686ff82c2920cca7050e5c1e8b4d6de6",":usr_id":5501,":ejercicio":2027,":date":"2026-04-26 18:01:58"}]||ESTADO[]|| BITACORA DE AFECTACION DE TABLAS 
+27-05-2026 18:01:59CLASE[ServicioUsuario]||CLIENTE[127.0.0.1]||USRSES[498]||NOERROR[0]||ERROR[]||CONSULTA[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARSEDQUERY[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARAMETROS[{":pass":"6ba3f11bc431091972a5803499f21e008c97a6c54357c4583a4796f0eef81ce3",":usr_id":5502,":ejercicio":2027,":date":"2026-04-26 18:01:59"}]||ESTADO[]|| BITACORA DE AFECTACION DE TABLAS 
+27-05-2026 18:01:59CLASE[ServicioUsuario]||CLIENTE[127.0.0.1]||USRSES[498]||NOERROR[0]||ERROR[]||CONSULTA[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARSEDQUERY[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARAMETROS[{":pass":"6b0bb3033c4d00490c99d297017247023b7b6a75828295675edd7302f381f270",":usr_id":5503,":ejercicio":2027,":date":"2026-04-26 18:01:59"}]||ESTADO[]|| BITACORA DE AFECTACION DE TABLAS 
+27-05-2026 18:02:00CLASE[ServicioUsuario]||CLIENTE[127.0.0.1]||USRSES[498]||NOERROR[0]||ERROR[]||CONSULTA[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARSEDQUERY[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARAMETROS[{":pass":"81c5d329ba4828a3bf0df7bf00471827839de91388bbcb0ac8d25b4e65af0011",":usr_id":5504,":ejercicio":2027,":date":"2026-04-26 18:02:00"}]||ESTADO[]|| BITACORA DE AFECTACION DE TABLAS 
+27-05-2026 18:02:00CLASE[ServicioUsuario]||CLIENTE[127.0.0.1]||USRSES[498]||NOERROR[0]||ERROR[]||CONSULTA[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARSEDQUERY[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARAMETROS[{":pass":"b3adec5b414f7564a5fe1492eb6129f66c843965b13c958eb2aed79a8f5efa64",":usr_id":5505,":ejercicio":2027,":date":"2026-04-26 18:02:00"}]||ESTADO[]|| BITACORA DE AFECTACION DE TABLAS 
+27-05-2026 18:02:01CLASE[ServicioUsuario]||CLIENTE[127.0.0.1]||USRSES[498]||NOERROR[0]||ERROR[]||CONSULTA[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARSEDQUERY[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARAMETROS[{":pass":"a1a1cb24bf166204992c37a2ab2629ce66f4e15d6d3dd6b59e1e14ea6bf04ca6",":usr_id":5506,":ejercicio":2027,":date":"2026-04-26 18:02:01"}]||ESTADO[]|| BITACORA DE AFECTACION DE TABLAS 
+27-05-2026 18:02:02CLASE[ServicioUsuario]||CLIENTE[127.0.0.1]||USRSES[498]||NOERROR[0]||ERROR[]||CONSULTA[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARSEDQUERY[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARAMETROS[{":pass":"0ae86dddcac9aa7984732922a631fbf2551fd8e0028908780f85821096ce9dc4",":usr_id":5507,":ejercicio":2027,":date":"2026-04-26 18:02:01"}]||ESTADO[]|| BITACORA DE AFECTACION DE TABLAS 
+27-05-2026 18:02:03CLASE[ServicioUsuario]||CLIENTE[127.0.0.1]||USRSES[498]||NOERROR[0]||ERROR[]||CONSULTA[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARSEDQUERY[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARAMETROS[{":pass":"d0afe43ce8f75944bf2a805f1446d18a511e1964b51cdf74efd7e8206fd72d20",":usr_id":5508,":ejercicio":2027,":date":"2026-04-26 18:02:02"}]||ESTADO[]|| BITACORA DE AFECTACION DE TABLAS 
+27-05-2026 18:02:04CLASE[ServicioUsuario]||CLIENTE[127.0.0.1]||USRSES[498]||NOERROR[0]||ERROR[]||CONSULTA[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARSEDQUERY[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARAMETROS[{":pass":"f8ca0515f4fb9662e1212de4a1ec5e27bd8344a34f2c87c2192742466a6ed35b",":usr_id":5509,":ejercicio":2027,":date":"2026-04-26 18:02:04"}]||ESTADO[]|| BITACORA DE AFECTACION DE TABLAS 
+27-05-2026 18:02:05CLASE[ServicioUsuario]||CLIENTE[127.0.0.1]||USRSES[498]||NOERROR[0]||ERROR[]||CONSULTA[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARSEDQUERY[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARAMETROS[{":pass":"88117f3c1ad1f7c8c2d015dcace662117060fb497c6a88b888913edd353e4d1f",":usr_id":5510,":ejercicio":2027,":date":"2026-04-26 18:02:05"}]||ESTADO[]|| BITACORA DE AFECTACION DE TABLAS 
+27-05-2026 18:02:06CLASE[ServicioUsuario]||CLIENTE[127.0.0.1]||USRSES[498]||NOERROR[0]||ERROR[]||CONSULTA[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARSEDQUERY[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARAMETROS[{":pass":"c386293f25aa7bd6ee8b5b3025daa1db9fd1afc1b2926eb80b4bc7799ac46d3f",":usr_id":5511,":ejercicio":2027,":date":"2026-04-26 18:02:05"}]||ESTADO[]|| BITACORA DE AFECTACION DE TABLAS 
+27-05-2026 18:02:06CLASE[ServicioUsuario]||CLIENTE[127.0.0.1]||USRSES[498]||NOERROR[0]||ERROR[]||CONSULTA[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARSEDQUERY[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARAMETROS[{":pass":"774ae83c42c2ac227d6f485537343fab59867a66bb2893907924ba1be3f1c073",":usr_id":5512,":ejercicio":2027,":date":"2026-04-26 18:02:06"}]||ESTADO[]|| BITACORA DE AFECTACION DE TABLAS 
+27-05-2026 18:02:07CLASE[ServicioUsuario]||CLIENTE[127.0.0.1]||USRSES[498]||NOERROR[0]||ERROR[]||CONSULTA[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARSEDQUERY[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARAMETROS[{":pass":"ee513c25cd808bae0ef6ae47f295166b96d30c28bd1f13a6d2b76ffc9266e5c5",":usr_id":5513,":ejercicio":2027,":date":"2026-04-26 18:02:07"}]||ESTADO[]|| BITACORA DE AFECTACION DE TABLAS 
+27-05-2026 18:02:07CLASE[ServicioUsuario]||CLIENTE[127.0.0.1]||USRSES[498]||NOERROR[0]||ERROR[]||CONSULTA[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARSEDQUERY[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARAMETROS[{":pass":"492fc50c2e88a315c8a6e1142cbefec8fe9d0356619eb9cf8b463b2b1b83fd1d",":usr_id":5514,":ejercicio":2027,":date":"2026-04-26 18:02:07"}]||ESTADO[]|| BITACORA DE AFECTACION DE TABLAS 
+27-05-2026 18:02:08CLASE[ServicioUsuario]||CLIENTE[127.0.0.1]||USRSES[498]||NOERROR[0]||ERROR[]||CONSULTA[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARSEDQUERY[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARAMETROS[{":pass":"b13b13bebaf127806207cd0b5b2431f5e434e64619bdf6b74ca1a8bb810fe829",":usr_id":5515,":ejercicio":2027,":date":"2026-04-26 18:02:08"}]||ESTADO[]|| BITACORA DE AFECTACION DE TABLAS 
+27-05-2026 18:02:08CLASE[ServicioUsuario]||CLIENTE[127.0.0.1]||USRSES[498]||NOERROR[0]||ERROR[]||CONSULTA[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARSEDQUERY[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARAMETROS[{":pass":"6eab4161ee876821df182353dcc4287c346f8c24b95ad8cecb8d14dfa0c17fd8",":usr_id":5516,":ejercicio":2027,":date":"2026-04-26 18:02:08"}]||ESTADO[]|| BITACORA DE AFECTACION DE TABLAS 
+27-05-2026 18:02:09CLASE[ServicioUsuario]||CLIENTE[127.0.0.1]||USRSES[498]||NOERROR[0]||ERROR[]||CONSULTA[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARSEDQUERY[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARAMETROS[{":pass":"69d46b0d2e529c85be29311af2c3186da80e08441af2131039a2402df53a4d55",":usr_id":5517,":ejercicio":2027,":date":"2026-04-26 18:02:08"}]||ESTADO[]|| BITACORA DE AFECTACION DE TABLAS 
+27-05-2026 18:02:09CLASE[ServicioUsuario]||CLIENTE[127.0.0.1]||USRSES[498]||NOERROR[0]||ERROR[]||CONSULTA[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARSEDQUERY[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARAMETROS[{":pass":"acc0e1846323bc3e615a2bfc767bdd49e7401e18426be93dc760834cea05fec3",":usr_id":5518,":ejercicio":2027,":date":"2026-04-26 18:02:09"}]||ESTADO[]|| BITACORA DE AFECTACION DE TABLAS 
+27-05-2026 18:02:09CLASE[ServicioUsuario]||CLIENTE[127.0.0.1]||USRSES[498]||NOERROR[0]||ERROR[]||CONSULTA[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARSEDQUERY[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARAMETROS[{":pass":"7da962f10fe1d895fecce400b73f48ed2f8c62e6f962e3dfdc6b409051ad1668",":usr_id":5519,":ejercicio":2027,":date":"2026-04-26 18:02:09"}]||ESTADO[]|| BITACORA DE AFECTACION DE TABLAS 
+27-05-2026 18:02:10CLASE[ServicioUsuario]||CLIENTE[127.0.0.1]||USRSES[498]||NOERROR[0]||ERROR[]||CONSULTA[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARSEDQUERY[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARAMETROS[{":pass":"70eaaf70089339a9de0b2a09da353cb5405b7fb6b1d43d22c22c3615b688cc27",":usr_id":5520,":ejercicio":2027,":date":"2026-04-26 18:02:10"}]||ESTADO[]|| BITACORA DE AFECTACION DE TABLAS 
+27-05-2026 18:02:10CLASE[ServicioUsuario]||CLIENTE[127.0.0.1]||USRSES[498]||NOERROR[0]||ERROR[]||CONSULTA[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARSEDQUERY[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARAMETROS[{":pass":"ce37ebe63cfa066b8e83969d766b1810efee4ee6e3311f341aa2b3bbbadab793",":usr_id":5521,":ejercicio":2027,":date":"2026-04-26 18:02:10"}]||ESTADO[]|| BITACORA DE AFECTACION DE TABLAS 
+27-05-2026 18:02:11CLASE[ServicioUsuario]||CLIENTE[127.0.0.1]||USRSES[498]||NOERROR[0]||ERROR[]||CONSULTA[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARSEDQUERY[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARAMETROS[{":pass":"199f89614b00687ed410a111fb716c8db99c4d316f389cd513b4f2c98de532bc",":usr_id":5522,":ejercicio":2027,":date":"2026-04-26 18:02:11"}]||ESTADO[]|| BITACORA DE AFECTACION DE TABLAS 
+27-05-2026 18:02:11CLASE[ServicioUsuario]||CLIENTE[127.0.0.1]||USRSES[498]||NOERROR[0]||ERROR[]||CONSULTA[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARSEDQUERY[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARAMETROS[{":pass":"aa41ba08fac54b83f551c753be0ae6e70c9fbbbc66d6292a0ba8c0e60c35b2b7",":usr_id":5523,":ejercicio":2027,":date":"2026-04-26 18:02:11"}]||ESTADO[]|| BITACORA DE AFECTACION DE TABLAS 
+27-05-2026 18:02:11CLASE[ServicioUsuario]||CLIENTE[127.0.0.1]||USRSES[498]||NOERROR[0]||ERROR[]||CONSULTA[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARSEDQUERY[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARAMETROS[{":pass":"758eebb71e02ca565056b15486f20eb0a933fb3c70babbf6071e6c9ee70aa567",":usr_id":5524,":ejercicio":2027,":date":"2026-04-26 18:02:11"}]||ESTADO[]|| BITACORA DE AFECTACION DE TABLAS 
+27-05-2026 18:02:12CLASE[ServicioUsuario]||CLIENTE[127.0.0.1]||USRSES[498]||NOERROR[0]||ERROR[]||CONSULTA[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARSEDQUERY[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARAMETROS[{":pass":"1c907e7e4cf80a0fd992d6bc44063954e3f23a66ecb9aed06bc53ad5ffe44a36",":usr_id":5525,":ejercicio":2027,":date":"2026-04-26 18:02:12"}]||ESTADO[]|| BITACORA DE AFECTACION DE TABLAS 
+27-05-2026 18:02:12CLASE[ServicioUsuario]||CLIENTE[127.0.0.1]||USRSES[498]||NOERROR[0]||ERROR[]||CONSULTA[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARSEDQUERY[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARAMETROS[{":pass":"7ddf9e187af7cbd1cf6f7a318b404e958ae93a6dccfb82e8f3fb01ce57ee2067",":usr_id":5526,":ejercicio":2027,":date":"2026-04-26 18:02:12"}]||ESTADO[]|| BITACORA DE AFECTACION DE TABLAS 
+27-05-2026 18:02:13CLASE[ServicioUsuario]||CLIENTE[127.0.0.1]||USRSES[498]||NOERROR[0]||ERROR[]||CONSULTA[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARSEDQUERY[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARAMETROS[{":pass":"294775860e04936f3a07d12a66224eb73610b5289f103c777d4047a19bd9ee86",":usr_id":5527,":ejercicio":2027,":date":"2026-04-26 18:02:13"}]||ESTADO[]|| BITACORA DE AFECTACION DE TABLAS 
+27-05-2026 18:02:13CLASE[ServicioUsuario]||CLIENTE[127.0.0.1]||USRSES[498]||NOERROR[0]||ERROR[]||CONSULTA[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARSEDQUERY[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARAMETROS[{":pass":"7b7cf114ab5fb9b4c793e9588948b44c9ca9a16ce023516edb7ad8285b874f13",":usr_id":5528,":ejercicio":2027,":date":"2026-04-26 18:02:13"}]||ESTADO[]|| BITACORA DE AFECTACION DE TABLAS 
+27-05-2026 18:02:14CLASE[ServicioUsuario]||CLIENTE[127.0.0.1]||USRSES[498]||NOERROR[0]||ERROR[]||CONSULTA[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARSEDQUERY[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARAMETROS[{":pass":"f84faf3bfca224aa14c298b5d1362f3c474c3321f09b21fe29347a388299fb15",":usr_id":5529,":ejercicio":2027,":date":"2026-04-26 18:02:14"}]||ESTADO[]|| BITACORA DE AFECTACION DE TABLAS 
+27-05-2026 18:02:14CLASE[ServicioUsuario]||CLIENTE[127.0.0.1]||USRSES[498]||NOERROR[0]||ERROR[]||CONSULTA[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARSEDQUERY[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARAMETROS[{":pass":"2f1696f74ae5b2b8f7bded395e6bf03b41d7381bcf995ff841758862c1d2b095",":usr_id":5530,":ejercicio":2027,":date":"2026-04-26 18:02:14"}]||ESTADO[]|| BITACORA DE AFECTACION DE TABLAS 
+27-05-2026 18:02:15CLASE[ServicioUsuario]||CLIENTE[127.0.0.1]||USRSES[498]||NOERROR[0]||ERROR[]||CONSULTA[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARSEDQUERY[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARAMETROS[{":pass":"902516492a549ede2c1d90cd788771c90baafbad949c2559d1349a2176e778f0",":usr_id":5531,":ejercicio":2027,":date":"2026-04-26 18:02:15"}]||ESTADO[]|| BITACORA DE AFECTACION DE TABLAS 
+27-05-2026 18:02:15CLASE[ServicioUsuario]||CLIENTE[127.0.0.1]||USRSES[498]||NOERROR[0]||ERROR[]||CONSULTA[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARSEDQUERY[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARAMETROS[{":pass":"6c89e7ca8c511f0f72131357c94d4ee966e2f2da179f25d7dc462078b483e27e",":usr_id":5532,":ejercicio":2027,":date":"2026-04-26 18:02:15"}]||ESTADO[]|| BITACORA DE AFECTACION DE TABLAS 
+27-05-2026 18:02:15CLASE[ServicioUsuario]||CLIENTE[127.0.0.1]||USRSES[498]||NOERROR[0]||ERROR[]||CONSULTA[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARSEDQUERY[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARAMETROS[{":pass":"cecab1075e17e3cbef15ef083a5029fd90fcabb3f89cc0891fc6707b0322e94b",":usr_id":5533,":ejercicio":2027,":date":"2026-04-26 18:02:15"}]||ESTADO[]|| BITACORA DE AFECTACION DE TABLAS 
+27-05-2026 18:02:16CLASE[ServicioUsuario]||CLIENTE[127.0.0.1]||USRSES[498]||NOERROR[0]||ERROR[]||CONSULTA[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARSEDQUERY[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARAMETROS[{":pass":"ed5318567ff50c5cf4c6f6e07484f1e7d483e2615a8d4c72ba6192092648df5c",":usr_id":5534,":ejercicio":2027,":date":"2026-04-26 18:02:16"}]||ESTADO[]|| BITACORA DE AFECTACION DE TABLAS 
+27-05-2026 18:02:16CLASE[ServicioUsuario]||CLIENTE[127.0.0.1]||USRSES[498]||NOERROR[0]||ERROR[]||CONSULTA[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARSEDQUERY[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARAMETROS[{":pass":"d722ef20e29977141a57238c0d21d590a03dc142a156deeee9c33c6a457422de",":usr_id":5535,":ejercicio":2027,":date":"2026-04-26 18:02:16"}]||ESTADO[]|| BITACORA DE AFECTACION DE TABLAS 
+27-05-2026 18:02:17CLASE[ServicioUsuario]||CLIENTE[127.0.0.1]||USRSES[498]||NOERROR[0]||ERROR[]||CONSULTA[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARSEDQUERY[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARAMETROS[{":pass":"394a01d50ec1ccac59980ad015df45eb98b45366d3ff838e9cabb20b8b35fb73",":usr_id":5536,":ejercicio":2027,":date":"2026-04-26 18:02:17"}]||ESTADO[]|| BITACORA DE AFECTACION DE TABLAS 
+27-05-2026 18:02:17CLASE[ServicioUsuario]||CLIENTE[127.0.0.1]||USRSES[498]||NOERROR[0]||ERROR[]||CONSULTA[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARSEDQUERY[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARAMETROS[{":pass":"10eb83457596402418cae7e0528c4ae181dd75e5e8e1e889ff3c28132c4adc8f",":usr_id":5537,":ejercicio":2027,":date":"2026-04-26 18:02:17"}]||ESTADO[]|| BITACORA DE AFECTACION DE TABLAS 
+27-05-2026 18:02:18CLASE[ServicioUsuario]||CLIENTE[127.0.0.1]||USRSES[498]||NOERROR[0]||ERROR[]||CONSULTA[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARSEDQUERY[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARAMETROS[{":pass":"7a5f20d62cab14fd7c7f7a9d2a36b8a2d5fc38888c801784daa657ded8a5ce38",":usr_id":5538,":ejercicio":2027,":date":"2026-04-26 18:02:17"}]||ESTADO[]|| BITACORA DE AFECTACION DE TABLAS 
+27-05-2026 18:02:18CLASE[ServicioUsuario]||CLIENTE[127.0.0.1]||USRSES[498]||NOERROR[0]||ERROR[]||CONSULTA[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARSEDQUERY[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARAMETROS[{":pass":"932491cc5c43daccc72d993228876c96321b2c2db11112a9beca939cce1cdaea",":usr_id":5539,":ejercicio":2027,":date":"2026-04-26 18:02:18"}]||ESTADO[]|| BITACORA DE AFECTACION DE TABLAS 
+27-05-2026 18:02:18CLASE[ServicioUsuario]||CLIENTE[127.0.0.1]||USRSES[498]||NOERROR[0]||ERROR[]||CONSULTA[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARSEDQUERY[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARAMETROS[{":pass":"157d87f6cd5497b56115e3f32019c88df62cdf4743b4533e3306f1c8a94b9782",":usr_id":5540,":ejercicio":2027,":date":"2026-04-26 18:02:18"}]||ESTADO[]|| BITACORA DE AFECTACION DE TABLAS 
+27-05-2026 18:02:19CLASE[ServicioUsuario]||CLIENTE[127.0.0.1]||USRSES[498]||NOERROR[0]||ERROR[]||CONSULTA[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARSEDQUERY[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARAMETROS[{":pass":"f9ef030c9cb120e09a07b371ce6bb21ee27fa96b10f4b85d23dc92621ab1b4c5",":usr_id":5541,":ejercicio":2027,":date":"2026-04-26 18:02:19"}]||ESTADO[]|| BITACORA DE AFECTACION DE TABLAS 
+27-05-2026 18:02:19CLASE[ServicioUsuario]||CLIENTE[127.0.0.1]||USRSES[498]||NOERROR[0]||ERROR[]||CONSULTA[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARSEDQUERY[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARAMETROS[{":pass":"6a27cca9c9d269802db3c98dc7225ec527733e266c0e2123cb510bb6165d2a3b",":usr_id":5542,":ejercicio":2027,":date":"2026-04-26 18:02:19"}]||ESTADO[]|| BITACORA DE AFECTACION DE TABLAS 
+27-05-2026 18:02:20CLASE[ServicioUsuario]||CLIENTE[127.0.0.1]||USRSES[498]||NOERROR[0]||ERROR[]||CONSULTA[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARSEDQUERY[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARAMETROS[{":pass":"acc26f34960b9912e5cd13399f7fd77d2611b37340267eae03d68cafacca1c36",":usr_id":5543,":ejercicio":2027,":date":"2026-04-26 18:02:19"}]||ESTADO[]|| BITACORA DE AFECTACION DE TABLAS 
+27-05-2026 18:02:21CLASE[ServicioUsuario]||CLIENTE[127.0.0.1]||USRSES[498]||NOERROR[0]||ERROR[]||CONSULTA[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARSEDQUERY[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARAMETROS[{":pass":"f1fb0a3b5508dd03cc144b9eaa2a1d7e9c7327de86a91dbb0fa6cb32a9e7b0a1",":usr_id":5544,":ejercicio":2027,":date":"2026-04-26 18:02:21"}]||ESTADO[]|| BITACORA DE AFECTACION DE TABLAS 
+27-05-2026 18:02:22CLASE[ServicioUsuario]||CLIENTE[127.0.0.1]||USRSES[498]||NOERROR[0]||ERROR[]||CONSULTA[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARSEDQUERY[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARAMETROS[{":pass":"20f712318af3b490e06bff7ad037b8827960b8aed7a298e5adb39d81ca600fd1",":usr_id":5545,":ejercicio":2027,":date":"2026-04-26 18:02:22"}]||ESTADO[]|| BITACORA DE AFECTACION DE TABLAS 
+27-05-2026 18:02:22CLASE[ServicioUsuario]||CLIENTE[127.0.0.1]||USRSES[498]||NOERROR[0]||ERROR[]||CONSULTA[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARSEDQUERY[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARAMETROS[{":pass":"bc21608aae48ec37f0156ec1ec1c53f7808d0c928eb010a268035e2e124e74b1",":usr_id":5546,":ejercicio":2027,":date":"2026-04-26 18:02:22"}]||ESTADO[]|| BITACORA DE AFECTACION DE TABLAS 
+27-05-2026 18:02:23CLASE[ServicioUsuario]||CLIENTE[127.0.0.1]||USRSES[498]||NOERROR[0]||ERROR[]||CONSULTA[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARSEDQUERY[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARAMETROS[{":pass":"7a9786afda810f7fedcf6fb9b816f776b516eaac24de8b97d792ff1d9f74e621",":usr_id":5547,":ejercicio":2027,":date":"2026-04-26 18:02:23"}]||ESTADO[]|| BITACORA DE AFECTACION DE TABLAS 
+27-05-2026 18:02:23CLASE[ServicioUsuario]||CLIENTE[127.0.0.1]||USRSES[498]||NOERROR[0]||ERROR[]||CONSULTA[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARSEDQUERY[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARAMETROS[{":pass":"0393002c3737bd441f741a59b753799ce133ed632912d4685fee6bbdc2662064",":usr_id":5548,":ejercicio":2027,":date":"2026-04-26 18:02:23"}]||ESTADO[]|| BITACORA DE AFECTACION DE TABLAS 
+27-05-2026 18:02:23CLASE[ServicioUsuario]||CLIENTE[127.0.0.1]||USRSES[498]||NOERROR[0]||ERROR[]||CONSULTA[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARSEDQUERY[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARAMETROS[{":pass":"7346d24847feacd6fa3cdc3f03fbb43fb306138d8d96d691c5cb3342dba7f46a",":usr_id":5549,":ejercicio":2027,":date":"2026-04-26 18:02:23"}]||ESTADO[]|| BITACORA DE AFECTACION DE TABLAS 
+27-05-2026 18:02:24CLASE[ServicioUsuario]||CLIENTE[127.0.0.1]||USRSES[498]||NOERROR[0]||ERROR[]||CONSULTA[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARSEDQUERY[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARAMETROS[{":pass":"b5064b36fda4c1308d9d2ec162cb4c8885de0f0099a7e8f64c0787056b7bf685",":usr_id":5550,":ejercicio":2027,":date":"2026-04-26 18:02:24"}]||ESTADO[]|| BITACORA DE AFECTACION DE TABLAS 
+27-05-2026 18:02:24CLASE[ServicioUsuario]||CLIENTE[127.0.0.1]||USRSES[498]||NOERROR[0]||ERROR[]||CONSULTA[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARSEDQUERY[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARAMETROS[{":pass":"1893b6d713aef60b24c44f1b6e2244ead8380326c30f134ddd857f45388228a5",":usr_id":5551,":ejercicio":2027,":date":"2026-04-26 18:02:24"}]||ESTADO[]|| BITACORA DE AFECTACION DE TABLAS 
+27-05-2026 18:02:25CLASE[ServicioUsuario]||CLIENTE[127.0.0.1]||USRSES[498]||NOERROR[0]||ERROR[]||CONSULTA[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARSEDQUERY[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARAMETROS[{":pass":"40513086de461ce6f247add5671e3e46b42cd0226a97a9576175f67421f6d3bb",":usr_id":5552,":ejercicio":2027,":date":"2026-04-26 18:02:25"}]||ESTADO[]|| BITACORA DE AFECTACION DE TABLAS 
+27-05-2026 18:02:25CLASE[ServicioUsuario]||CLIENTE[127.0.0.1]||USRSES[498]||NOERROR[0]||ERROR[]||CONSULTA[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARSEDQUERY[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARAMETROS[{":pass":"3df0d40c1dadecd8c654ce57856b2b6a658152a78325c8772b0532fe6a3f0c6c",":usr_id":5553,":ejercicio":2027,":date":"2026-04-26 18:02:25"}]||ESTADO[]|| BITACORA DE AFECTACION DE TABLAS 
+27-05-2026 18:02:26CLASE[ServicioUsuario]||CLIENTE[127.0.0.1]||USRSES[498]||NOERROR[0]||ERROR[]||CONSULTA[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARSEDQUERY[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARAMETROS[{":pass":"37403dc86eea8ace8e9415e07249e1971d5e60b14d0c134413faa25fc74ed1ac",":usr_id":5554,":ejercicio":2027,":date":"2026-04-26 18:02:26"}]||ESTADO[]|| BITACORA DE AFECTACION DE TABLAS 
+27-05-2026 18:02:26CLASE[ServicioUsuario]||CLIENTE[127.0.0.1]||USRSES[498]||NOERROR[0]||ERROR[]||CONSULTA[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARSEDQUERY[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARAMETROS[{":pass":"f48567978f005a427d193f4059c59609ea7743c0b6c6f11448e3c266b138ad6f",":usr_id":5555,":ejercicio":2027,":date":"2026-04-26 18:02:26"}]||ESTADO[]|| BITACORA DE AFECTACION DE TABLAS 
+27-05-2026 18:02:27CLASE[ServicioUsuario]||CLIENTE[127.0.0.1]||USRSES[498]||NOERROR[0]||ERROR[]||CONSULTA[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARSEDQUERY[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARAMETROS[{":pass":"e16c4c3f132b8da82753901bcf84ee71ca836e99514aeea63eed297e482f6ffc",":usr_id":5556,":ejercicio":2027,":date":"2026-04-26 18:02:27"}]||ESTADO[]|| BITACORA DE AFECTACION DE TABLAS 
+27-05-2026 18:02:27CLASE[ServicioUsuario]||CLIENTE[127.0.0.1]||USRSES[498]||NOERROR[0]||ERROR[]||CONSULTA[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARSEDQUERY[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARAMETROS[{":pass":"c76f8ecf7b1a3d443f5bceee82e7119f87dd01dbd1ad95deba08908b2b28de0a",":usr_id":5557,":ejercicio":2027,":date":"2026-04-26 18:02:27"}]||ESTADO[]|| BITACORA DE AFECTACION DE TABLAS 
+27-05-2026 18:02:27CLASE[ServicioUsuario]||CLIENTE[127.0.0.1]||USRSES[498]||NOERROR[0]||ERROR[]||CONSULTA[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARSEDQUERY[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARAMETROS[{":pass":"f860050a24fabe1282c83de2788b647179bff3df091ca08980684878d4d551f2",":usr_id":5558,":ejercicio":2027,":date":"2026-04-26 18:02:27"}]||ESTADO[]|| BITACORA DE AFECTACION DE TABLAS 
+27-05-2026 18:02:28CLASE[ServicioUsuario]||CLIENTE[127.0.0.1]||USRSES[498]||NOERROR[0]||ERROR[]||CONSULTA[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARSEDQUERY[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARAMETROS[{":pass":"fb239fdd1abcf4fe0267b7a32e860cf404e5410abe72d27b56563b871500f5fa",":usr_id":5559,":ejercicio":2027,":date":"2026-04-26 18:02:28"}]||ESTADO[]|| BITACORA DE AFECTACION DE TABLAS 
+27-05-2026 18:02:28CLASE[ServicioUsuario]||CLIENTE[127.0.0.1]||USRSES[498]||NOERROR[0]||ERROR[]||CONSULTA[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARSEDQUERY[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARAMETROS[{":pass":"972c7131a202a5dcd3f6bb7b56586c5d650fde9a9cb43523cdcb79b702be193f",":usr_id":5560,":ejercicio":2027,":date":"2026-04-26 18:02:28"}]||ESTADO[]|| BITACORA DE AFECTACION DE TABLAS 
+27-05-2026 18:02:29CLASE[ServicioUsuario]||CLIENTE[127.0.0.1]||USRSES[498]||NOERROR[0]||ERROR[]||CONSULTA[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARSEDQUERY[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARAMETROS[{":pass":"167ec9385692955f525e7cc6d00b5fdb4e01b82fe0159c5afbc334a856f9bf0b",":usr_id":5561,":ejercicio":2027,":date":"2026-04-26 18:02:29"}]||ESTADO[]|| BITACORA DE AFECTACION DE TABLAS 
+27-05-2026 18:02:29CLASE[ServicioUsuario]||CLIENTE[127.0.0.1]||USRSES[498]||NOERROR[0]||ERROR[]||CONSULTA[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARSEDQUERY[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARAMETROS[{":pass":"94e701b46439d77cb8484bf42a8793bf4c3efa9627bb5b862a4cc6e843d334fd",":usr_id":5562,":ejercicio":2027,":date":"2026-04-26 18:02:29"}]||ESTADO[]|| BITACORA DE AFECTACION DE TABLAS 
+27-05-2026 18:02:30CLASE[ServicioUsuario]||CLIENTE[127.0.0.1]||USRSES[498]||NOERROR[0]||ERROR[]||CONSULTA[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARSEDQUERY[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARAMETROS[{":pass":"f1a7969536f5246bb3cfdfd32ed3fd19f97da2b070bac06b74376a751c5c336f",":usr_id":5563,":ejercicio":2027,":date":"2026-04-26 18:02:30"}]||ESTADO[]|| BITACORA DE AFECTACION DE TABLAS 
+27-05-2026 18:02:30CLASE[ServicioUsuario]||CLIENTE[127.0.0.1]||USRSES[498]||NOERROR[0]||ERROR[]||CONSULTA[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARSEDQUERY[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARAMETROS[{":pass":"2c52e28da34de3d5408e8c828dabd2f9d1de1bc7373485d2eb32af68cd357518",":usr_id":5564,":ejercicio":2027,":date":"2026-04-26 18:02:30"}]||ESTADO[]|| BITACORA DE AFECTACION DE TABLAS 
+27-05-2026 18:02:31CLASE[ServicioUsuario]||CLIENTE[127.0.0.1]||USRSES[498]||NOERROR[0]||ERROR[]||CONSULTA[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARSEDQUERY[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARAMETROS[{":pass":"e8075e3e3cb700cc302403fce407e6820ca3f166f523fff23a71c03d6f3e570e",":usr_id":5565,":ejercicio":2027,":date":"2026-04-26 18:02:31"}]||ESTADO[]|| BITACORA DE AFECTACION DE TABLAS 
+27-05-2026 18:02:31CLASE[ServicioUsuario]||CLIENTE[127.0.0.1]||USRSES[498]||NOERROR[0]||ERROR[]||CONSULTA[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARSEDQUERY[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARAMETROS[{":pass":"293c11459ad243a3a37f52ae0c8696299618b7d4b3eb67619729ed1d608e7e3f",":usr_id":5566,":ejercicio":2027,":date":"2026-04-26 18:02:31"}]||ESTADO[]|| BITACORA DE AFECTACION DE TABLAS 
+27-05-2026 18:02:31CLASE[ServicioUsuario]||CLIENTE[127.0.0.1]||USRSES[498]||NOERROR[0]||ERROR[]||CONSULTA[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARSEDQUERY[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARAMETROS[{":pass":"3809ee0147b2a17e142786c3bcccd307bd26f18d1b89c58d8fb6bf18da92b538",":usr_id":5567,":ejercicio":2027,":date":"2026-04-26 18:02:31"}]||ESTADO[]|| BITACORA DE AFECTACION DE TABLAS 
+27-05-2026 18:02:32CLASE[ServicioUsuario]||CLIENTE[127.0.0.1]||USRSES[498]||NOERROR[0]||ERROR[]||CONSULTA[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARSEDQUERY[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARAMETROS[{":pass":"0c37dea50e0cdd7713c3e6c4e504354514acae4aa8d1a6d6500c1874c7842874",":usr_id":5568,":ejercicio":2027,":date":"2026-04-26 18:02:32"}]||ESTADO[]|| BITACORA DE AFECTACION DE TABLAS 
+27-05-2026 18:02:32CLASE[ServicioUsuario]||CLIENTE[127.0.0.1]||USRSES[498]||NOERROR[0]||ERROR[]||CONSULTA[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARSEDQUERY[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARAMETROS[{":pass":"8bb15961c1a46f1a5b009a6bf545acdb7385e7a763ba70455d5e7c6707e2845f",":usr_id":5569,":ejercicio":2027,":date":"2026-04-26 18:02:32"}]||ESTADO[]|| BITACORA DE AFECTACION DE TABLAS 
+27-05-2026 18:02:33CLASE[ServicioUsuario]||CLIENTE[127.0.0.1]||USRSES[498]||NOERROR[0]||ERROR[]||CONSULTA[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARSEDQUERY[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARAMETROS[{":pass":"02771718a78f8cc574f49a817c272c8b8433dd75b1b5f70f42744fd65f53689a",":usr_id":5570,":ejercicio":2027,":date":"2026-04-26 18:02:33"}]||ESTADO[]|| BITACORA DE AFECTACION DE TABLAS 
+27-05-2026 18:02:33CLASE[ServicioUsuario]||CLIENTE[127.0.0.1]||USRSES[498]||NOERROR[0]||ERROR[]||CONSULTA[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARSEDQUERY[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARAMETROS[{":pass":"990e8e71eadd3da034154076cc160593078cb57576f6d45df445f10b4de4bdd5",":usr_id":5571,":ejercicio":2027,":date":"2026-04-26 18:02:33"}]||ESTADO[]|| BITACORA DE AFECTACION DE TABLAS 
+27-05-2026 18:02:34CLASE[ServicioUsuario]||CLIENTE[127.0.0.1]||USRSES[498]||NOERROR[0]||ERROR[]||CONSULTA[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARSEDQUERY[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARAMETROS[{":pass":"f11d34a7dc25a3a91001d798ce0305df812bd14d77319913650f21601ab9bd50",":usr_id":5572,":ejercicio":2027,":date":"2026-04-26 18:02:34"}]||ESTADO[]|| BITACORA DE AFECTACION DE TABLAS 
+27-05-2026 18:02:34CLASE[ServicioUsuario]||CLIENTE[127.0.0.1]||USRSES[498]||NOERROR[0]||ERROR[]||CONSULTA[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARSEDQUERY[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARAMETROS[{":pass":"fed825541e061dca5244681693f69866fee53fe25f76763e76c5e6e964a27327",":usr_id":5573,":ejercicio":2027,":date":"2026-04-26 18:02:34"}]||ESTADO[]|| BITACORA DE AFECTACION DE TABLAS 
+27-05-2026 18:02:35CLASE[ServicioUsuario]||CLIENTE[127.0.0.1]||USRSES[498]||NOERROR[0]||ERROR[]||CONSULTA[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARSEDQUERY[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARAMETROS[{":pass":"297f0d9f044fd2e86a8b1cac46318eeddc537c01b999c30534697012ce357f07",":usr_id":5574,":ejercicio":2027,":date":"2026-04-26 18:02:35"}]||ESTADO[]|| BITACORA DE AFECTACION DE TABLAS 
+27-05-2026 18:02:35CLASE[ServicioUsuario]||CLIENTE[127.0.0.1]||USRSES[498]||NOERROR[0]||ERROR[]||CONSULTA[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARSEDQUERY[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARAMETROS[{":pass":"5e3e03d10389a0843f6f7b145675a7fc084bba775afece18ce4b17490ff28c51",":usr_id":5575,":ejercicio":2027,":date":"2026-04-26 18:02:35"}]||ESTADO[]|| BITACORA DE AFECTACION DE TABLAS 
+27-05-2026 18:02:36CLASE[ServicioUsuario]||CLIENTE[127.0.0.1]||USRSES[498]||NOERROR[0]||ERROR[]||CONSULTA[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARSEDQUERY[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARAMETROS[{":pass":"23cb0d48f94ac441507485e97b3a4dafcf7d176c9925cd4ac2c22a1ced3bb488",":usr_id":5576,":ejercicio":2027,":date":"2026-04-26 18:02:36"}]||ESTADO[]|| BITACORA DE AFECTACION DE TABLAS 
+27-05-2026 18:02:37CLASE[ServicioUsuario]||CLIENTE[127.0.0.1]||USRSES[498]||NOERROR[0]||ERROR[]||CONSULTA[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARSEDQUERY[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARAMETROS[{":pass":"a30bbe4db032bf9d3e4902ad010206f782bd568b2bc039f6f7cc34476f530897",":usr_id":5577,":ejercicio":2027,":date":"2026-04-26 18:02:37"}]||ESTADO[]|| BITACORA DE AFECTACION DE TABLAS 
+27-05-2026 18:02:37CLASE[ServicioUsuario]||CLIENTE[127.0.0.1]||USRSES[498]||NOERROR[0]||ERROR[]||CONSULTA[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARSEDQUERY[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARAMETROS[{":pass":"f72e75e8c5c43f0973728be4e9ca6b2d50de74729395db05d7d3d720bf0bdc7b",":usr_id":5578,":ejercicio":2027,":date":"2026-04-26 18:02:37"}]||ESTADO[]|| BITACORA DE AFECTACION DE TABLAS 
+27-05-2026 18:02:38CLASE[ServicioUsuario]||CLIENTE[127.0.0.1]||USRSES[498]||NOERROR[0]||ERROR[]||CONSULTA[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARSEDQUERY[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARAMETROS[{":pass":"1c16cadaeba6f60c96ea7644c408f10bb1b810ab091c8ef840a908ef8de71c51",":usr_id":5579,":ejercicio":2027,":date":"2026-04-26 18:02:38"}]||ESTADO[]|| BITACORA DE AFECTACION DE TABLAS 
+27-05-2026 18:02:38CLASE[ServicioUsuario]||CLIENTE[127.0.0.1]||USRSES[498]||NOERROR[0]||ERROR[]||CONSULTA[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARSEDQUERY[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARAMETROS[{":pass":"963d50d9b38b1bedc8dafec52fd23e6bb7b03d4474727cfb2f2d6d6c5bfd8473",":usr_id":5580,":ejercicio":2027,":date":"2026-04-26 18:02:38"}]||ESTADO[]|| BITACORA DE AFECTACION DE TABLAS 
+27-05-2026 18:02:39CLASE[ServicioUsuario]||CLIENTE[127.0.0.1]||USRSES[498]||NOERROR[0]||ERROR[]||CONSULTA[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARSEDQUERY[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARAMETROS[{":pass":"0926eadfbda5800413faa5a4ec7deadb58c8d816610884375efd1c09e56d1ef8",":usr_id":5581,":ejercicio":2027,":date":"2026-04-26 18:02:39"}]||ESTADO[]|| BITACORA DE AFECTACION DE TABLAS 
+27-05-2026 18:02:39CLASE[ServicioUsuario]||CLIENTE[127.0.0.1]||USRSES[498]||NOERROR[0]||ERROR[]||CONSULTA[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARSEDQUERY[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARAMETROS[{":pass":"0d4e96f38523ebf931b092eedde398e633ec53d65815f2e070b561dde8b5a59f",":usr_id":5582,":ejercicio":2027,":date":"2026-04-26 18:02:39"}]||ESTADO[]|| BITACORA DE AFECTACION DE TABLAS 
+27-05-2026 18:21:32CLASE[ServicioUsuario]||CLIENTE[127.0.0.1]||USRSES[498]||NOERROR[0]||ERROR[]||CONSULTA[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARSEDQUERY[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARAMETROS[{":pass":"156b3d02d7a2b12755f94d145a07527903cb05aa3eee94378f890c4077b6a43c",":usr_id":498,":ejercicio":2027,":date":"2026-04-26 18:21:32"}]||ESTADO[]|| BITACORA DE AFECTACION DE TABLAS 
+27-05-2026 18:32:05CLASE[ServicioUsuario]||CLIENTE[127.0.0.1]||USRSES[498]||NOERROR[0]||ERROR[]||CONSULTA[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARSEDQUERY[    UPDATE ctrlUsuario.cat_VigenciaUsuario v
+    INNER JOIN ctrlUsuario.cat_Usuario ug USING (usr_id)
+    INNER JOIN ctrl2027.cat_Usuario uu USING (usr_id)
+    SET v.vgu_clave = :pass,
+        v.usr_fecha = :date
+    WHERE v.usr_id = :usr_id 
+        AND v.vgu_ejercicio = :ejercicio]||PARAMETROS[{":pass":"65c292b7e7f77bf5c7ed30b71962a24d0e21517a892e363478e9b8427ec3fdc4",":usr_id":498,":ejercicio":2027,":date":"2026-04-26 18:32:05"}]||ESTADO[]|| BITACORA DE AFECTACION DE TABLAS 

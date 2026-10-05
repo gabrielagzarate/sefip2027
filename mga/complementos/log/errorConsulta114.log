@@ -1,0 +1,69 @@
+27-05-2026 17:47:05CLASE[ControladorEnviarPasswords]||CLIENTE[127.0.0.1]||USRSES[498]||NOERROR[23000]||ERROR[SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'gpo_id' in from clause is ambiguous]||CONSULTA[SELECT SQL_CALC_FOUND_ROWS 
+        u.usr_id, ur.ur_nombre, u.usr_usuario, u.usr_fecha,
+        aur.ur_correoElectronicoTitular AS ur_correoElectronico
+    FROM
+        ctrlUsuario.cat_Usuario AS u
+        INNER JOIN ctrlUsuario.cat_VigenciaUsuario vu USING (usr_id)
+        INNER JOIN ctrl2027.cat_Usuario cu USING (usr_id)
+        INNER JOIN ctrl2026.cat_UnidadResponsable ur USING (uur_id)
+        INNER JOIN ctrl2026.aux_UnidadResponsable aur USING (gpo_id, ur_id)
+    WHERE
+        vu.sts_id = 1 AND cu.usr_titular = 1
+        AND vu.vgu_ejercicio = 2027 LIMIT 0,999;]||PARSEDQUERY[SELECT SQL_CALC_FOUND_ROWS 
+        u.usr_id, ur.ur_nombre, u.usr_usuario, u.usr_fecha,
+        aur.ur_correoElectronicoTitular AS ur_correoElectronico
+    FROM
+        ctrlUsuario.cat_Usuario AS u
+        INNER JOIN ctrlUsuario.cat_VigenciaUsuario vu USING (usr_id)
+        INNER JOIN ctrl2027.cat_Usuario cu USING (usr_id)
+        INNER JOIN ctrl2026.cat_UnidadResponsable ur USING (uur_id)
+        INNER JOIN ctrl2026.aux_UnidadResponsable aur USING (gpo_id, ur_id)
+    WHERE
+        vu.sts_id = 1 AND cu.usr_titular = 1
+        AND vu.vgu_ejercicio = 2027 LIMIT 0,999;]||ESTADO[]||[M_4_7][llenaTablaUsuarios]
+27-05-2026 18:19:34CLASE[ControladorEnviarPasswords]||CLIENTE[127.0.0.1]||USRSES[498]||NOERROR[42S22]||ERROR[SQLSTATE[42S22]: Column not found: 1054 Unknown column 'ur.gpo_id' in 'field list']||CONSULTA[SELECT SQL_CALC_FOUND_ROWS 
+        u.usr_id, ur.gpo_id, ur.ur_id,
+        CONCAT(ur.gpo_id, ur.ur_id, ' - ', ur.ur_nombre) AS ur_nombre,
+        u.usr_usuario, u.usr_fecha,
+        u.usr_correo AS ur_correoElectronico
+    FROM
+        ctrlUsuario.cat_Usuario AS u
+        INNER JOIN ctrlUsuario.cat_VigenciaUsuario vu USING (usr_id)
+        INNER JOIN ctrl2027.cat_Usuario cu USING (usr_id)
+    WHERE
+        vu.sts_id = 1 AND cu.usr_titular = 1
+        AND vu.vgu_ejercicio = 2027 LIMIT 0,999;]||PARSEDQUERY[SELECT SQL_CALC_FOUND_ROWS 
+        u.usr_id, ur.gpo_id, ur.ur_id,
+        CONCAT(ur.gpo_id, ur.ur_id, ' - ', ur.ur_nombre) AS ur_nombre,
+        u.usr_usuario, u.usr_fecha,
+        u.usr_correo AS ur_correoElectronico
+    FROM
+        ctrlUsuario.cat_Usuario AS u
+        INNER JOIN ctrlUsuario.cat_VigenciaUsuario vu USING (usr_id)
+        INNER JOIN ctrl2027.cat_Usuario cu USING (usr_id)
+    WHERE
+        vu.sts_id = 1 AND cu.usr_titular = 1
+        AND vu.vgu_ejercicio = 2027 LIMIT 0,999;]||ESTADO[]||[M_4_7][llenaTablaUsuarios]
+27-05-2026 18:19:42CLASE[ControladorEnviarPasswords]||CLIENTE[127.0.0.1]||USRSES[498]||NOERROR[42S22]||ERROR[SQLSTATE[42S22]: Column not found: 1054 Unknown column 'ur.gpo_id' in 'field list']||CONSULTA[SELECT SQL_CALC_FOUND_ROWS 
+        u.usr_id, ur.gpo_id, ur.ur_id,
+        CONCAT(ur.gpo_id, ur.ur_id, ' - ', ur.ur_nombre) AS ur_nombre,
+        u.usr_usuario, u.usr_fecha,
+        u.usr_correo AS ur_correoElectronico
+    FROM
+        ctrlUsuario.cat_Usuario AS u
+        INNER JOIN ctrlUsuario.cat_VigenciaUsuario vu USING (usr_id)
+        INNER JOIN ctrl2027.cat_Usuario cu USING (usr_id)
+    WHERE
+        vu.sts_id = 1 AND cu.usr_titular = 1
+        AND vu.vgu_ejercicio = 2027 LIMIT 0,999;]||PARSEDQUERY[SELECT SQL_CALC_FOUND_ROWS 
+        u.usr_id, ur.gpo_id, ur.ur_id,
+        CONCAT(ur.gpo_id, ur.ur_id, ' - ', ur.ur_nombre) AS ur_nombre,
+        u.usr_usuario, u.usr_fecha,
+        u.usr_correo AS ur_correoElectronico
+    FROM
+        ctrlUsuario.cat_Usuario AS u
+        INNER JOIN ctrlUsuario.cat_VigenciaUsuario vu USING (usr_id)
+        INNER JOIN ctrl2027.cat_Usuario cu USING (usr_id)
+    WHERE
+        vu.sts_id = 1 AND cu.usr_titular = 1
+        AND vu.vgu_ejercicio = 2027 LIMIT 0,999;]||ESTADO[]||[M_4_7][llenaTablaUsuarios]
